@@ -1,0 +1,73 @@
+@media only screen and (max-width: 375px) {
+
+body {
+    font-family: 'Manrope';
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 0;
+}
+.container1 {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem;
+    width: 90%;
+    height: 20%;
+}
+
+.container1 img {
+    flex-grow: 1;
+    width: 30%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.container2 {
+    display: flex;
+    flex-flow: row wrap;
+    width: 99%;
+    margin-left: 2rem;
+}
+
+.container2 h1 {
+    justify-content: center;
+    text-align: left;
+    width: 80%;
+    line-height: 1.2.3rem;
+    font-family: "Marlo";
+    color: hsl(217, 19%, 35%);
+    font-size: 1.3rem;
+}
+
+.container2 p {
+    justify-content: center;
+    text-align: left;
+    width: 80%;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: 60px 160px 100px;
+    padding: 1.5rem;
+}
+
+.container3 img {
+    border-radius: 50%;
+    width: 90%;
+}
+
+.container3  h1 {
+    font-weight: 700;
+    font-family: "Marlo";
+    font-size: .9rem;
+    width: 90%;
+    color: hsl(217, 19%, 35%);
+}
+
+.container3 p {
+    font-size: .9rem;
+}
+
+.container3 .icon {
+    width: 50%;
+}
+
+.
