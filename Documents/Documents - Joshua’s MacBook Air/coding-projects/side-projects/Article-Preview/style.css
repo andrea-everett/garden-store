@@ -1,5 +1,17 @@
-@media only screen and (max-width: 375px) {
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
 
+:root {
+    /* colors */
+--Very-Dark--Grayish-Blue: hsl(217, 19%, 35%);
+--Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+--Grayish-Blue: hsl(212, 23%, 69%);
+--Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+/* Typography  */
+    --family: 'Manrope', sans-serif;
+    --font-size: 13px;
+    --weigths: 500, 700;
+}
 body {
     background-color: hsl(210, 46%, 95%);
     font-family: 'Manrope';
@@ -92,19 +104,122 @@ body {
     color: hsl(214, 17%, 51%);
 }
 
- .icon  {
-     padding-left: .5rem;
+ /* .icon  {
+    padding-left: .5rem;
     background-color:  hsl(210, 46%, 95%);
     border-radius: 50%;
     width: 60%;
-}
+} */
 
 .icon img {
    align-items: right;
-    padding-top: .5rem;
+   padding-top: .5rem;
 }
 
 .share {
     display: none;
 }
+
+@media  all and (max-width: 1440px) and (orientation: landscape) {
+
+.desktop-card {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .card-summary {
+    position: relative;
+    display: block;
+} */
+
+.card-content {
+    width: 730px;
+    height: 350px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 0px 30px 2px var(--blue-grayish-shaddow);
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+.drawers {
+    /* display: inline-block; */
+    width: 285px;
+    height: 280px;
+}
+
+.drawers img {
+    border-top-left-radius:  10%;
+    border-bottom-left-radius:  10%;
+    width: 325px;
+    height: 350px;
+}
+
+.card-info {
+    display: inline-block;
+}
+
+.card-info h1  {
+   display: inline-block;
+   width: 70%;
+   margin-top: 40px;
+   margin-left: 60px;
+}
+
+.card-info p {
+    display: block;
+    width: 70%;
+    margin-left: 60px;
+    font-size: 14px;
+    line-height: 1.6rem;
+}
+
+.card-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.author img {
+    margin-left: 70px;
+    width: 15%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+.author {
+   display: flex;
+}
+
+.author-info h1 {
+    position: relative;
+    font-size: 13px;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.author-info p {
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.icon img {
+    width: 30px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.icon img::after {
+    content: url("./images/icon-share.svg");
+    position: absolute;
+    background-color:  hsl(210, 46%, 95%);
+    border-radius: 30%;
+    width: 60px;
+    height: 20px;
+}
+
 
