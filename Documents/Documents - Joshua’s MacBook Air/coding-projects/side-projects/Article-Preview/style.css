@@ -1,14 +1,15 @@
 @media only screen and (max-width: 375px) {
 
 body {
+    background-color: hsl(210, 46%, 95%);
     font-family: 'Manrope';
-    margin: 1rem 1rem 1rem 1rem;
-    padding: 0;
+    margin: .2rem;
+  
 }
 .container1 {
+    margin: 1rem 1rem ;
     display: flex;
     flex-flow: row wrap;
-    padding: 1rem;
     width: 90%;
     height: 20%;
 }
@@ -21,29 +22,35 @@ body {
 }
 
 .container2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: white;
     display: flex;
     flex-flow: row wrap;
-    width: 99%;
-    margin-left: 2rem;
 }
 
 .container2 h1 {
-    justify-content: center;
+   padding: 1rem;
     text-align: left;
-    width: 80%;
-    line-height: 1.2.3rem;
-    font-family: "Marlo";
+    width: 85%;
+    line-height: 1.5rem;
     color: hsl(217, 19%, 35%);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .container2 p {
-    justify-content: center;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color:  hsl(212, 23%, 69%);
     text-align: left;
-    width: 80%;
+    /* width: 80%; */
 }
 
 .container3 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: white;
     display: grid;
     grid-template-columns: 60px 160px 100px;
     padding: 1.5rem;
