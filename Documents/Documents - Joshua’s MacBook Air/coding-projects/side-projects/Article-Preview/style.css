@@ -3,25 +3,27 @@
 body {
     background-color: hsl(210, 46%, 95%);
     font-family: 'Manrope';
+    font-size: 13px;
     margin: .2rem;
-  
 }
+
 .container1 {
-    margin: 1rem 1rem ;
+    margin: 2rem 1rem  0rem;
     display: flex;
     flex-flow: row wrap;
-    width: 90%;
-    height: 20%;
+    width: 65%;
+    height: 50%;
 }
 
 .container1 img {
-    flex-grow: 1;
-    width: 30%;
+    flex-grow: 2;
+    width: 15%;
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
 }
 
 .container2 {
+    width: 65%;
     margin-left: 1rem;
     margin-right: 1rem;
     background-color: white;
@@ -30,49 +32,55 @@ body {
 }
 
 .container2 h1 {
+    font-family: "Manrope";
    padding: 1rem;
    padding-bottom: 0;
     text-align: left;
     width: 85%;
     line-height: 1.5rem;
     color: hsl(217, 19%, 35%);
-    font-size: 1.1rem;
+    font-size: 13px;
 }
 
 .container2 p {
+    font-family: "Manrope";
     padding: 1rem;
     padding-top:  0;
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 13px;
+    line-height: 1.3rem;
     color:  hsl(214, 17%, 51%);
     text-align: left;
 }
 
 .container3 {
     margin-left: 1rem;
-    margin-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    width: 61%;
     background-color: white;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
     display: grid;
-    grid-template-columns: 60px 160px 100px;
-    padding: 1.5rem;
+    grid-template-columns: 20% 50% 20%;
 }
 
 .container3 img {
-    justify-content: center;
     border-radius: 50%;
-    width: 75%;
+    width: 80%;
 }
 
 .container3  h1 {
+    text-align: left;
     margin-top: 0;
     margin-left: .5rem;
     margin-bottom: .5rem;
     font-weight: 700;
     font-family: "Marlo";
-    font-size: 1rem;
+    font-size: 12px;
     width: 90%;
     color: hsl(217, 19%, 35%);
 }
@@ -80,18 +88,23 @@ body {
 .container3 p {
     margin-top: 0;
     margin-left: .5rem;
-    font-size: .9rem;
+    font-size: 10px;
     color: hsl(214, 17%, 51%);
 }
 
  .icon  {
+     padding-left: .5rem;
     background-color:  hsl(210, 46%, 95%);
     border-radius: 50%;
     width: 60%;
-    height: 90%;
 }
 
 .icon img {
-   height: 60%;
-   width: 60%;
+   align-items: right;
+    padding-top: .5rem;
 }
+
+.share {
+    display: none;
+}
+
