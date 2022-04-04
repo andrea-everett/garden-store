@@ -31,6 +31,7 @@ body {
 
 .container2 h1 {
    padding: 1rem;
+   padding-bottom: 0;
     text-align: left;
     width: 85%;
     line-height: 1.5rem;
@@ -40,11 +41,14 @@ body {
 
 .container2 p {
     padding: 1rem;
+    padding-top:  0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 1rem;
     line-height: 1.5rem;
-    color:  hsl(212, 23%, 69%);
+    color:  hsl(214, 17%, 51%);
     text-align: left;
-    /* width: 80%; */
 }
 
 .container3 {
@@ -57,24 +61,37 @@ body {
 }
 
 .container3 img {
+    justify-content: center;
     border-radius: 50%;
-    width: 90%;
+    width: 75%;
 }
 
 .container3  h1 {
+    margin-top: 0;
+    margin-left: .5rem;
+    margin-bottom: .5rem;
     font-weight: 700;
     font-family: "Marlo";
-    font-size: .9rem;
+    font-size: 1rem;
     width: 90%;
     color: hsl(217, 19%, 35%);
 }
 
 .container3 p {
+    margin-top: 0;
+    margin-left: .5rem;
     font-size: .9rem;
+    color: hsl(214, 17%, 51%);
 }
 
-.container3 .icon {
-    width: 50%;
+ .icon  {
+    background-color:  hsl(210, 46%, 95%);
+    border-radius: 50%;
+    width: 60%;
+    height: 90%;
 }
 
-.
+.icon img {
+   height: 60%;
+   width: 60%;
+}
