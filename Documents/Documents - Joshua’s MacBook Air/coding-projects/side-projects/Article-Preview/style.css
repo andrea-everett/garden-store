@@ -40,6 +40,7 @@ body {
 
 .card-summary {
     width: 18.75rem;
+    height: 20rem;
     margin-left: 1rem;
     margin-right: 1rem;
     background-color: white;
@@ -49,76 +50,79 @@ body {
 
 .card-info h1 {
     font-family: "Manrope";
-   padding: 1rem;
-   padding-bottom: 0;
+    padding: 1rem;
+    padding-bottom: 0;
     text-align: left;
-    width: 85%;
+     width: 85%;
     line-height: 1.5rem;
     color: hsl(217, 19%, 35%);
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
-.container2 p {
+.card-info p {
     font-family: "Manrope";
     padding: 1rem;
     padding-top:  0;
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 13px;
+    font-size: .85rem;
     line-height: 1.3rem;
     color:  hsl(214, 17%, 51%);
     text-align: left;
 }
 
-.container3 {
-    margin-left: 1rem;
-    padding-bottom: 1rem;
+.card-icons {
+    bottom: 12%; 
+    width: 18.75rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
     padding-top: 1rem;
-    padding-left: 1rem;
-    width: 61%;
-    background-color: white;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-    display: grid;
-    grid-template-columns: 20% 50% 20%;
 }
 
-.container3 img {
+.author {
+    width: 4rem;
+}
+
+.author img {
+    margin-left: 1rem;
     border-radius: 50%;
-    width: 80%;
+    width: 50%;
+    height: 60%;
 }
 
-.container3  h1 {
-    text-align: left;
-    margin-top: 0;
-    margin-left: .5rem;
-    margin-bottom: .5rem;
+.author-info h1 {
     font-weight: 700;
     font-family: "Marlo";
-    font-size: 12px;
-    width: 90%;
+    font-size:1rem;
     color: hsl(217, 19%, 35%);
 }
 
-.container3 p {
-    margin-top: 0;
-    margin-left: .5rem;
+.author-info p {
+    padding-top: 0;
     font-size: 10px;
     color: hsl(214, 17%, 51%);
 }
 
- /* .icon  {
-    padding-left: .5rem;
-    background-color:  hsl(210, 46%, 95%);
+  .icon::after {
+     padding-left: 4rem;
+    background-color:  hwb(210 93% 3%);
+    border-bottom-left-radius: 7%;
+    border-bottom-right-radius: 7%;
     border-radius: 50%;
-    width: 60%;
-} */
+    width: 90%;
+}
+
+.icon {
+    margin-left: 3rem;
+}
 
 .icon img {
-   align-items: right;
-   padding-top: .5rem;
-}
+    width: 70%;
+   padding-right: 1rem;
+   margin-right: .3rem;
+}  
 
 .share {
     display: none;
@@ -169,56 +173,47 @@ body {
 }
 
 .card-info h1  {
-    font-size: .3rem;
-   display: inline-block;
+   font-size: 1.3rem;
+   line-height: 1.6rem;
    width: 70%;
    margin-top: 1.5rem;
    margin-left: 3.5rem;
 }
 
 .card-info p {
-    display: block;
-    width: 70%;
-    margin-left: 3.5rem;
-    font-size: 14px;
+    width: 75%;
+    margin-left: 3.2rem;
     line-height: 1.6rem;
 }
 
 .card-icons {
-    padding-top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    padding-bottom: 12rem;
 }
 
 .author img {
     margin-left: 4rem;
-    width: 15%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     border-radius: 50%;
 }
-
 .author {
-   display: flex;
+    width: 4rem;
 }
-
 .author-info h1 {
-    position: relative;
-    font-size: 13px;
-    padding-left: 30px;
-    padding-right: 0;
+    width: 3rem;
+    padding-left: 5rem; 
 }
 
 .author-info p {
-    padding-left: 30px;
-    padding-right: 0;
+    padding-right: 3rem;
 }
 
 .icon img {
+    padding-left: 0;
     width: 2rem;
-    margin-right: 4rem;
+    margin-left: 7rem;
 }
-
+/* 
 .icon img::after {
     content: url("./images/icon-share.svg");
     position: absolute;
@@ -226,6 +221,6 @@ body {
     border-radius: 30%;
     width: 60px;
     height: 20px;
-}
+} */
 
 
