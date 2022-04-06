@@ -33,7 +33,7 @@ body {
     margin-top: 2rem;
     margin-left: 1rem;
     margin-right:1rem;
-    width: 19rem;
+    width: 18.75rem;
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
 }
@@ -43,6 +43,8 @@ body {
     height: 20rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
     background-color: white;
     display: flex;
     flex-flow: row wrap;
@@ -192,7 +194,7 @@ body {
 
 .author img {
     margin-left: 4rem;
-    width: 70%;
+    width: 80%;
     height: 70%;
     border-radius: 50%;
 }
@@ -200,18 +202,20 @@ body {
     width: 4rem;
 }
 .author-info h1 {
-    width: 3rem;
+    width: 8rem;
     padding-left: 5rem; 
 }
 
 .author-info p {
-    padding-right: 3rem;
+font-size: .7rem;
+width: 4rem;
+padding-left: 5rem; 
 }
 
 .icon img {
     padding-left: 0;
     width: 2rem;
-    margin-left: 7rem;
+    margin-left: 4rem;
 }
 /* 
 .icon img::after {
