@@ -75,12 +75,12 @@ body {
 }
 
 .card-icons {
-    bottom: 12%; 
+    padding: 1rem;
+    bottom: 13%; 
     width: 18.75rem;
     position: absolute;
     display: flex;
     align-items: center;
-    padding-top: 1rem;
 }
 
 .author {
@@ -107,26 +107,60 @@ body {
     color: hsl(214, 17%, 51%);
 }
 
-  .icon::after {
+  /* .icon::after {
      padding-left: 4rem;
     background-color:  hwb(210 93% 3%);
     border-bottom-left-radius: 7%;
     border-bottom-right-radius: 7%;
     border-radius: 50%;
     width: 90%;
-}
+} */
 
-.icon {
+/* .icon {
     margin-left: 3rem;
-}
+} */
 
-.icon img {
+/* .icon img {
     width: 70%;
    padding-right: 1rem;
    margin-right: .3rem;
-}  
+}   */
 
 .share {
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 18.75rem;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.share h1 {
+    color: lightgrey;
+    padding:1.4rem;
+    padding-top: .5rem;
+    font-size: 1rem;
+}
+
+.share img {
+    padding: .5rem;
+    margin-top: 1rem;
+   padding-right: 1rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+#share-button  {
+    width: 1.5rem;
+    background-color: hsl(212, 23%, 69%);
+    padding: .2rem;
+}
+
+#share-button img {
+    margin-right: 5rem;
+}
+
+#share-button2 {
     display: none;
 }
 
@@ -212,19 +246,19 @@ width: 4rem;
 padding-left: 5rem; 
 }
 
-.icon img {
+/* .icon img {
     padding-left: 0;
     width: 2rem;
     margin-left: 4rem;
-}
-/* 
-.icon img::after {
-    content: url("./images/icon-share.svg");
-    position: absolute;
-    background-color:  hsl(210, 46%, 95%);
-    border-radius: 30%;
-    width: 60px;
-    height: 20px;
 } */
+
+.share {
+    border-radius: 1rem;
+    width: 16rem;
+    height: 4rem;
+    position: relative;
+    bottom: 20%;
+    left: 50%
+}
 
 
