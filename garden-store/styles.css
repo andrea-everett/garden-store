@@ -105,3 +105,77 @@ input{
     max-width: 600px;
     padding: 60px;
 }
+
+.shop-heading  img {
+    max-width: 400px;
+    max-height: 200px;
+    padding: 100px;
+}
+
+.shop-heading h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shop-heading h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.shop-latest {
+    display: flex;
+    align-items: center;
+}
+
+.seeds  {
+    background-color: aliceblue;
+    margin: 30px;
+}
+
+.tools  {
+    background-color: aliceblue;
+   margin: 50px;
+}
+
+.books  {
+    background-color: aliceblue;
+    margin: 10px
+}
+
+.footer {
+    display: flex;
+    max-height: 1000px;
+    background-color: rgb(235, 203, 175);
+}
+
+.footer .heading {
+    font-size: 50px;
+   align-items: center;
+   padding: 60px;
+}
+
+.about {
+    margin-left: 40px;
+   padding: 10px;
+}
+
+.social {
+    margin-left:150px ;
+    padding: 10px;
+}
+
+.join {
+    margin-left: 300px;
+    padding: 10px;
+}
+
+.join input[text] {
+    max-width: 50px;
+    margin-left: 30px;
+    display: grid;
+    row-gap: 40px;
+}
+
+
+
