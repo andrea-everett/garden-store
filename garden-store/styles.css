@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: white;
+    margin: 20px;
+}
+
+.mini-course-banner {
+    display: flex;
+    font-family: 'Abel', sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-color:burlywood ;
+    color: white;
+    height: 60px;
+}
+
+.mini-course-banner h1 {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.mini-course-banner p {
+    padding: 10px;
+    width: 400px;
+    font-size: 18px;
+}
+
+button .sign-up {
+    width: 100px;
+    height: 40px;
+    background-color: burlywood;
+    border-width: 2px;
+}
+
+.heading {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 80px;
+    text-align: center;
+}
+
+.garden-store {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color:rgb(254, 162, 177) ;
+    padding: 20px;
+    margin-left: 150px;
+}
+
+.hero-image img {
+    width: 1400px;
+    padding-top: 20px;
+  
+}
+
+.mini-course {
+    display: flex;
+    background-color: rgb(242, 223, 201);
+    margin-top: 70px;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.course-info h1 {
+    font-size: 45px;
+}
+
+.course-info h2 {
+    font-size: 25px;
+}
+
+input{
+    max-width: 80px;
+   margin-left: 300px;
+   background-color: white;
+   background-image: url('searchicon.png');
+   background-position: 10px 10px;
+   background-repeat: no-repeat;
+   padding-left: 40px;
+}
+
+.course-sign-up {
+    max-width: 150px;
+    height: 40px;
+    margin-left: 250px;
+    margin-top: 40px;
+}
+
+.mini-course img {
+    max-width: 600px;
+    padding: 60px;
+}
