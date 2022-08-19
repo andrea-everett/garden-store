@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+button .sign-up {
+    width: 100px;
+    height: 40px;
+    background-color: burlywood;
+    border-width: 2px;
+}
+
+.heading {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 80px;
+    text-align: center;
+}
+
+.garden-store {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color:rgb(254, 162, 177) ;
+    padding: 20px;
+    margin-left: 150px;
+}
+
+.hero-image img {
+    width: 1400px;
+    padding-top: 20px;
+}
+
+.shop-display {
+    display:flex;
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+    line-height: 35px;
+}
+
+.shop-display img {
+    max-width: 1100px;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+.img-heading {
+    position: relative;
+    text-align: center;
+}
+
+.img-heading h1 {
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 70px;
+}
+
+.books {
+    position:absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.flower-banner {
+    background-color: rgb(233, 205, 169);
+    margin-left: 245px;
+    height: 150px;
+    width: 1100px;
+}
+
+.flower-banner  h1 {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.flower-banner p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.product-display {
+    display: flex;
+    margin-left: 245px;
+}
+
+.product-img img {
+    max-width: 327px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.shop {
+    position: relative;
+    top: 80%;
+    right: 50%;
+}
+
