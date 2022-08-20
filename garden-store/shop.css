@@ -97,6 +97,10 @@ ul {
     margin-left: 245px;
 }
 
+.product-img {
+    position: relative;
+}
+
 .product-img img {
     max-width: 327px;
     height: 300px;
@@ -104,8 +108,85 @@ ul {
 }
 
 .shop {
-    position: relative;
-    top: 80%;
-    right: 50%;
+    max-width: 180px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 70px;
 }
+
+.shop:hover {
+    background-color: rgb(233, 205, 169); 
+}
+
+.featured-projects h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-left: 550px;
+    padding-top: 30px;
+}
+
+.featured-projects h2 {
+    font-size: 20px;
+    margin-left: 478px;
+    padding-bottom: 10px;
+}
+
+.featured-imgs {
+    margin-left: 245px;
+    background-color: whitesmoke;
+}
+
+.featured-imgs img {
+    margin: 0;
+    max-width: 176px;
+    padding: 25px;
+}
+
+.featured-imgs-title {
+   display: flex;
+   justify-content: space-evenly;
+   font-size: 25px;
+   margin-left: 140px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.footer {
+    display: flex;
+    max-height: 1000px;
+    background-color: rgb(235, 203, 175);
+}
+
+.footer .heading {
+    font-size: 50px;
+   align-items: center;
+   padding: 60px;
+}
+
+.about {
+    margin-left: 40px;
+   padding: 10px;
+}
+
+.social {
+    margin-left:150px ;
+    padding: 10px;
+}
+
+.join {
+    margin-left: 300px;
+    padding: 10px;
+}
+
+.join input[text] {
+    max-width: 50px;
+    margin-left: 30px;
+    display: grid;
+    row-gap: 40px;
+}
+
+
+
+
+
 

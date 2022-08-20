@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
 :root
 body {
@@ -58,10 +59,37 @@ a {
     margin-left: 150px;
 }
 
+.hero-image {
+    position: relative;
+}
+
 .hero-image img {
-    width: 1400px;
     padding-top: 20px;
 }
+
+.arrow {
+    height: 20px;
+    border: solid white;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 60px;
+  }
+  
+  .right {
+    position: absolute;
+    top: 30%;
+    left: 87%;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    position: absolute;
+    top: 30%;
+    right: 87%;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
 
 .mini-course {
     display: flex;
@@ -76,11 +104,19 @@ a {
 }
 
 .course-info h1 {
+    margin-bottom: 0px;
+    font-family: 'EB Garamond', serif;
     font-size: 45px;
 }
 
 .course-info h2 {
+    font-family: 'EB Garamond', serif;
     font-size: 25px;
+}
+
+.course-info p {
+    line-height: 30px;
+    max-width: 780px;
 }
 
 input{
@@ -105,76 +141,112 @@ input{
     padding: 60px;
 }
 
-.shop-heading  img {
-    max-width: 400px;
-    max-height: 200px;
-    padding: 100px;
+.shop-heading {
+    background-color: whitesmoke;
 }
 
-.shop-heading h1 {
+.shop-heading  h1 {
+    background-color: whitesmoke;
+    padding-top: 20px;
+    font-family: 'EB Garamond', serif;
+    margin-top: 100px;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .shop-heading h2 {
+    background-color: whitesmoke;
+    font-family: 'EB Garamond', serif;
     text-align: center;
-    font-size: 30px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.shop-heading  img {
+    max-width: 290px;
+    max-height: 290px;
+    padding-bottom: 20px;
+    margin-left: 50px;
 }
 
 .shop-latest {
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
 }
 
-.seeds  {
-    background-color: aliceblue;
-    margin: 30px;
+.seeds  a {
+    margin-left: 60px;
+    font-size: 30px;
+    max-width: 400px;
+    max-height: 400px;
 }
 
-.tools  {
-    background-color: aliceblue;
-   margin: 50px;
+.tools  a {
+    margin-left: 65px;
+    font-size: 30px;
+    max-width: 400px;
+    max-height: 400px;
 }
 
-.books  {
-    background-color: aliceblue;
-    margin: 10px
+.books  a {
+    margin-left: 70px;
+    font-size: 30px;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.gifts a {
+    margin-left: 75px;
+    font-size: 30px;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.Shop-Here {
+    font-size: 20px;
+    color: black;
 }
 
 .footer {
     display: flex;
-    max-height: 1000px;
+    padding-bottom: 160px;
     background-color: rgb(235, 203, 175);
 }
 
 .footer .heading {
     font-size: 50px;
-   align-items: center;
-   padding: 60px;
+    padding-top: 70px;
+    margin-left: 100px;
 }
 
 .about {
-    margin-left: 40px;
-   padding: 10px;
+    line-height: 30px;
+    margin-left: 150px;
+    font-family: 'EB Garamond', serif;
 }
 
 .social {
-    margin-left:150px ;
-    padding: 10px;
+    line-height: 30px;
+    margin-left: 200px;
+    font-family: 'EB Garamond', serif;
+}
+
+.bx-bxl {
+    width: 20px;
 }
 
 .join {
+    line-height: 30px;
     margin-left: 300px;
-    padding: 10px;
+    font-family: 'EB Garamond', serif;
 }
 
-.join input[text] {
+/* .join input {
+   margin-left: 30px;
     max-width: 50px;
-    margin-left: 30px;
-    display: grid;
-    row-gap: 40px;
-}
+} */
 
 
 
