@@ -1,3 +1,5 @@
+
+
 // change home image
 var i = 0; 
 var images = [];
@@ -20,6 +22,22 @@ function changeImg(){
 }
 
 window.onload = changeImg;
+
+// Send Email Input- Home Page
+
+function sendEmail() {
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "a.deverett@yahoo.com",
+        Password : "Comparti1!",
+        To : 'a.deverett@yahoo.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form ",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
 
 
 

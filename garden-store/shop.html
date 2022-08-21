@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="shop.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 <body>
     <div class="hero-section">
         <div class="heading"> Floret</div>
             <div class="garden-store">
-                <button onclick="myFunction()">ABOUT</button>
+                <div><a href="/about.html">ABOUT</a></div>
                 <div><a href="/shop.html">SHOP</a></div>
                 <div ><a href="/workshop.html">WORKSHOPS</a></div>
-                <div ><a href="/resources.html">RESOURCES</a></div>
                 <div><a href="/flowers.html">FIND FLOWERS</a></div>
                 <div><a href="/contact.html">CONTACT</a></div>
             </div>
@@ -24,13 +24,22 @@
         <div class="categories">
             <h1>Shop by Category</h1>
             <h2>Seeds</h2>
-            <ul>
+            <ul class="seeds">
                 <li>Seeds A-Z</li>
                 <li>Cosmos</li>
                 <li>Foliage & Fillers</li>
                 <li>Grasses & Pods</li>
-        </ul>
+            </ul>
         </div>
+
+        <!-- <div class="shop-books">
+            <h2>Books</h2>
+            <ul class="menu">
+                <li>Vegetable Books</li>
+                <li>Flower Books</li>
+                <li>Farming</li>
+            </ul>
+        </div> -->
      
         <div class="img-heading">
             <img src="/imgs/flower-books.jpeg">
@@ -86,25 +95,27 @@
     
         <div class="about">
             <h1>About</h1>
-            <div>Contact</a></div>
-            <div >Gallery</a></div>
-            <div >Shipping & Delivery</a></div>
+            <div><a href="/contact.html">Contact</a></div>
+            <div ><a href="/gallery.html">Gallery</a></div>
+            <div ><a href="/shipping.html">Shipping & Delivery</a></div>
         </div>
     
         <div class="social">
             <h1>Follow us</h1>
-            <div>Instagram</a></div>
-            <div >Facebook</a></div>
-            <div >Pintrest</a></div>
+            <div><i class='bx bxl-instagram'></i>Instagram</a></div>
+            <div ><i class='bx bxl-facebook'></i>Facebook</a></div>
+            <div ><i class='bx bxl-pinterest'></i>Pinterest</a></div>
         </div>  
     
         <div class="join">
             <h1>Join us</h1>
-            <input type[text]="First Name">
-            <input type[text]="Email">
-            <button class="button">Get Updates</button>
-        </div>
-    </section>
-    
+                <form>
+                        <input type="text" id="footer-input" placeholder="Your Name">
+                        <input type="email" id="footer-input" placeholder="Your Email">
+                        <button class="button">Get Updates</button>
+                </form>
+            </div>
+        </section>
+        <script type="text/javascript" src="shop.js"></script>
 </body>
 </html>

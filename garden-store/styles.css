@@ -21,6 +21,19 @@ body {
     height: 60px;
 }
 
+.mini-course-banner a {
+    font-family: 'Abel', sans-serif;
+    color: white;
+    border-style: solid;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.mini-course-banner a:hover {
+    color: burlywood;
+    background-color: white;
+}
+
 .mini-course-banner h1 {
     padding: 10px;
     font-size: 20px;
@@ -48,6 +61,7 @@ button .sign-up {
 .garden-store {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 a {
@@ -55,8 +69,7 @@ a {
     text-transform: capitalize;
     text-decoration: none;
     color:rgb(254, 162, 177) ;
-    padding: 20px;
-    margin-left: 150px;
+    padding: 5px;
 }
 
 .hero-image {
@@ -101,9 +114,11 @@ a {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 40px;
 }
 
 .course-info h1 {
+    align-items: left;
     margin-bottom: 0px;
     font-family: 'EB Garamond', serif;
     font-size: 45px;
@@ -115,25 +130,26 @@ a {
 }
 
 .course-info p {
+    margin: 10px 50px 10px;
     line-height: 30px;
-    max-width: 780px;
 }
 
-input{
-    max-width: 80px;
-   margin-left: 300px;
-   background-color: white;
-   background-image: url('searchicon.png');
-   background-position: 10px 10px;
-   background-repeat: no-repeat;
-   padding-left: 40px;
+form {
+    width: 250px;
+}
+
+ form  input {
+    width: 250px;
+    height: 35px;
+    margin: 10px 155px 10px;
+    padding: 10px;
+    text-align: center;
 }
 
 .course-sign-up {
-    max-width: 150px;
+    width: 275px;
     height: 40px;
-    margin-left: 250px;
-    margin-top: 40px;
+    margin: 5px 155px 20px;
 }
 
 .mini-course img {
@@ -172,33 +188,29 @@ input{
 
 .shop-latest {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 100px;
+    justify-content: space-between;
+   margin: 0px 140px 150px;
 }
 
 .seeds  a {
-    margin-left: 60px;
     font-size: 30px;
     max-width: 400px;
     max-height: 400px;
 }
 
 .tools  a {
-    margin-left: 65px;
     font-size: 30px;
     max-width: 400px;
     max-height: 400px;
 }
 
 .books  a {
-    margin-left: 70px;
     font-size: 30px;
     max-width: 400px;
     max-height: 400px;
 }
 
 .gifts a {
-    margin-left: 75px;
     font-size: 30px;
     max-width: 400px;
     max-height: 400px;
@@ -222,31 +234,43 @@ input{
 }
 
 .about {
+    max-width:170px ;
     line-height: 30px;
     margin-left: 150px;
     font-family: 'EB Garamond', serif;
+    font-size: 18px;
+}
+
+.about a {
+    font-family: 'EB Garamond', serif;
+    color: black;
 }
 
 .social {
     line-height: 30px;
     margin-left: 200px;
     font-family: 'EB Garamond', serif;
+    font-size: 18px;
 }
 
-.bx-bxl {
-    width: 20px;
+.bx {
+    padding: 5px;
+    align-items: baseline;
 }
 
-.join {
+.join  {
     line-height: 30px;
-    margin-left: 300px;
+    margin-left: 320px;
     font-family: 'EB Garamond', serif;
+    align-items: center;
 }
 
-/* .join input {
-   margin-left: 30px;
-    max-width: 50px;
-} */
+form #footer-input {
+   margin: 10px 30px 10px ;
+   max-width: 150px;
+   height: 5px;
+}
+
 
 
 

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Garden Store</title>
 </head>
 
@@ -12,15 +13,14 @@
 <div class="mini-course-banner">
     <h1>Summer Mini Course</h1>
     <p>Learn how to grow, harvest & arrange beautiful cut flowers in this free 3-part video series</p>
-    <button class="sign-up">Sign Up Now</button>
+    <a href="/sign-up.html">Sign Up</a>
 </div>
 <div class="hero-section">
         <div class="heading"> Floret</div>
             <div class="garden-store">
-                <button onclick="myFunction()">ABOUT</button>
+                <div><a href="/about.html">ABOUT</a></div>
                 <div><a href="/shop.html">SHOP</a></div>
                 <div ><a href="/workshop.html">WORKSHOPS</a></div>
-                <div ><a href="/resources.html">RESOURCES</a></div>
                 <div><a href="/flowers.html">FIND FLOWERS</a></div>
                 <div><a href="/contact.html">CONTACT</a></div>
             </div>
@@ -37,9 +37,11 @@
             <h2>Learn how to grow, harvest, and arrange cut flowers.</h2>
             <p>In our free three-part video series, you’ll learn a simple step to double the number of blooms your plants produce, how to cut and care for your flowers for the longest vase life, and how to make beautiful mixed bouquets quickly and efficiently.
             </p>
-        <!-- <input type[text]="Name">
-        <input type[text]="email"> -->
-    <button class="course-sign-up">Sign Up</button>
+            <form onsubmit="sendEmail();  reset(); return false;">      
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <button class="course-sign-up">Sign Up</button>
+        </form>
     </div>
 </section>
 
@@ -76,28 +78,29 @@
 
     <div class="about">
         <h1>About</h1>
-        <div>Contact</a></div>
-        <div >Gallery</a></div>
-        <div >Shipping & Delivery</a></div>
+        <div><a href="/contact.html">Contact</a></div>
+        <div ><a href="/gallery.html">Gallery</a></div>
+        <div ><a href="/shipping.html">Shipping & Delivery</a></div>
     </div>
 
     <div class="social">
         <h1>Follow us</h1>
-        <div>Instagram</a></div><i class='bx bxl-instagram'></i>
-        <div >Facebook</a></div><i class='bx bxl-facebook'></i>
-        <div >Pinterest</a></div><i class='bx bxl-pinterest'></i>
+        <div><i class='bx bxl-instagram'></i>Instagram</a></div>
+        <div ><i class='bx bxl-facebook'></i>Facebook</a></div>
+        <div ><i class='bx bxl-pinterest'></i>Pinterest</a></div>
     </div>  
 
     <div class="join">
         <h1>Join us</h1>
-        <!-- <input type[First Name]="First Name">
-        <input type[Email]="Email">
-        <button class="button">Get Updates</button> -->
-    </div>
-</section>
+            <form>
+                    <input type="text" id="footer-input" placeholder="Your Name">
+                    <input type="email" id="footer-input" placeholder="Your Email">
+                    <button class="button">Get Updates</button>
+            </form>
+        </div>
+    </section>
 </body>
 
-    
-
+<script src="//smtpjs.com/v3/smtp.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </html>
