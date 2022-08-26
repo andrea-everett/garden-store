@@ -36,3 +36,13 @@ p {
    font-size: 30px;
     line-height: 45px;
 }
+
+.about-imgs {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 350px;
+    padding: 50px;
+}
