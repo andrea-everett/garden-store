@@ -41,13 +41,12 @@ a {
 
 ul {
     list-style: none;
-    line-height: 35px;
+    line-height: 33px;
 }
 
 .shop-books {
     display:flex;
     margin: 10px;
-    
 }
 
 .shop-display img {

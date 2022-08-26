@@ -46,3 +46,8 @@ img {
     max-width: 350px;
     padding: 50px;
 }
+
+.about-shop {
+    margin: 10px 50px 10px;
+    background-color: rgb(247, 219, 219);
+}

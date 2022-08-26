@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+.heading {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 80px;
+    text-align: center;
+}
+
+.garden-store {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color:rgb(254, 162, 177) ;
+    padding: 5px;
+}
+
+.hero-image {
+    font-family: 'EB Garamond', serif;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.hero-image img {
+    width: 1300px;
+    height: 600px;
+    margin: 10px 20px 10px;
+}
+
+h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.workshops {
+    max-width: 1200px;
+    margin: 10px 100px 10px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+h2 {
+    margin-top: 200px 100px 100px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.courses {
+    display: flex;
+}
+
+.mini-course {
+    background-color: antiquewhite;
+    margin: 5px 100px 10px;
+    width: 900px;
+}
+
+.mini-course   h1, p {
+    display: flex;
+}
+
+.mini-course img {
+    margin: 5px 100px 5px;
+    width: 350px;
+}
+
+.online {
+    background-color: antiquewhite;
+    margin: 5px 100px 10px;
+    width: 900px;
+}
+
+.online  h1, p {
+    display: flex;
+    line-height: 25px;
+}
+
+.online img {
+    width: 350px;
+}
+
+/* button {
+   margin: 10px 300px 10px;
+} */
