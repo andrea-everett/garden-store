@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+
+.heading {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 80px;
+    text-align: center;
+}
+
+.garden-store {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color:rgb(254, 162, 177) ;
+    padding: 5px;
+}
+
+h1 {
+    margin: 100px 400px 50px;
+    font-size: 30px;
+}
+
+p {
+   margin: 60px 100px 20px;
+   font-size: 30px;
+    line-height: 45px;
+}
