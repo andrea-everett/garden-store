@@ -74,9 +74,17 @@ a {
 
 .hero-image {
     position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero-image img {
+.hero-image  img {
+    object-fit: cover;
+    object-position: center;
+    max-width: 1400px;
+    height: 750px;
     padding-top: 20px;
 }
 
@@ -135,10 +143,14 @@ a {
 }
 
 form {
-    width: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
  form  input {
+    display: block;
     width: 250px;
     height: 35px;
     margin: 10px 155px 10px;
@@ -158,47 +170,59 @@ form {
 }
 
 .shop-heading {
-    background-color: whitesmoke;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
 }
 
 .shop-heading  h1 {
-    background-color: whitesmoke;
-    padding-top: 20px;
     font-family: 'EB Garamond', serif;
-    margin-top: 100px;
+    margin: 100px 400px 20px;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .shop-heading h2 {
-    background-color: whitesmoke;
     font-family: 'EB Garamond', serif;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 0px 400px 80px;
     font-size: 20px;
 }
 
-.shop-heading  img {
+.figures {
+    display: flex;
+}
+
+figure  img {
     max-width: 290px;
     max-height: 290px;
-    padding-bottom: 20px;
-    margin-left: 50px;
 }
 
-.shop-latest {
+figure {
     display: flex;
-    justify-content: space-between;
-   margin: 0px 140px 150px;
+    flex-direction: column;
 }
 
-.seeds  a {
+figcaption {
+    font-family: 'EB Garamond', serif;
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+    bottom: 60px;
+    margin: 0 15px 0;
+    font-size: 35px;
+    background-color: antiquewhite;
+    width: 240px;
+    height: 130px;
+}
+
+/* .seeds  a {
     font-size: 30px;
     max-width: 400px;
     max-height: 400px;
-}
+} */
 
-.tools  a {
+/* .tools  a {
     font-size: 30px;
     max-width: 400px;
     max-height: 400px;
@@ -214,11 +238,25 @@ form {
     font-size: 30px;
     max-width: 400px;
     max-height: 400px;
+} */
+
+.shop {
+     font-family: 'Abel', sans-serif;
+    position: absolute;
+    text-align: center;
+    right: 30px;
+    left: 30px;
+    bottom: 60px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(232, 191, 133);
+    opacity: 70%;
+    color: black;
 }
 
-.Shop-Here {
-    font-size: 20px;
-    color: black;
+.shop:hover {
+    background-color: white;
+    color: burlywood;
 }
 
 .footer {

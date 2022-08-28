@@ -1,9 +1,9 @@
 
 
 // change home image
-var i = 0; 
-var images = [];
-var time = 4000;
+let i = 0; 
+const images = [];
+const time = 4000;
 
 images[0] = 'imgs/hero-image.jpg';
 images[1] = 'imgs/hero-image2.jpeg';
