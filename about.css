@@ -88,6 +88,7 @@ img {
 }
 
 .grid-container2 {
+    margin-bottom: 250px;
     justify-content: center;
     display: grid;
     grid-template-columns: 400px 400px 200px 200px ;
@@ -121,5 +122,11 @@ img {
 
 .item-5 img {
     height: 250px;
+}
+
+.footer {
+    display: flex;
+    padding-bottom: 160px;
+    background-color: rgb(235, 203, 175);
 }
 
