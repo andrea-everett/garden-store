@@ -36,7 +36,7 @@ a {
 .hero-image img {
     width: 1300px;
     height: 600px;
-    margin: 10px 20px 10px;
+    margin: 50px 20px 10px;
 }
 
 h1 {
@@ -142,8 +142,54 @@ p {
     color: white;
 } 
 
+.testimonials {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0px  0px 150px;
+}
 
+.testimonial-heading {
+    margin: 50px 0px 50px;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    font-size: 45px;
+}
 
-/* button {
-   margin: 10px 300px 10px;
-} */
+.testimonial-cards {
+    background-color: rgb(245, 235, 222);
+    border-radius: 30%;
+    margin: 100px 10px 100px;
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    height: 200px;
+}
+
+.testimonial-cards img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial-cards p {
+    width: 300px;
+    padding: 10px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    padding-bottom: 160px;
+    background-color: rgb(235, 203, 175);
+    width: 1400px;
+}
+
+.footer .heading {
+    font-size: 50px;
+    padding-top: 70px;
+    margin-left: 100px;
+}
