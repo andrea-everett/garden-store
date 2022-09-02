@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+body {
+    margin: 10px;
+    font-family: 'EB Garamond', serif;
+}
+
+.heading {
+    color: white;
+    position: relative;
+    padding: 100px 80px 100px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 80px;
+}
+
+.garden-store {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a {
+    position: absolute;
+    top: 10%;
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 5px;
+}
+
+a:hover {
+    background-color: rgb(242, 220, 192);
+    color: white;
+    font-size: 20px;;
+}
+
+.hero-image {
+    max-width: 1400px;
+}
+
+.hero-image img {
+    position: absolute;
+    margin: 20px 10px 30px;
+    object-fit: cover;
+    object-position: center;
+    width: 1400px;
+    height: 300px;
+    padding-top: 20px;
+}
+
+.map-section h1 {
+    margin: 30px 30px 0px;
+    font-size: 45px;
+}
+
+.map-section img {
+    margin: 20px 30px 0px;
+    width: 780px;
+    height: 370px;
+}
+
+.map-section p {
+    margin: 20px 30px 10px;
+    font-size: 20px;
+    width: 780px;
+}
+
+.info {
+    display: flex;
+    width: 1000px;
+}
+.name {
+    margin: 20px 30px 10px;
+    font-size: 30px;
+}
+
+.address {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+form {
+    margin: 20px 30px 100px;
+    width: 750px;
+}
+
+form input {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+}
+
+#address {
+    width: 630px;
+}
+
+.submit {
+    width: 200px;
+    height: 50px;
+    margin: 50px 10px 50px;
+    background-color: burlywood;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+.submit:hover {
+    color: burlywood;
+    background-color: rgb(228, 225, 225);
+}

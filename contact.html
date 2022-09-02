@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contact.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Contact Page</h1>
+
+    <div class="hero-image">
+        <img src="contact-imgs/contact-header.jpeg">
+    </div>
+
+    <div class="hero-section">
+        <div class="heading"> Floret</div>
+            <div class="garden-store">
+                <div><a href="about.html">ABOUT</a></div>
+                <div><a href="shop.html">SHOP</a></div>
+                <div ><a href="workshop.html">WORKSHOPS</a></div>
+                <div><a href="flowers.html">FIND FLOWERS</a></div>
+                <div><a href="contact.html">CONTACT</a></div>
+            </div>
+    </div>
+
+    <section class="map-section">
+        <h1>Contact</h1>
+        <img src="contact-imgs/map.jpeg">
+        <p>We appreciate your interest in our community and want to ensure that you get our full attention on your visit to Floret. Due to high tour volume, Floret is currently offering tours by appointment only.
+        </p>
+    </section>
+
+
+    <section class="info">
+        <div class="name">Floret Farm</div>
+        <div class="address">3000 Amber Court SW, Concord, NC 28025</div>
+    </section>
+   
+    <form action="https://formsubmit.co/a.deverett@yahoo.com" method="POST">   
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="phone" id="phone" placeholder="Number" required>
+        <br><br>
+        <input type="address" id="address" placeholder="Street Address" required>
+        <br><br>
+        <input type="address" id="city" placeholder="City" required>
+        <input type="address" id="city" placeholder="State" required>
+        <input type="address" id="city" placeholder="Zip Code" required>
+        <input type="hidden" name="_next" value="thanks.html">
+        <br>
+        <button class="submit">S U B M I T</button>
+    </form>
+
+  
+
 </body>
 </html>
