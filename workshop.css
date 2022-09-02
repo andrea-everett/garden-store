@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
+body {
+    background-color: whitesmoke;
+}
 .heading {
     font-family: 'Cedarville Cursive', cursive;
     font-size: 80px;
@@ -23,6 +26,7 @@ a {
 
 .hero-image {
     font-family: 'EB Garamond', serif;
+    text-transform: capitalize;
     position: relative;
     text-align: center;
     color: white;
@@ -42,10 +46,11 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-.workshops {
+.workshops p {
+    font-family: 'EB Garamond', serif;
     max-width: 1200px;
-    margin: 10px 100px 10px;
-    line-height: 40px;
+    margin: 350px 100px 0px;
+    line-height: 45px;
     font-size: 20px;
 }
 
@@ -58,39 +63,86 @@ p {
     text-align: center;
 }
 
+.courses h1 {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    font-size: 45px;
+    top: 130%;
+}
+
 .courses {
+    margin: 0px;
     display: flex;
 }
 
 .mini-course {
-    background-color: antiquewhite;
-    margin: 5px 100px 10px;
-    width: 900px;
+    margin: 200px 30px 50px;
+    background-color: white;
+    width: 650px;
 }
 
-.mini-course   h1, p {
-    display: flex;
+.mini-course  h2 {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    font-size: 30px;
 }
 
 .mini-course img {
-    margin: 5px 100px 5px;
-    width: 350px;
-}
-
-.online {
-    background-color: antiquewhite;
-    margin: 5px 100px 10px;
-    width: 900px;
-}
-
-.online  h1, p {
-    display: flex;
-    line-height: 25px;
+    margin: 50px 100px 30px;
+    width: 480px;
+    height: 300px;
 }
 
 .online img {
-    width: 350px;
+    margin: 50px 100px 30px;
+    width: 480px;
+    height: 300px;
 }
+
+.online {
+    margin: 200px 30px 50px;
+    background-color: white;
+    width: 650px;
+}
+
+.online  h2 {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.online  p {
+    font-family: 'EB Garamond', serif;
+    margin: 10px 15px 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.mini-course p {
+    font-family: 'EB Garamond', serif;
+    margin: 10px 15px 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.learn-more {
+    background-color: white;
+    border: solid  2px burlywood;;
+    color: burlywood;
+    font-size: 15px;
+    margin: 30px 250px 50px;
+    width: 135px;
+    height: 50px;
+}
+
+.learn-more:hover {
+    background-color: burlywood;
+    color: white;
+} 
+
+
 
 /* button {
    margin: 10px 300px 10px;
