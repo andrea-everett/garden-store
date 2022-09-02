@@ -4,7 +4,7 @@
 body {
     text-align: center;
     font-family: 'EB Garamond', serif;
-    background-color: rgb(249, 240, 230);
+    background-color:white;
 }
 
 .heading {
@@ -26,9 +26,10 @@ body {
 
 .about-info  p {
     justify-content: center;
-    margin: 60px 300px 50px;
-    max-width: 1000px;
-    font-size: 18px;
+    line-height: 30px;
+    margin: 70px 370px 70px;
+    max-width: 750px;
+    font-size: 20px;
 }
 
 .garden-store {
@@ -83,45 +84,66 @@ img {
 }
 
 .about-shop {
-    font-size: 30px;
-    margin: 50px 100px 50px;
+    line-height: 30px;
+    font-size: 20px;
+    margin: 50px 390px 50px;
 }
 
 .grid-container2 {
+    margin-left: 55px;
     margin-bottom: 250px;
     justify-content: center;
     display: grid;
-    grid-template-columns: 400px 400px 200px 200px ;
-    grid-template-rows:100px 100px 150px 130px ;
-    gap: 5px;
+    grid-template-columns: 200px 150px 100px 250px;
+    grid-template-rows:100px 160px 150px 130px ;
+    gap: 3px;
 }
 
 .item-4 {
-   grid-column: 1 / 2;
+   grid-column: 2  / 2.5;
    grid-row: 1 / 5;
 }
 
  .item-5 {
-    grid-column: 3  / 5;
-    grid-row: 1 / 3;
+    grid-column: 3  / 6;
+    grid-row: 2.5 / 5;
 } 
 
 .item-6 {
-    grid-column: 2.5 / 5;
-    grid-row: 3.5  / 6;
+    grid-column: 3 / 5;
+    grid-row: 3  / 6;
 } 
 
 .item-7 {
-    grid-column: 3 / 5;
-    grid-row: 4 / 6;
+    grid-column: 1 / 5;
+    grid-row: 5 / 6;
 }
 
 .item-4 img {
-    height: 474px;
-}
+    height: 520px;
+    width: 340px;
+} 
 
 .item-5 img {
     height: 250px;
+    width: 350px;
+} 
+
+.shop-products {
+    margin: 50px 200px 200px 600px;
+}
+
+.shop-products h1 {
+    font-size: 18px;
+}
+
+.shop-products h2 {
+    font-size: 25px;
+}
+
+.products {
+    margin-left: 50px;
+    border: none;
 }
 
 .footer {
