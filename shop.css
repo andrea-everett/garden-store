@@ -20,7 +20,7 @@ button .sign-up {
     flex-direction: row;
 }
 
-a {
+.garden-store a {
     font-family: 'Archivo Narrow', sans-serif;
     text-transform: capitalize;
     text-decoration: none;
@@ -39,9 +39,58 @@ a {
     margin: 10px;
 }
 
+#menutoggle {
+    /* border-bottom: solid 1px black; */
+    margin-top: 5px;
+    background-color: white;
+    border: none;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 30px;
+}
+
+#toolstoggle {
+    background-color: white;
+    border: none;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 30px;
+}
+
+#bookstoggle {
+    border-bottom: solid 1px black;
+    background-color: white;
+    border: none;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 30px;
+}
+
+.open {
+     margin-top: 0;
+      max-height: 900px;
+      opacity: 1;
+      transition: max-height 0.3s ease-in-out, opacity 0.25s ease-in-out;
+      color: black;
+      line-height: 18px;
+} 
+
+.open a {
+    text-decoration: none;
+    margin-left: 2px;
+    font-size: 18px;
+    line-height: 25px;
+    color: black;
+    padding-left: 0;
+}
+
 ul {
-    list-style: none;
+    text-decoration: none;
+    overflow: hidden;
+    color: black;
     line-height: 26px;
+    margin-left: 5px;
+
+    opacity: 0;
+    max-height: 0;
+    list-style: none;
 }
 
 .shop-books {
@@ -97,11 +146,6 @@ ul {
     font-size: 20px;
     text-align: center;
 }
-
-/* .items {
-    display: flex;
-    flex-direction: row;
-} */
 
 .product-display {
     display: flex;
