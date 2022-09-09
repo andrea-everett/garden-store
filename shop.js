@@ -24,3 +24,65 @@ document.addEventListener("DOMContentLoaded", function(){
       navMenu.classList.toggle("open");
     });
   });
+
+// on button click redirect to shop page
+document.querySelector('#books')
+    .addEventListener('click', () => {
+        window.location.href = '/books/books.html';
+  });
+
+// on button click redirect to books page
+document.querySelector('#product-img')
+    .addEventListener('click', () => {
+        window.location.href = '/books/books.html';
+  });
+
+// on button click redirect to tools page
+  document.querySelector('#garden-img')
+        .addEventListener('click', () => {
+            window.location.href = 'tools/tools.html';
+    });
+
+// on button click redirect to seeds page
+document.querySelector('#seeds-img')
+.addEventListener('click', () => {
+    window.location.href = 'seeds/seeds.html';
+});
+
+
+
+
+// on button click redirect to seeds page
+document.querySelector('#seeds')
+.addEventListener('click', () => {
+    window.location.href = 'seeds/seeds.html';
+});
+
+// on button click redirect to seeds page
+document.querySelector('#gloves')
+.addEventListener('click', () => {
+    window.location.href = 'tools/tools.html';
+});
+
+// on button click redirect to seeds page
+document.querySelector('#pruners')
+.addEventListener('click', () => {
+    window.location.href = 'tools/tools.html';
+});
+
+// on button click redirect to seeds page
+document.querySelector('#veg')
+.addEventListener('click', () => {
+    window.location.href = 'seeds/seeds.html';
+});
+
+// on button click redirect to seeds page
+document.querySelector('#snips')
+.addEventListener('click', () => {
+    window.location.href = 'tools/tools.html';
+});
+
+
+
+
+
