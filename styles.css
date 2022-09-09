@@ -310,5 +310,53 @@ form #footer-input {
 }
 
 
+/* FOR SMALL MEDIA DEVICES */
+@media  screen and (max-width: 320px){
+    .heading {
+        text-align: center;
+    }
+
+    .hero-image img {
+        margin: 10px 100px 100px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .mini-course {
+        width: 300px;
+        margin: 10px 100px 100px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mini-course img {
+        margin: 10px 10px 100px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .course-info {
+        text-align: center;
+       width: 300px;
+    }
+
+    .course-info h1 {
+        width: 300px;
+        font-size: 50px;
+    }
+
+    .course-info h2 {
+        font-size: 50px;
+    }
+
+}
+
+/* FOR LARGE DEVICES */
+@media  screen and (min-width: 992px) {
+    
+}
+
+
 
 
