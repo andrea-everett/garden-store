@@ -40,18 +40,3 @@ function sendEmail() {
 }
 
 
-
-// Redirect nav pages
-// function myFunction() {
-//     window.open("", "_self")
-// }
-// function myFunction() {
-//     window.open("", "_self")
-// }
-// function myFunction() {
-//     window.open("", "_self")
-// }
-// function myFunction() {
-//     window.open("", "_self")
-// }
-
