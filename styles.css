@@ -311,7 +311,7 @@ form #footer-input {
 
 
 /* FOR SMALL MEDIA DEVICES */
-@media  screen and (max-width: 320px){
+@media  screen and (max-width: 480px){
     .heading {
         text-align: center;
     }
