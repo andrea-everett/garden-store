@@ -207,3 +207,27 @@ figure .featured-imgs {
     bottom: 130px;
     left: 55px;
 }
+
+@media  screen and (max-width: 576px) {
+    .shop-display {
+        display: block;
+    }
+
+    .img-heading img {
+        width: 450px;
+        height: 250px;
+    }
+
+    .border {
+        width: 510px;
+        margin: 20px;
+    }
+
+    .product-display {
+       width: 450px;
+    }
+
+    figure .product-img {
+        width: 350px;
+    }
+}
