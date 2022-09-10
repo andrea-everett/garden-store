@@ -55,7 +55,7 @@ button .sign-up {
 .heading {
     font-family: 'Cedarville Cursive', cursive;
     font-size: 80px;
-    /* margin: 5px 400px 10px; */
+    text-align: center;
 }
 
 .garden-store {
