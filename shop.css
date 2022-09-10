@@ -40,7 +40,6 @@ button .sign-up {
 }
 
 #menutoggle {
-    /* border-bottom: solid 1px black; */
     margin-top: 5px;
     background-color: white;
     border: none;
@@ -305,13 +304,29 @@ form #footer-input {
        width: 350px;
     }
 
-    a {
-        font-size: 12px;;
+   .garden-store  a {
+        font-size: 12px;
+        margin-left: 20px;
     }
 
     .categories {
         margin-left: 25px;
         width: 350px;
+    }
+
+    #menutoggle {
+        text-decoration: none;
+        line-height: 10px;;
+    }
+    
+    #toolstoggle {
+        text-decoration: none;
+       line-height: 5px;;
+    }
+    
+    #bookstoggle {
+        text-decoration: none;
+        line-height: 5px;
     }
 
     .shop-display {
@@ -321,17 +336,26 @@ form #footer-input {
 
     .shop-display img {
         padding: 0;
-        margin-left: 25px;
         width: 350px;
         height: 200px;
     }
 
     .books {
+        text-decoration: none;
         width: 150px;
     }
 
+    .books h1 {
+        font-size: 15px;;
+    }
+
+    .img-heading {
+        margin-left: 50px;
+        width: 350px;
+    }
+
     .flower-banner {
-        margin-left: 25px;
+        margin-left: 50px;
         width: 350px;
     }
 
@@ -348,23 +372,26 @@ form #footer-input {
     }
 
     .product-img {
-        margin-left: 10px;
-        width: 300px;
+        margin-left: 20px;
+        width: 350px;
     }
 
     .featured-products h1 {
         width: 350px;
+        margin-left: 40px;
         font-size: 30px;
     }
 
     .featured-products h2 {
         width: 350px;
+        margin-left: 40px;
         font-size: 25px;
     }
 
     .products {
         flex-direction: column;
-        margin-left: 25px;
+        gap: 150px;
+        margin-left: 65px;
         margin-top: 50px;
     }
 
@@ -379,6 +406,8 @@ form #footer-input {
         width: 130px;
         height: 70px;
     }
+
+    
 
 }
 
