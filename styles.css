@@ -310,12 +310,13 @@ form #footer-input {
 
 
 /* FOR SMALL MEDIA DEVICES */
-@media  screen and (max-width: 576px){
+@media  screen and (max-width: 576px) {
     .mini-course-banner {
         margin: 10px 10px 10px;
         justify-content: left;
-       max-width: 350px;
+       max-width: 500px;
     }
+
     .mini-course-banner h1 {
         padding: 8px;
         width: 100px;
@@ -346,7 +347,7 @@ form #footer-input {
     .hero-image img {
        margin-left: 10px;
         margin-left: 10px;
-        width: 350px;
+        width: 500px;
         height: 300px;
     }
 
