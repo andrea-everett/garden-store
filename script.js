@@ -43,7 +43,7 @@ document.getElementById("checkout").addEventListener("click", function(){
 stripe.redirectToCheckout({
     lineItems: [
         {
-            price: "price_1LgHMJB6d5FKrU8p5J7puMGa",
+            price: "price_1LgU4yB6d5FKrU8pTDd9Vfvn",
             quantity: 1
         },
     ],
