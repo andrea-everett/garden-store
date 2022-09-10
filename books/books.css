@@ -209,6 +209,29 @@ figure {
     color: burlywood;
 }
 
+@media  screen and (max-width: 576px) {
+    .img-heading img {
+        width: 415px;
+    }
+
+    .border {
+        margin: 50px 10px 50px;
+        width: 550px;
+    }
+
+    .product-display {
+        margin-left: 50px;
+        gap: 150px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .product-img img {
+        width: 450px;
+        height: 350px;
+    }
+}
+
 
 
 
