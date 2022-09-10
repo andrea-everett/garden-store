@@ -367,16 +367,18 @@ form #footer-input {
         padding: 0;
         margin: 10px 10px 10px;
         width: 330px;
-        height: 350px;
+        height: 250px;
     }
 
     .course-info {
+        margin: 10px 30px 10px;
+        text-align: center;
         width: 300px;
     }
 
     .course-info h1 {
-       align-items: center;
-        margin-left: 5px;
+        margin-left: 0px;
+        text-align: center;
         font-size: 25px;
     }
 
@@ -390,8 +392,8 @@ form #footer-input {
     }
 
     .shop-heading h1 {
-        margin-top: 25px;
-        margin: 10px;
+        margin: 20px;
+        margin-left: 20px;
         text-align: center;
         font-size: 45px;
     }
