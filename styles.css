@@ -344,23 +344,29 @@ form #footer-input {
         width: 350px;
     }
 
+    a {
+        font-size: 12px;;
+    }
+
     .hero-image img {
        margin-left: 10px;
         margin-left: 10px;
-        width: 350px;
+        max-width: 350px;
         height: 300px;
     }
 
     .mini-course {
         margin: 10px 10px 10px;
-        width: 500px;
+        width: 350px;
         text-align: center;
         display: flex;
         flex-wrap: wrap;
     }
 
     .mini-course img {
-        width: 400px;
+        padding: 0;
+        margin: 10px 10px 10px;
+        width: 330px;
         height: 350px;
     }
 
@@ -384,13 +390,14 @@ form #footer-input {
     }
 
     .shop-heading h1 {
+        margin-top: 25px;
         margin: 10px;
         text-align: center;
         font-size: 45px;
     }
 
     .shop-heading h2 {
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
         margin: 10px 10px 10px;
     }
@@ -404,6 +411,30 @@ form #footer-input {
     .figures img {
         width: 350px;
         height: 300px;
+    }
+
+    .about {
+        display: none;
+    }
+    
+    .about a {
+        display: none;
+    }
+    
+    .social {
+        display: none;
+    }
+    
+    .bx {
+        display: none;
+    }
+    
+    .join  {
+        display: none;
+    }
+    
+    form #footer-input {
+        display: none;
     }
 }
 
