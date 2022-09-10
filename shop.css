@@ -302,7 +302,11 @@ form #footer-input {
     }
 
     .garden-store {
-        display: none;
+       width: 350px;
+    }
+
+    a {
+        font-size: 12px;;
     }
 
     .categories {
