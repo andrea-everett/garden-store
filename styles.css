@@ -314,7 +314,7 @@ form #footer-input {
     .mini-course-banner {
         margin: 10px 10px 10px;
         justify-content: left;
-       max-width: 500px;
+       max-width: 350px;
     }
 
     .mini-course-banner h1 {
@@ -341,13 +341,13 @@ form #footer-input {
     }
 
     .garden-store {
-        display: none;
+        width: 350px;
     }
 
     .hero-image img {
        margin-left: 10px;
         margin-left: 10px;
-        width: 500px;
+        width: 350px;
         height: 300px;
     }
 
@@ -361,7 +361,7 @@ form #footer-input {
 
     .mini-course img {
         width: 400px;
-        height: 300px;
+        height: 350px;
     }
 
     .course-info {
@@ -402,7 +402,7 @@ form #footer-input {
     }
 
     .figures img {
-        width: 300px;
+        width: 350px;
         height: 300px;
     }
 }
