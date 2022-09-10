@@ -55,7 +55,7 @@ button .sign-up {
 .heading {
     font-family: 'Cedarville Cursive', cursive;
     font-size: 80px;
-    text-align: center;
+    margin: 5px 400px 10px;
 }
 
 .garden-store {
@@ -75,7 +75,6 @@ a {
 .hero-image {
     position: relative;
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -83,7 +82,7 @@ a {
 .hero-image  img {
     object-fit: cover;
     object-position: center;
-    max-width: 1400px;
+    width: 1400px;
     height: 750px;
     padding-top: 20px;
 }
@@ -311,12 +310,21 @@ form #footer-input {
 
 
 /* FOR SMALL MEDIA DEVICES */
-@media  screen and (max-width: 480px){
+@media  screen and (max-width: 576px){
+    .mini-course-banner {
+        margin: 10px 10px 10px;
+        justify-content: left;
+       max-width: 350px;
+    }
     .mini-course-banner h1 {
+        padding: 8px;
+        width: 100px;
+        margin-left: 0px;
         font-size: 10px;
     }
     .mini-course-banner p {
-        width: 150px;
+        padding: 5px;
+        width: 130px;
         font-size: 10px;
     }
 
@@ -327,12 +335,18 @@ form #footer-input {
     }
 
     .heading {
-        text-align: center;
+        font-size: 40px;
+        margin-right: 150px;
+    }
+
+    .garden-store {
+        display: none;
     }
 
     .hero-image img {
-        margin: 10px 100px 100px;
-        width: 300px;
+       margin-left: 10px;
+        margin-left: 10px;
+        width: 350px;
         height: 300px;
     }
 
@@ -369,13 +383,15 @@ form #footer-input {
     }
 
     .shop-heading h1 {
-        margin: 20px 10px 20px;
+        margin: 10px;
+        text-align: center;
         font-size: 45px;
     }
 
     .shop-heading h2 {
         font-size: 30px;
-        margin: 10px 100px 10px;
+        text-align: center;
+        margin: 10px 10px 10px;
     }
 
     .figures {
