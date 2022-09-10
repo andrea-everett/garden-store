@@ -296,3 +296,80 @@ form #footer-input {
    height: 5px;
 }
 
+@media  screen and (max-width: 576px) {
+    .heading {
+        font-size: 35px;
+    }
+
+    .garden-store {
+        display: none;
+    }
+
+    .categories {
+        margin-left: 25px;
+        width: 350px;
+    }
+
+    .shop-display {
+        display: block;
+    }
+
+    .shop-display img {
+        padding: 0;
+        margin-left: 25px;
+        width: 350px;
+        height: 200px;
+    }
+
+    .books {
+        width: 150px;
+    }
+
+    .flower-banner {
+        width: 350px;
+    }
+
+    .flower-banner h1 {
+        font-size: 30px;
+    }
+
+    .flower-banner p {
+        font-size: 18px;
+    }
+
+    .product-display {
+       flex-direction: column;
+    }
+
+    .product-img {
+        width: 350px;
+    }
+
+    .featured-products h1 {
+        width: 350px;
+        font-size: 30px;
+    }
+
+    .featured-products h2 {
+        width: 350px;
+        font-size: 25px;
+    }
+
+    .products {
+        flex-direction: column;
+  
+        margin-top: 30px;
+    }
+
+    .featured-imgs img {
+        margin-top: 20px;
+        width: 350px;
+        height: 200px;
+    }
+
+    .featured-imgs  figcaption {
+        left: 100px;
+    }
+
+}
+
