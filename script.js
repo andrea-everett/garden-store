@@ -1,6 +1,4 @@
-
-
-// change home image
+// / change home image
 let i = 0; 
 const images = [];
 const time = 4000;
@@ -24,7 +22,6 @@ function changeImg(){
 window.onload = changeImg;
 
 // Send Email Input- Home Page
-
 function sendEmail() {
     Email.send({
         Host : "smtp.gmail.com",
@@ -38,5 +35,27 @@ function sendEmail() {
       message => alert(message)
     );
 }
+
+// stripe payment API
+var stripe = Stripe('pk_live_51LgH1XB6d5FKrU8pLOm7kDtW2ls5eTvlkCJhggqL8KwMfMDHtgXGeherqOzgI9EaQ9Q9c7A9OplCd6fmACMJ4PbT00rZV2vs17');
+
+document.getElementById("checkout").addEventListener("click", function(){
+stripe.redirectToCheckout({
+    lineItems: [
+        {
+            price: "price_1LgHMJB6d5FKrU8p5J7puMGa",
+            quantity: 1
+        },
+    ],
+    mode: "subscription",
+    sucessUrl:"https://www.google.com",
+    cancelUrl: "https:www.twitter.com",
+})
+.then(function(result) {
+    // alert(result)
+});
+
+})
+
 
 
