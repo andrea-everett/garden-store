@@ -7,10 +7,12 @@ document.querySelector('#heading')
 // on button click redirect to workshop info
 document.querySelector('#learn-more')
 .addEventListener('click', () => {
-    window.location.href = 'tools/tools.html';
+    window.location.href = '/sign-up/sign.html';
 });
 
-document.querySelector('#learn-more')
+document.querySelector('#learn-more1')
 .addEventListener('click', () => {
-    window.location.href = 'tools/tools.html';
+    window.location.href = '/online/online.html';
 });
+
+// 
