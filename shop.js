@@ -1,3 +1,9 @@
+// on button click redirect to home page
+document.querySelector('#heading')
+.addEventListener('click', () => {
+    window.location.href = 'index.html';
+});
+
 // toggle seeds menu
 document.addEventListener("DOMContentLoaded", function(){
     var navToggle = document.getElementById("menutoggle");
@@ -48,9 +54,6 @@ document.querySelector('#seeds-img')
 .addEventListener('click', () => {
     window.location.href = 'seeds/seeds.html';
 });
-
-
-
 
 // on button click redirect to seeds page
 document.querySelector('#seeds')
