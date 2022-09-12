@@ -1,7 +1,7 @@
 // on button click redirect to home page
 document.querySelector('#heading')
 .addEventListener('click', () => {
-    window.location.href = './index.html';
+    window.location.href = 'https://andrea-everett.github.io/garden-store//index.html';
 });
 
 // toggle seeds menu
@@ -46,43 +46,43 @@ document.querySelector('#product-img')
 // on button click redirect to tools page
   document.querySelector('#garden-img')
         .addEventListener('click', () => {
-            window.location.href = 'tools/tools.html';
+            window.location.href = 'https://andrea-everett.github.io/garden-store/tools/tools.html';
     });
 
 // on button click redirect to seeds page
 document.querySelector('#seeds-img')
 .addEventListener('click', () => {
-    window.location.href = 'seeds/seeds.html';
+    window.location.href = 'https://andrea-everett.github.io/garden-store/seeds/seeds.html';
 });
 
 // on button click redirect to seeds page
 document.querySelector('#seeds')
 .addEventListener('click', () => {
-    window.location.href = 'seeds/seeds.html';
+    window.location.href = 'https://andrea-everett.github.io/garden-store/seeds/seeds.html';
 });
 
 // on button click redirect to seeds page
 document.querySelector('#gloves')
 .addEventListener('click', () => {
-    window.location.href = 'tools/tools.html';
+    window.location.href = 'https://andrea-everett.github.io/garden-store/tools/tools.html';
 });
 
 // on button click redirect to seeds page
 document.querySelector('#pruners')
 .addEventListener('click', () => {
-    window.location.href = 'tools/tools.html';
+    window.location.href = 'https://andrea-everett.github.io/garden-store/tools/tools.html';
 });
 
 // on button click redirect to seeds page
 document.querySelector('#veg')
 .addEventListener('click', () => {
-    window.location.href = 'seeds/seeds.html';
+    window.location.href = 'https://andrea-everett.github.io/garden-store/seeds/seeds.html';
 });
 
 // on button click redirect to seeds page
 document.querySelector('#snips')
 .addEventListener('click', () => {
-    window.location.href = 'tools/tools.html';
+    window.location.href = 'https://andrea-everett.github.io/garden-store/tools/tools.html';
 });
 
 
