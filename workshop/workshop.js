@@ -7,7 +7,7 @@ document.querySelector('#heading')
 // on button click redirect to workshop info
 document.querySelector('#learn-more')
 .addEventListener('click', () => {
-    window.location.href = '/https://andrea-everett.github.io/garden-store/sign-up/sign.html';
+    window.location.href = 'https://andrea-everett.github.io/garden-store/sign-up/sign.html';
 });
 
 document.querySelector('#learn-more1')

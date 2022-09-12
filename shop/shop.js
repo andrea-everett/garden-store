@@ -34,13 +34,13 @@ document.addEventListener("DOMContentLoaded", function(){
 // on button click redirect to shop page
 document.querySelector('#books')
     .addEventListener('click', () => {
-        window.location.href = '/books/books.html';
+        window.location.href = 'https://andrea-everett.github.io/garden-store/books/books.html';
   });
 
 // on button click redirect to books page
 document.querySelector('#product-img')
     .addEventListener('click', () => {
-        window.location.href = '/books/books.html';
+        window.location.href = 'https://andrea-everett.github.io/garden-store/books/books.html';
   });
 
 // on button click redirect to tools page
