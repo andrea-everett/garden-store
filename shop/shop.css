@@ -18,6 +18,7 @@ button .sign-up {
 .garden-store {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .garden-store a {
@@ -26,7 +27,6 @@ button .sign-up {
     text-decoration: none;
     color:rgb(254, 162, 177) ;
     padding: 20px;
-    margin-left: 150px;
 }
 
 .hero-image img {
@@ -156,22 +156,29 @@ figure {
     display: flex;
     flex-direction: row;
     position: relative; 
-    margin-left: 2px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
 } 
 
-.product-img figcaption {
+.product-img  figcaption {
+    padding-top: 25px;
     font-size: 20px;
-    background-color: azure;
-    width: 230px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    width: 150px;
     height: 80px;
     position: absolute;
-    border-style: solid;
     bottom: 30px;
-    left: 80px;
-    padding: 3px;
-    text-align: center;
-    justify-content: center;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
 }
+
+
 
 .product-img img {
     width: 395px;
@@ -300,33 +307,41 @@ form #footer-input {
         font-size: 35px;
     }
 
-    .garden-store {
-       width: 350px;
-    }
-
    .garden-store  a {
         font-size: 12px;
-        margin-left: 20px;
+        width: 70%;
     }
 
     .categories {
-        margin-left: 25px;
-        width: 350px;
+      width: 70%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 60px;
     }
 
     #menutoggle {
         text-decoration: none;
-        line-height: 10px;;
+        line-height: 10px;
+        font-size: 25px;
     }
     
     #toolstoggle {
         text-decoration: none;
-       line-height: 5px;;
+       line-height: 5px;
+       font-size: 25px;
     }
     
     #bookstoggle {
         text-decoration: none;
         line-height: 5px;
+        font-size: 25px;
+    }
+
+    .border {
+        border: solid .1px;
+        width:100%;
+       justify-content: center;
     }
 
     .shop-display {
@@ -349,14 +364,17 @@ form #footer-input {
         font-size: 15px;;
     }
 
-    .img-heading {
-        margin-left: 50px;
-        width: 350px;
+    .img-heading  img {
+        display: block;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .flower-banner {
-        margin-left: 50px;
-        width: 350px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .flower-banner h1 {
@@ -369,42 +387,51 @@ form #footer-input {
 
     .product-display {
        flex-direction: column;
+       width: 70%;
+       margin-left: auto;
+       margin-right: auto;
     }
 
-    .product-img {
-        margin-left: 20px;
-        width: 350px;
+    .product-img  img {
+        width: 378px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .featured-products {
+        width: 70%;
+       margin-left: auto;
+       margin-right: auto;
     }
 
     .featured-products h1 {
-        width: 350px;
-        margin-left: 40px;
+        font-family: 'EB Garamond', serif;
         font-size: 30px;
     }
 
     .featured-products h2 {
-        width: 350px;
-        margin-left: 40px;
-        font-size: 25px;
+        font-family: 'EB Garamond', serif;
+        font-size: 20px;
     }
 
     .products {
         flex-direction: column;
         gap: 150px;
-        margin-left: 65px;
-        margin-top: 50px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .featured-imgs img {
-        margin-left: 10px;
         width: 300px;
         height: 200px;
     }
 
     .featured-imgs  figcaption {
-        left: 100px;
-        width: 130px;
-        height: 70px;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
     }
 
     
