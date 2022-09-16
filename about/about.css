@@ -154,48 +154,57 @@ img {
 
 
 @media  screen and (max-width: 576px) {
-    .heading {
+    .hero-section {
         text-align: center;
-        margin: 10px;
-        font-size: 35px;
     }
 
-    .garden-store {
-        width: 350px;
-    }
+    /* .heading {
+        text-align: center;
+        font-size: 35px;
+    } */
+
 
     .subheading  h1 {
         width: 400px;
-        margin: 20px 100px 20px;
+       text-align: center;
         font-size: 25px;
     }
 
     .subheading h2 {
         width: 400px;
-        margin: 20px 100px 20px;
+        text-align: center;
+        line-height: 20px;
         font-size: 15px;
     }
 
     .about-info p {
         font-size: 15px;
         width: 400px;
-        margin: 20px 100px 20px;
+       text-align: center;
     }
 
-    .item-1 img {
-        width: 200px;
+    .grid-container {
+        gap: 2px;
+        grid-template-columns: 50px 100px 100px 100px;
+        grid-template-rows: 50px 100px 100px 100px;
     }
 
-    .item-2 img {
-        width: 300px;
-    }
+     .item-2 img {
+        width: 100px;
+    } 
 
     .item-3 img {
-        width: 200px;
-    }
+        width: 300px;
+    } 
 
     .about-shop {
+        margin: 0px;
+    }
+
+    .about-shop p {
+        text-align: center;
         line-height: 25px;
+        margin: 0px;
         width: 400px;
     }
 
