@@ -212,3 +212,34 @@ figure .featured-imgs {
     bottom: 130px;
     left: 55px;
 }
+
+
+@media  screen and (max-width: 576px) {
+   .shop-display {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   }
+
+   .border {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+   .page-count {
+    text-align: right;
+   }
+
+   .shop-display h1 {
+    font-size: 20px;
+   }
+
+   .product-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+   }
+    }
