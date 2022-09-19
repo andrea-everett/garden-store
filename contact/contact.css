@@ -205,7 +205,7 @@ form input {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .map-section p {
@@ -218,6 +218,8 @@ form input {
     .testimonials {
         margin-left: auto;
         margin-right: auto;
+        display: block;
+        width: 60%;
         margin-top: 100px;
     }
 
@@ -234,6 +236,7 @@ form input {
 
     .contact-info p {
         font-size: 20px;
+        margin-top: 40px;
     }
 
     .contact-info h2 {
@@ -241,10 +244,7 @@ form input {
     }
 
     .info {
-        width:80%;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
+        display: none;
     }
 
     .stars {
@@ -265,7 +265,7 @@ form input {
     }
 
     form {
-        margin-top: 800px;
+        margin-top: 400px;
         width: 350px;
     }
 
