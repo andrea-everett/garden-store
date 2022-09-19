@@ -328,19 +328,19 @@ form #footer-input {
 
     #menutoggle {
         text-decoration: none;
-        line-height: 30px;
+        line-height: 40px;
         font-size: 25px;
     }
     
     #toolstoggle {
         text-decoration: none;
-       line-height: 20px;
+       line-height: 40px;
        font-size: 25px;
     }
     
     #bookstoggle {
         text-decoration: none;
-        line-height: 20px;
+        line-height: 40px;
         font-size: 25px;
     }
 
@@ -372,7 +372,8 @@ form #footer-input {
     }
 
     .img-heading h1 {
-        font-size: 25px;
+        font-size: 30px;
+        margin-top: 40px;
     }
 
     .img-heading  img {
@@ -384,7 +385,7 @@ form #footer-input {
 
     .flower-banner {
         width: 70%;
-        height: 300px;
+        height: 250px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -399,19 +400,21 @@ form #footer-input {
 
     .product-display {
        flex-direction: column;
-       width: 70%;
+       width: 80%;
        margin-left: auto;
        margin-right: auto;
     }
 
     .product-img  img {
-        height: 70%;
+         width: 80%;
+         height: 80%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .featured-products {
-        width: 70%;
+        gap: 200px;
+        width: 80%;
        margin-left: auto;
        margin-right: auto;
     }
@@ -423,6 +426,7 @@ form #footer-input {
     }
 
     .featured-products h2 {
+        width: 80%;
         font-family: 'EB Garamond', serif;
         font-size: 20px;
     }
@@ -430,13 +434,13 @@ form #footer-input {
     .products {
         display: block;
         gap: 350px;
-        width: 70%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .featured-imgs img {
-        width: 70%;
+        width: 80%;
         height: 200px;
     }
 
@@ -445,6 +449,7 @@ form #footer-input {
         right:0;
         margin-left:auto;
         margin-right:auto;
+        width: 70%;
     }
 
     
