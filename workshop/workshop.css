@@ -196,26 +196,44 @@ p {
 
 
 @media  screen and (max-width: 576px) {
+    .hero-image h1 {
+    font-size: 30px;
+    }
+
    .hero-image img {
-    width: 350px;
-    height: 200px;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
    }
 
    .workshops p {
-     width: 75%;
-     margin-left: auto;
-     margin-right: auto;
-     margin:0px;
-     font-size: 18px;;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin:0px;
+    font-size: 15px;
+   }
+
+   .courses h1 {
+    font-size: 20px;
    }
 
    .courses {
-   flex:none;
+     flex-wrap: wrap;
    }
 
    .mini-course {
-    margin: 0px;
-    width: 350px;
+    font-size: 12px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+   .learn-more {
+    width: 150px;
+    justify-content: center;
    }
 
    .testimonials {
@@ -225,9 +243,12 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+    gap: 30px;
    }
 
    .testimonial-cards {
+    gap: 30px;
+    font-size: 11px;
     width: 250px;
     margin: 0px;
    }
