@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
 
 body {
-    text-align: center;
+    /* text-align: center; */
     font-family: 'EB Garamond', serif;
     background-color:white;
 }
@@ -14,22 +14,22 @@ body {
 }
 
 .subheading h1 {
-    margin-top: 100px;
-    font-size: 20px;
+    text-align: center;
+    width: clamp( 350px, 60%, 1100px);
+    font-size: clamp(12px, 50%, 50px);
 }
 
 .subheading h2 {
-    justify-content: center;
-    margin: 10px 200px 10px;
-    font-size: 40px;
+    text-align: center;
+    width: clamp(350px, 50%, 1100px);
+    font-size: clamp(10px , 50%, 45px);
 }
 
 .about-info  p {
-    justify-content: center;
-    line-height: 30px;
-    margin: 70px 370px 70px;
-    max-width: 750px;
-    font-size: 20px;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .garden-store {
@@ -154,25 +154,26 @@ img {
 
 
 @media  screen and (max-width: 576px) {
+    .heading {
+        font-size: 30px;
+    }
+    
     .hero-section {
+        max-width: 350px;
         text-align: center;
     }
 
-    /* .heading {
-        text-align: center;
-        font-size: 35px;
+    /* .subheading  h1 {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         font-size: 25px;
     } */
 
-
-    .subheading  h1 {
-        width: 400px;
-       text-align: center;
-        font-size: 25px;
-    }
-
     .subheading h2 {
-        width: 400px;
-        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         line-height: 20px;
         font-size: 15px;
     }

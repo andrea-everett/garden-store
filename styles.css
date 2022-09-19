@@ -215,29 +215,9 @@ figcaption {
     height: 130px;
 }
 
-/* .seeds  a {
-    font-size: 30px;
-    max-width: 400px;
-    max-height: 400px;
-} */
-
-/* .tools  a {
-    font-size: 30px;
-    max-width: 400px;
-    max-height: 400px;
-}
-
-.books  a {
-    font-size: 30px;
-    max-width: 400px;
-    max-height: 400px;
-}
-
 .gifts a {
     font-size: 30px;
-    max-width: 400px;
-    max-height: 400px;
-} */
+}
 
 .shop {
      font-family: 'Abel', sans-serif;
@@ -394,6 +374,10 @@ form #footer-input {
 
     .course-info p {
         margin: 5px 10px 5px ;
+    }
+
+    .course-sign-up {
+        text-decoration: none;
     }
 
     .shop-heading {

@@ -193,3 +193,44 @@ p {
     padding-top: 70px;
     margin-left: 100px;
 }
+
+
+@media  screen and (max-width: 576px) {
+   .hero-image img {
+    width: 350px;
+    height: 200px;
+   }
+
+   .workshops p {
+     width: 75%;
+     margin-left: auto;
+     margin-right: auto;
+     margin:0px;
+     font-size: 18px;;
+   }
+
+   .courses {
+   flex:none;
+   }
+
+   .mini-course {
+    margin: 0px;
+    width: 350px;
+   }
+
+   .testimonials {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+   }
+
+   .testimonial-cards {
+    width: 250px;
+    margin: 0px;
+   }
+
+   
+}
