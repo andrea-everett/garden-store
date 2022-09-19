@@ -26,12 +26,13 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: clamp(350px, 50%, 1100px);
+    width: clamp(350px, 60%, 1200px);
     font-size: max(35px, 10px);
 }
 
 .about-info  p {
-    width: 60%;
+    text-align: center;
+    width: clamp(350px, 60%, 1200px);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -186,13 +187,35 @@ img {
         grid-template-rows: 50px 100px 100px 100px;
     }
 
+    .item-1 img {
+        width: 150px;
+        height: 200px;
+    }
+
      .item-2 img {
-        width: 100px;
+        width: 150px;
+        height: 400px;
     } 
 
     .item-3 img {
-        width: 300px;
+        width: 150px;
+        height: 200px;
     } 
+
+    .item-4 img {
+        width: 150px;
+        height:  400px;
+    }
+
+    .item-5 img {
+        width: 150px;
+        height:  200px;
+    }
+
+    .item-6 img {
+        width: 150px;
+        height:  200px;
+    }
 
     .about-shop {
         margin: 0px;

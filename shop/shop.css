@@ -372,7 +372,7 @@ form #footer-input {
     }
 
     .img-heading h1 {
-        font-size: 15px;
+        font-size: 25px;
     }
 
     .img-heading  img {
@@ -384,7 +384,7 @@ form #footer-input {
 
     .flower-banner {
         width: 70%;
-        height: 450px;
+        height: 300px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -405,6 +405,7 @@ form #footer-input {
     }
 
     .product-img  img {
+        height: 250px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -416,6 +417,7 @@ form #footer-input {
     }
 
     .featured-products h1 {
+        width: 80%;
         font-family: 'EB Garamond', serif;
         font-size: 30px;
     }
@@ -427,7 +429,7 @@ form #footer-input {
 
     .products {
         display: block;
-        gap: 200px;
+        gap: 250px;
         width: 70%;
         margin-left: auto;
         margin-right: auto;
