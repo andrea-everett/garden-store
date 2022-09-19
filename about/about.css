@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
 
 body {
-    /* text-align: center; */
     font-family: 'EB Garamond', serif;
     background-color:white;
 }
@@ -179,7 +178,7 @@ img {
 
      .subheading  h1 {
          font-size: 21px;
-         margin-top: 5px;
+         margin-top: 10px;
     } 
 
     .subheading h2 {
@@ -188,9 +187,13 @@ img {
 
     .about-info p {
         font-size: 15px;
+        margin: 5px;
     }
 
     .grid-container {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
         gap: 2px;
         grid-template-columns: 50px 100px 100px 100px;
         grid-template-rows: 50px 100px 100px 100px;
@@ -203,7 +206,7 @@ img {
 
      .item-2 img {
         width: 150px;
-        height: 350px;
+        height: 300px;
     } 
 
     .item-3 img {
@@ -212,7 +215,7 @@ img {
     } 
 
     .grid-container2 {
-        grid-template-columns: 100px 150px 100px 100px;
+        grid-template-columns: 100px  100px 100px;
         grid-template-rows: 100px 100px 100px 100px;
     }
 
@@ -238,18 +241,34 @@ img {
     .about-shop p {
         text-align: center;
         line-height: 25px;
-        margin-top: 40px;
+        margin-top: 100px;
         margin-left: auto;
         margin-right: auto;
         display:block ;
+        width: 70%;
     }
 
     .shop-products  h1 {
         font-size: 10px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
     .shop-products  h2 {
         font-size: 16px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #products {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
 }
