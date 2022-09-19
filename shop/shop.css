@@ -150,7 +150,8 @@ ul {
 
 .product-display {
     display: flex;
-    width: 1400px;
+    margin: 10px;
+    width: 1335px;
     justify-content:space-evenly;
 }
 
@@ -174,10 +175,8 @@ figure {
     height: 80px;
     position: absolute;
     bottom: 30px;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
+    left:auto;
+    right:auto;
 }
 
 .product-img img {
@@ -329,7 +328,7 @@ form #footer-input {
 
     #menutoggle {
         text-decoration: none;
-        line-height: 20px;
+        line-height: 30px;
         font-size: 25px;
     }
     
@@ -368,7 +367,8 @@ form #footer-input {
     }
 
     .books h1 {
-        font-size: 15px;;
+        font-size: 25px;
+        margin-bottom: 5px;
     }
 
     .img-heading h1 {
@@ -405,7 +405,7 @@ form #footer-input {
     }
 
     .product-img  img {
-        height: 250px;
+        height: 70%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -429,14 +429,14 @@ form #footer-input {
 
     .products {
         display: block;
-        gap: 250px;
+        gap: 350px;
         width: 70%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .featured-imgs img {
-        width: 300px;
+        width: 70%;
         height: 200px;
     }
 
