@@ -343,9 +343,10 @@ form #footer-input {
     }
 
     .border {
-        border: solid .1px;
-        width:100%;
-       justify-content: center;
+        color: white;
+        border: solid .3px;
+        width:20%;
+        justify-content: center;
     }
 
     .shop-display {
@@ -405,7 +406,7 @@ form #footer-input {
 
     .product-img  img {
          width: 70%;
-         height: 80%;
+         height: 250px;
          margin-left: auto;
          margin-right: auto;
     }

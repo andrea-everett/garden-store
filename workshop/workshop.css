@@ -196,8 +196,12 @@ p {
 
 
 @media  screen and (max-width: 576px) {
+    .heading {
+        font-size: 25px;
+    }
+
     .hero-image h1 {
-    font-size: 20px;
+     font-size: 20px;
     }
 
    .hero-image img {
@@ -212,7 +216,7 @@ p {
     text-align: center;
     width: 80%;
     display: block;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
     line-height: 25px;
@@ -220,7 +224,7 @@ p {
    }
 
    .courses h1 {
-    top: 80%;
+    top: 60%;
     font-size: 20px;
    }
 

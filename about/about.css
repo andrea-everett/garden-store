@@ -163,7 +163,7 @@ img {
 
 @media  screen and (max-width: 576px) {
     .garden-store {
-        width: 80%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
