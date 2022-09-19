@@ -194,6 +194,9 @@ form input {
 
     .hero-image img {
         width:80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
     .map-section img {
@@ -204,9 +207,17 @@ form input {
     }
 
     .map-section p {
+        width: 80%;
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .testimonials {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        margin-top: 100px;
     }
 
     .contact-format {
@@ -220,11 +231,18 @@ form input {
         margin-right: auto;
     }
 
+    .contact-info p {
+        font-size: 20px;
+    }
+
+    .contact-info h2 {
+        margin-bottom: 50px;
+    }
+
     .info {
         width:80%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 50px;
     }
 
     .bx {
@@ -258,9 +276,6 @@ form input {
         width: 350px;
     }
 
-    .contact-info p {
-        margin-bottom: 100px;
-        font-size: 20px;
-    }
+ 
    
 }
