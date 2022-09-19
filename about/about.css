@@ -92,7 +92,10 @@ img {
 .about-shop {
     line-height: 30px;
     font-size: 20px;
-    margin: 50px 390px 50px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .grid-container2 {
@@ -160,6 +163,11 @@ img {
 
 
 @media  screen and (max-width: 576px) {
+    .garden-store {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .heading {
         font-size: 30px;
     }
@@ -170,7 +178,8 @@ img {
     }
 
      .subheading  h1 {
-         font-size: 20px;
+         font-size: 21px;
+         margin-top: 5px;
     } 
 
     .subheading h2 {
@@ -189,18 +198,23 @@ img {
 
     .item-1 img {
         width: 150px;
-        height: 200px;
+        height: 150px;
     }
 
      .item-2 img {
         width: 150px;
-        height: 400px;
+        height: 350px;
     } 
 
     .item-3 img {
         width: 150px;
-        height: 200px;
+        height: 150px;
     } 
+
+    .grid-container2 {
+        grid-template-columns: 100px 150px 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px;
+    }
 
     .item-4 img {
         width: 150px;
@@ -224,8 +238,10 @@ img {
     .about-shop p {
         text-align: center;
         line-height: 25px;
-        margin: 0px;
-        width: 400px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        display:block ;
     }
 
     .shop-products  h1 {
