@@ -210,6 +210,12 @@ figure {
 }
 
 @media  screen and (max-width: 576px) {
+    .shop-display {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
     .img-heading img {
         width: 415px;
     }
@@ -220,15 +226,22 @@ figure {
     }
 
     .product-display {
-        margin-left: 50px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
         gap: 150px;
-        justify-content: center;
         flex-direction: column;
     }
 
     .product-img img {
         width: 450px;
         height: 350px;
+    }
+
+    .add-to-cart {
+        top: 100px;
+        left: 80px;
     }
 }
 
