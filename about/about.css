@@ -24,7 +24,6 @@ body {
 
 .subheading h2 {
     text-align: center;
-    width: 60%;
     margin-left: auto;
     margin-right: auto;
     width: clamp(350px, 50%, 1100px);
