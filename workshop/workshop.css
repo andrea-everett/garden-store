@@ -197,7 +197,7 @@ p {
 
 @media  screen and (max-width: 576px) {
     .hero-image h1 {
-    font-size: 30px;
+    font-size: 25px;
     }
 
    .hero-image img {
@@ -214,11 +214,12 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    line-height: 15px;
+    line-height: 20px;
     font-size: 20px;
    }
 
    .courses h1 {
+    top: 80%;
     font-size: 20px;
    }
 
@@ -228,14 +229,14 @@ p {
 
    .mini-course {
     font-size: 12px;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
    }
 
    .mini-course img {
-    width: 60%;
-    height: 250px;
+    width: 70%;
+    height: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -246,11 +247,12 @@ p {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0px;
    }
 
    .online img {
-    width: 60%;
-    height: 250px;
+    width: 70%;
+    height: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -275,7 +277,7 @@ p {
 
    .testimonial-cards {
     gap: 30px;
-    font-size: 14px;
+    font-size: 10px;
     width: 250px;
     height: 150px;
     margin: 0px;
