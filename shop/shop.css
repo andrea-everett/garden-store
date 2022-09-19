@@ -175,8 +175,8 @@ figure {
     height: 80px;
     position: absolute;
     bottom: 30px;
-    left:auto;
-    right:auto;
+    left:50px;
+    right:50px;
 }
 
 .product-img img {
