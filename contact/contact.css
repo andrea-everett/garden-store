@@ -46,10 +46,11 @@ a:hover {
 
 .hero-image img {
     position: absolute;
-    margin: 20px 10px 30px;
-    object-fit: cover;
     object-position: center;
-    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80%;
     height: 300px;
     padding-top: 20px;
 }
@@ -179,13 +180,9 @@ form input {
 }
 
 @media  screen and (max-width: 576px) {
-    .garden-store {
-        width: 350px;
-        justify-content: space-evenly;
-    }
-
-    a {
+    .garden-store  a {
         font-size: 12px;
+        width: 70%;
     }
     
     .heading {
@@ -232,6 +229,7 @@ form input {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 40px;
     }
 
     .contact-info p {
@@ -248,10 +246,15 @@ form input {
     }
 
     .stars {
-        margin-top: 150px;
+        margin-top: 120px;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
         display: block;
+    }
+
+    .bx {
+        padding: 0px;
     }
 
     .name {
@@ -265,7 +268,7 @@ form input {
     }
 
     form {
-        margin-top: 600px;
+        margin-top: 800px;
         width: 350px;
     }
 
