@@ -31,7 +31,7 @@ body {
 
 .about-info  p {
     text-align: center;
-    width: clamp(350px, 60%, 1200px);
+    width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -88,10 +88,9 @@ img {
     padding: 50px;
 }
 
-.about-shop {
-    line-height: 30px;
-    font-size: 20px;
+.about-shop p {
     text-align: center;
+    width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -192,7 +191,7 @@ img {
     }
 
     .grid-container {
-        width: 80%;;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
         gap: 2px;
@@ -207,7 +206,7 @@ img {
 
      .item-2 img {
         width: 150px;
-        height: 300px;
+        height: 310px;
     } 
 
     .item-3 img {
@@ -216,16 +215,16 @@ img {
     } 
 
     .grid-container2 {
-        width: 80%;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
         grid-template-columns:  50px 100px  100px 100px;
-        grid-template-rows: 100px 100px 100px 100px;
-        gap: 1px;
+        grid-template-rows: 50px 100px 100px 100px;
+        gap: 2px;
     }
 
     .item-4 img {
-        width: 200px;
+        width: 150px;
         height:  350px;
     }
 
