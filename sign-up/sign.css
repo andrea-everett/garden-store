@@ -19,10 +19,6 @@ body {
 
 .hero-image {
     position: relative;
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .hero-image h1 {
@@ -31,6 +27,7 @@ body {
     color: white;
     font-weight: 800;
     position: absolute;
+    margin: auto;
     top: 45%;
     left:0;
     right: 0;
@@ -38,10 +35,12 @@ body {
 }
 
 .hero-image  img {
+    width: 80%;
     object-fit: cover;
     object-position: center;
-    width: 1250px;
-    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 20px;
 }
 
@@ -55,8 +54,12 @@ body {
 }
 
 .mini-course p {
-    margin: 5px 200px 100px;
-    font-size: 25px;
+   margin-top: 5px;
+   width: 80%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 25px;
 }
 
 .course-info {
@@ -125,3 +128,32 @@ input[type=email] {
     background-color: white;
     color: burlywood;
 }
+
+@media  screen and (max-width: 576px) {
+    .hero-image img {
+        width: 80%;
+    }
+
+    .hero-image h1 {
+        font-size: 30px;
+    }
+
+    .mini-course p {
+        font-size: 18px;
+    }
+
+    .course-info {
+        display: block;
+    }
+
+    .description h1 {
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    li {
+        line-height: 20px;
+        width: 80%;
+    }
