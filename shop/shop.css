@@ -129,10 +129,14 @@ ul {
 }
 
 .flower-banner {
-    background-color: rgb(233, 205, 169);
+    width: 70%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: rgb(233, 205, 169);
     margin: 70px 10px 70px;
     height: 150px;
-    width: 1335px;
+    width: 1335px; */
 }
 
 .flower-banner  h1 {
@@ -174,8 +178,10 @@ figure {
     width: 150px;
     height: 80px;
     position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
     bottom: 30px;
-    left:70px;
 }
 
 .product-img img {
@@ -326,18 +332,21 @@ form #footer-input {
 
     #menutoggle {
         text-decoration: none;
+        color:inherit;
         line-height: 40px;
         font-size: 25px;
     }
     
     #toolstoggle {
         text-decoration: none;
+        color:inherit;
        line-height: 40px;
        font-size: 25px;
     }
     
     #bookstoggle {
         text-decoration: none;
+        color:inherit;
         line-height: 40px;
         font-size: 25px;
     }
@@ -346,7 +355,8 @@ form #footer-input {
         color: white;
         border: solid .3px;
         width:20%;
-        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .shop-display {
@@ -362,11 +372,12 @@ form #footer-input {
 
     .books {
         text-decoration: none;
+        color:inherit;
         width: 150px;
     }
 
     .books h1 {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 5px;
     }
 
