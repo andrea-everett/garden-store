@@ -215,15 +215,33 @@ figure .featured-imgs {
 
 
 @media  screen and (max-width: 576px) {
+    .heading {
+        font-size: 40px;
+    }
+
+   #menutoggle {
+    margin-top: 100px;
+   }
+
    .shop-display {
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     display: block;
    }
 
+   .shop-display h1 {
+   left: 0px;
+   }
+
+   .shop-display img {
+    width: 80%;
+    height: 250px;
+   }
+
    .border {
     width: 80%;
+    margin-top: 300px;
     margin-left: auto;
     margin-right: auto;
    }
