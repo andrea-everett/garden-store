@@ -48,7 +48,7 @@ stripe.redirectToCheckout({
         },
     ],
     mode: "subscription",
-    sucessUrl:"https://www.google.com",
+    successUrl:"https://www.google.com",
     cancelUrl: "https:www.twitter.com",
 })
 .then(function(result) {
