@@ -217,6 +217,22 @@ figure {
         margin-top: 40px;
     }
 
+    #menutoggle {
+        text-decoration: none;
+        color:inherit;
+    }
+
+      
+    #toolstoggle {
+        text-decoration: none;
+        color:inherit;
+    }
+    
+    #bookstoggle {
+        text-decoration: none;
+        color:inherit;
+    }
+
     .shop-display {
         width: 80%;
         margin-left: auto;
@@ -242,8 +258,7 @@ figure {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        display: block;
-        gap: 250px;
+        gap: 150px;
         flex-direction: column;
     }
 
@@ -254,7 +269,7 @@ figure {
     }
 
     .product-img figcaption {
-        margin-top: 80px;
+        margin-top: 40px;
     }
 
     .add-to-cart {
