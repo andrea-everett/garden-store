@@ -31,6 +31,21 @@ document.addEventListener("DOMContentLoaded", function(){
     });
   });
 
+  document.querySelector('#navmenu')
+    .addEventListener('click', () => {
+        window.location.href = 'https://andrea-everett.github.io/garden-store/seeds/seeds.html';
+  });
+
+  document.querySelector('#toolsmenu')
+  .addEventListener('click', () => {
+      window.location.href = 'https://andrea-everett.github.io/garden-store/tools/tools.html';
+});
+
+document.querySelector('#booksmenu')
+.addEventListener('click', () => {
+    window.location.href = 'https://andrea-everett.github.io/garden-store/tools/tools.html';
+});
+
 // on button click redirect to shop page
 document.querySelector('#books')
     .addEventListener('click', () => {
@@ -44,7 +59,7 @@ document.querySelector('#product-img')
   });
 
 // on button click redirect to tools page
-  document.querySelector('#toolsmenu')
+  document.querySelector('#garden-img')
         .addEventListener('click', () => {
             window.location.href = 'https://andrea-everett.github.io/garden-store/tools/tools.html';
     });
@@ -56,7 +71,7 @@ document.querySelector('#seeds-img')
 });
 
 // on button click redirect to seeds page
-document.querySelector('#navmenu')
+document.querySelector('#seeds')
 .addEventListener('click', () => {
     window.location.href = 'https://andrea-everett.github.io/garden-store/seeds/seeds.html';
 });
