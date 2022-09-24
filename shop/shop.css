@@ -36,7 +36,6 @@ button .sign-up {
 
 .shop-display {
     display:flex;
-    margin: 10px;
 }
 
 #menutoggle {
@@ -129,34 +128,31 @@ ul {
 }
 
 .flower-banner {
-    width: 70%;
+    width: 100%;
     height: 250px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
      background-color: rgb(233, 205, 169);
-    margin: 70px 10px 70px;
-    height: 150px;
-    width: 1335px;
 }
 
 .flower-banner  h1 {
     color: white;
-    font-size: 32px;
+    font-size: 45px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 75px;
 }
 
 .flower-banner p {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
 }
 
 .product-display {
     display: flex;
-    margin: 10px;
-    width: 1335px;
-    justify-content:space-evenly;
+    width: 100%;;
 }
 
 figure {
@@ -186,7 +182,7 @@ figure {
 
 .product-img img {
     display: block;
-    width: 70%;
+    width: 350px;
     height: 350px;
 }
 
@@ -382,44 +378,47 @@ form #footer-input {
     }
 
     .img-heading h1 {
-        font-size: 30px;
-        margin-top: 20px;
+        font-size: 35px;
+        margin-top: 5px;
+        width: 80%;
     }
 
     .img-heading  img {
         display: block;
-        width: 70%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .flower-banner {
-        width: 70%;
+        width: 80%;
         height: 250px;
+        display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
     .flower-banner h1 {
         font-size: 30px;
+        margin-top: 10px;
     }
 
     .flower-banner p {
+        padding: 10px;
         font-size: 18px;
     }
 
     .product-display {
        flex-direction: column;
+       display: block;
        width: 80%;
        margin-left: auto;
        margin-right: auto;
     }
 
     .product-img  img {
-         width: 70%;
+         width: 100%;
          height: 250px;
-         margin-left: auto;
-         margin-right: auto;
     }
 
     .featured-products {
@@ -444,9 +443,12 @@ form #footer-input {
     .products {
         display: block;
         gap: 350px;
-        width: 80%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    figure {
+        width: 100%;
     }
 
     .featured-imgs img {
@@ -454,7 +456,7 @@ form #footer-input {
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 80%;
+        width: 100%;
         height: 200px;
     }
 
