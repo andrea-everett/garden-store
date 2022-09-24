@@ -12,6 +12,7 @@ body {
     color: white;
     position: relative;
     padding: 100px 80px 100px;
+    margin-top: 150px;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 80px;
 }
@@ -21,6 +22,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 a {
@@ -41,13 +43,10 @@ a:hover {
 
 .hero-image img {
     position: absolute;
-    object-position: center;
     object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 80%;
-    height: 300px;
+    object-position: center;
+    width: 1400px;
+    height: 400px;
     padding-top: 20px;
 }
 
@@ -91,7 +90,9 @@ a:hover {
     width: 200px;
     font-size: 20px;
     padding: 5px;
-    margin: 20px 170px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     background-color: white;
     color: brown;
     border: solid brown;
@@ -102,7 +103,7 @@ a:hover {
     background-color: brown;
 }
 .map-section h1 {
-    margin: 30px 60px 0px;
+    margin: 100px 30px 0px;
     font-size: 45px;
 }
 
@@ -113,7 +114,7 @@ a:hover {
 }
 
 .map-section p {
-    margin: 20px 60px 10px;
+    margin: 50px 35px 50px;
     font-size: 20px;
     width: 700px;
 }
