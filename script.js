@@ -37,7 +37,7 @@ function sendEmail() {
 }
 
 // stripe payment API
-var stripe = Stripe('pk_live_51LgH1XB6d5FKrU8pLOm7kDtW2ls5eTvlkCJhggqL8KwMfMDHtgXGeherqOzgI9EaQ9Q9c7A9OplCd6fmACMJ4PbT00rZV2vs17');
+const stripe = Stripe("pk_live_51LgH1XB6d5FKrU8pLOm7kDtW2ls5eTvlkCJhggqL8KwMfMDHtgXGeherqOzgI9EaQ9Q9c7A9OplCd6fmACMJ4PbT00rZV2vs17");
 
 document.getElementById("checkout").addEventListener("click", function(){
 stripe.redirectToCheckout({
