@@ -10,8 +10,7 @@ body {
 
 .heading {
     color: white;
-    position: relative;
-    padding: 100px 80px 100px;
+    position: absolute;
     margin-top: 150px;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 80px;
@@ -177,19 +176,28 @@ form input {
 }
 
 @media  screen and (max-width: 576px) {
-    .garden-store  a {
-        font-size: 12px;
+   .garden-store  a {
+        font-family: 'Archivo Narrow', sans-serif;
+        text-transform: capitalize;
+        text-decoration: none;
+        color:rgb(254, 162, 177) ;
+        padding: 10px;
     }
     
     .heading {
         font-size: 30px;
+        position: absolute;
+        top: 5px;
+        left: 50px;
     }
 
     .hero-image img {
-        width:80%;
-        height: 200px;
-        margin: auto;
-        display: block;
+        position: relative;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 250px;
+        padding-top: 20px;
     }
 
     .map-section img {
@@ -199,6 +207,10 @@ form input {
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
+    }
+
+    .map-section h1 {
+        margin: 50px 55px 0px;
     }
 
     .map-section p {
@@ -232,6 +244,7 @@ form input {
     .contact-info p {
         font-size: 20px;
         margin-top: 40px;
+        line-height: 35px;
     }
 
     .contact-info h2 {
@@ -243,11 +256,9 @@ form input {
     }
 
     .stars {
-        margin-top: 80px;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+        margin-top: 50px;
+        width: 100%;
+       text-align: center;
     }
 
     .bxs-star {
@@ -262,11 +273,11 @@ form input {
     }
 
     .address {
-        padding-left: 35px;
+        font-size: 60px;
     }
 
     form {
-        margin-top: 800px;
+        margin-top: 600px;
         width: 350px;
     }
 
