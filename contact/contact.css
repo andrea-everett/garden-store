@@ -9,31 +9,28 @@ body {
 }
 
 .heading {
+    position: relative;
+    top: 25px;
     color: white;
-
-    margin-top: 10px;
     text-align: center;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 80px;
 }
 
 .garden-store {
-    background-color: rgb(242, 220, 192);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
 a {
-    margin-top: 100px;
-    width: 100%;
-    position: absolute;
-    top: 10%;
+    font-size: 20px;
+    position: relative;
+    top:5px;
     font-family: 'Archivo Narrow', sans-serif;
     text-transform: capitalize;
     text-decoration: none;
-    color: black;
-    font-size: 18px;
+    color:black ;
     padding: 5px;
 }
 
@@ -48,7 +45,7 @@ a:hover {
     object-position: center;
     width: 1400px;
     height: 400px;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .contact-format {
@@ -57,7 +54,7 @@ a:hover {
 
 .contact-info {
     border: solid 10px burlywood;
-    margin: 110px 60px 130px;
+    margin: 420px 60px 130px;
     width: 490px;
     height: 250px;
 }
@@ -71,18 +68,20 @@ a:hover {
 
 .contact-info h1 {
     font-size: 35px;
+    margin-bottom: 10px;
     color: black;
     text-align: center;
 }   
 
 .contact-info h2 {
-    margin-top: 190px;
+    margin-top: 130px;
     font-size: 35px;
     color: black;
     text-align: center;
 }   
 
 .contact-info p {
+    line-height: 35px;
     font-size: 18px;
     text-align: center;
 }
@@ -91,6 +90,7 @@ a:hover {
     width: 200px;
     font-size: 20px;
     padding: 5px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -104,7 +104,7 @@ a:hover {
     background-color: brown;
 }
 .map-section h1 {
-    margin: 500px 30px 0px;
+    margin: 350px 30px 0px;
     font-size: 45px;
 }
 
@@ -178,19 +178,19 @@ form input {
 }
 
 @media  screen and (max-width: 576px) {
-   .garden-store  a {
+   /* .garden-store  a {
         font-family: 'Archivo Narrow', sans-serif;
         text-transform: capitalize;
         text-decoration: none;
         color:rgb(254, 162, 177) ;
         padding: 10px;
-    }
+    } */
     
     .heading {
         font-size: 30px;
         position: absolute;
-        top: 5px;
-        left: 50px;
+        top: 65px;
+        left: 80px;
     }
 
     .hero-image img {
@@ -279,7 +279,7 @@ form input {
     }
 
     form {
-        margin-top: 600px;
+        margin-top: 700px;
         width: 350px;
     }
 
