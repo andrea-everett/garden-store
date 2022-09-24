@@ -201,7 +201,7 @@ p {
     }
 
     .hero-image h1 {
-     font-size: 20px;
+     font-size: 25px;
     }
 
    .hero-image img {
@@ -224,8 +224,8 @@ p {
    }
 
    .courses h1 {
-    top: 60%;
-    font-size: 20px;
+    margin-top: 25px;;
+    font-size: 21px;
    }
 
    .courses {

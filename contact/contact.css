@@ -178,18 +178,10 @@ form input {
 }
 
 @media  screen and (max-width: 576px) {
-   /* .garden-store  a {
-        font-family: 'Archivo Narrow', sans-serif;
-        text-transform: capitalize;
-        text-decoration: none;
-        color:rgb(254, 162, 177) ;
-        padding: 10px;
-    } */
-    
     .heading {
-        font-size: 30px;
+        font-size: 35px;
         position: absolute;
-        top: 65px;
+        top: 85px;
         left: 80px;
     }
 
@@ -212,10 +204,11 @@ form input {
     }
 
     .map-section h1 {
-        margin: 50px 55px 0px;
+        margin: 50px 42px 0px;
     }
 
     .map-section p {
+        line-height: 35px;
         width: 80%;
         display: block;
         margin-left: auto;
@@ -235,7 +228,6 @@ form input {
     }
 
     .contact-info {
-        height: 300px;
         width: 80%;
         display: block;
         margin-left: auto;
@@ -244,8 +236,8 @@ form input {
     }
 
     .contact-info p {
-        font-size: 20px;
-        margin-top: 40px;
+        font-size: 18px;
+        margin-top: 25px;
         line-height: 35px;
     }
 
@@ -279,7 +271,7 @@ form input {
     }
 
     form {
-        margin-top: 700px;
+        margin-top: 750px;
         width: 350px;
     }
 
