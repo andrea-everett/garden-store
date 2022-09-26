@@ -36,26 +36,52 @@ function sendEmail() {
     );
 }
 
-// stripe payment API
-const stripe = Stripe("pk_live_51LgH1XB6d5FKrU8pLOm7kDtW2ls5eTvlkCJhggqL8KwMfMDHtgXGeherqOzgI9EaQ9Q9c7A9OplCd6fmACMJ4PbT00rZV2vs17");
-
-document.getElementById("checkout").addEventListener("click", function(){
-stripe.redirectToCheckout({
-    lineItems: [
-        {
-            price: "price_1LgU4yB6d5FKrU8pTDd9Vfvn",
-            quantity: 1
+const button = document.getElementById("checkout")
+button.addEventListener("click", () => {
+    fetch('http://localhost:3000/create-checkout-session', {
+        method: 'POST',
+        headers: {
+            'Content-Type': "application/json"
         },
-    ],
-    mode: "subscription",
-    successUrl:"https://www.google.com",
-    cancelUrl: "https://www.twitter.com",
+        body: JSON.stringify({
+            items: [
+                { id: 1, quantity: 3 },
+                { id: 2, quantity: 1 }
+            ]
+        })
+    }).then(res => {
+        if (res.ok) return res.json()
+        return res.json().then(json => Promise.reject(json))
+    })
+    .then(({ url }) => {
+        console.log(url)
+        // window.location = url
+    })
+    .catch(e => {
+        console.error(e.error)
+    })
 })
-.then(function(result) {
-    // alert(result)
-});
 
-})
+// // stripe payment API
+// const stripe = Stripe("pk_live_51LgH1XB6d5FKrU8pLOm7kDtW2ls5eTvlkCJhggqL8KwMfMDHtgXGeherqOzgI9EaQ9Q9c7A9OplCd6fmACMJ4PbT00rZV2vs17");
+
+// document.getElementById("checkout").addEventListener("click", function(){
+// stripe.redirectToCheckout({
+//     lineItems: [
+//         {
+//             price: "price_1LgU4yB6d5FKrU8pTDd9Vfvn",
+//             quantity: 1
+//         },
+//     ],
+//     mode: "subscription",
+//     successUrl:"https://www.google.com",
+//     cancelUrl: "https://www.twitter.com",
+// })
+// .then(function(result) {
+//     // alert(result)
+// });
+
+// })
 
 
 
