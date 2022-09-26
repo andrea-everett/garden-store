@@ -36,10 +36,10 @@ function sendEmail() {
     );
 }
 
-const button = document.getElementById("checkout")
+const button = document.querySelector("button")
 button.addEventListener("click", () => {
-    fetch('http://localhost:3000/create-checkout-session', {
-        method: 'POST',
+    fetch("http://localhost:3000/create-checkout-session", {
+        method: "POST", credentials: 'include',
         headers: {
             'Content-Type': "application/json"
         },
