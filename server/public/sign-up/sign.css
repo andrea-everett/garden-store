@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+:root
+body {
+    font-family: 'EB Garamond', serif;
+    color: black;
+    background-color: white;
+    margin: 20px;
+}
+
+.heading {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.garden-store {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color:rgb(254, 162, 177) ;
+    padding: 5px;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: 800;
+    position: absolute;
+    top: 40%;
+    left:49%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-image  img {
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.mini-course {
+    text-align: center;
+    margin: 200px 0px 200px;
+}
+
+.mini-course h1 {
+     font-size: 40px;
+}
+
+.mini-course p {
+   margin-top: 5px;
+   width: 80%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 25px;
+}
+
+.course-info {
+    height: 550px;
+    background-color: rgb(243, 241, 241);
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.description {
+    text-align: center;
+    margin: 100px 50px 100px;
+}
+
+.description h1 {
+    font-size: 30px;
+}
+
+li {
+    font-size: 18px;
+    line-height: 35px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.registration {
+    text-align: center;
+    margin-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.registration h1 {
+    font-size: 30px;
+    text-transform: bold;
+}
+
+.registration h2 {
+    font-size: 20px;
+}
+
+form {
+   margin: 5px 50px 5px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+input[type=text] {
+    margin-top: 20px;
+    height: 50px;
+}
+
+input[type=email] {
+    margin-top: 20px;
+    height: 50px;
+}
+
+.sign {
+    height: 35px;
+    margin-top: 30px;
+    color: white;
+    background-color: burlywood;
+    border: none;
+}
+
+.sign:hover {
+    background-color: white;
+    color: burlywood;
+}
+
+@media  screen and (max-width: 576px) {
+    .hero-image img {
+        width: 80%;
+        height: 250px;
+    }
+
+    .hero-image h1 {
+        left: 50%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .mini-course {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .mini-course h1 {
+        margin-top: 15px;
+    }
+
+    .mini-course p {
+        font-size: 20px;
+    }
+
+    .course-info {
+        display: block;
+        height: 650px;
+    }
+
+    .garden-store {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    a {
+        font-family: 'Archivo Narrow', sans-serif;
+        text-transform: capitalize;
+        text-decoration: none;
+        color:rgb(254, 162, 177) ;
+        padding: 5px;
+    }
+
+    .description h1 {
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 45px;
+    }
+
+    li {
+        line-height: 35px;
+        width: 80%;
+        padding: 5px;
+    }
+
+    .registration  h1{
+        margin-top: 250px;
+        margin-bottom: 0px;
+    }
+
+    form {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+
+}

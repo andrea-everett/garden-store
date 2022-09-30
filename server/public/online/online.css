@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+:root
+body {
+    font-family: 'EB Garamond', serif;
+    color: black;
+    background-color: white;
+    margin: 20px;
+}
+
+.heading {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 80px;
+    text-align: center;
+}
+
+.garden-store {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color:rgb(254, 162, 177) ;
+    padding: 5px;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image  img {
+    object-fit: cover;
+    object-position: center;
+    width: 1400px;
+    height: 750px;
+    padding-top: 20px;
+}
+
+.hero-image h1 {
+    color:rgb(0, 2, 5);
+    background-color: whitesmoke;
+    font-size: 55px;
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.online-info {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.online-info h1 {
+    font-size: 35px;
+}
+
+.online-info h2 {
+    font-size: 20px;
+}
+
+.border {
+   justify-content: center;
+    border: solid 1px black;
+    width: 200px;
+    margin: 50px 600px 50px;
+}
+
+.online-info p {
+    align-items: center;
+    width: 550px;
+    margin: 20px 430px 40px;
+    line-height: 40px;
+}
+
+.join {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
+    color: black;
+    border: none;
+    background-color: rgb(244, 227, 230);
+}
+
+.travel {
+    text-align: center;
+}
+
+.travel img {
+    object-fit: cover;
+    object-position: center;
+    width: 1400px;
+    height: 400px;
+    padding-top: 20px;
+}
+
+.travel  h1 {
+    font-size: 40px;
+}
+
+.travel h2 {
+    font-size: 20px;
+}
+
+.travel p {
+    font-size: 18px;
+}
+
+.travel-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.info {
+    width: 250px;
+}
+
+.info h1 {
+    font-size: 18px;
+}
+
+.info p {
+    margin-top: 20px;
+    font-size: 18px;
+    align-items: center;
+}
+
+@media  screen and (max-width: 576px) {
+    .heading {
+        font-size: 25px;
+    }
+
+    .hero-image img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 250px;
+    }
+
+    .hero-image h1 {
+        text-align: center;
+        font-size: 25px;
+        left: 50%;
+    }
+
+    .online-info {
+        height: 550px;
+    }
+
+    .online-info h1 {
+        margin-top: 70px;
+        font-size: 25px;
+    }
+
+    .online-info h2 {
+        font-size: 18px;
+        margin-top: 35px;
+    }
+
+    .online-info p {
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .join {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .travel img {
+        width: 80%;
+        height: 250px;
+    }
+
+    .travel h1 {
+        margin-top: 70px;
+    }
+
+    .travel h2 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 70%;
+    }
+
+    .border {
+        margin-left: auto;
+        margin-right: auto;
+        width: 45%;
+    }
+
+    .travel p {
+        margin-top: 5px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .travel-info {
+        display: block;
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    .info {
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info h1 {
+        font-size: 20px;
+    }
+}

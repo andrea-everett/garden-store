@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+.heading {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 80px;
+    text-align: center;
+}
+
+.garden-store {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color:rgb(254, 162, 177) ;
+    padding: 5px;
+}
+
+.categories {
+    width: 200px;
+}
+
+#menutoggle {
+    margin-top: 5px;
+    background-color: white;
+    border: none;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 30px;
+}
+
+#toolstoggle {
+    background-color: white;
+    border: none;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 30px;
+}
+
+#bookstoggle {
+    border-bottom: solid 1px black;
+    background-color: white;
+    border: none;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 30px;
+}
+
+.open {
+     margin-top: 0;
+      max-height: 900px;
+      opacity: 1;
+      transition: max-height 0.3s ease-in-out, opacity 0.25s ease-in-out;
+      color: black;
+      line-height: 18px;
+} 
+
+.open a {
+    text-decoration: none;
+    margin-left: 2px;
+    font-size: 18px;
+    line-height: 25px;
+    color: black;
+    padding-left: 0;
+}
+
+ul {
+    text-decoration: none;
+    overflow: hidden;
+    color: black;
+    line-height: 26px;
+    margin-left: 5px;
+
+    opacity: 0;
+    max-height: 0;
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+    line-height: 26px;
+}
+
+.shop-display {
+    display:flex;
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+    line-height: 26px;
+}
+
+.shop-books {
+    display:flex;
+    margin: 10px;
+}
+
+.shop-display img {
+    width: 1100px;
+    height: 500px;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+.border {
+    border: solid 1px black;
+    width: 1100px;
+    margin: 150px 200px 0px;
+}
+
+.page-count {
+    font-size: 18px;
+    text-align: right;
+    margin-right: 150px;
+}
+
+.img-heading {
+    position: relative;
+    text-align: center;
+}
+
+.img-heading h1 {
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 70px;
+}
+
+.books {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.border {
+    border: solid 1px black;
+    width: 1100px;
+    margin: 100px 200px 10px;
+}
+
+.page-count {
+    font-size: 18px;
+    text-align: right;
+    margin-right: 150px;
+}
+
+.product-display {
+    display: flex;
+    width: 933px;
+    justify-content:space-evenly;
+    margin: 100px 300px 200px;
+}
+
+figure {
+    display: flex;
+    flex-direction: row;
+    position: relative; 
+} 
+
+.product-img img {
+    width: 236px;
+    height: 236px;
+}
+
+.add-to-cart {
+    position: absolute;
+    background-color: burlywood;
+    color: white;
+    border: none;
+    font-size: 25px;
+    top: 80px;
+    left: 55px;
+}
+
+.product-img figcaption {
+    font-size: 25px;
+    width: 235px;
+    height: 30px;
+    position: absolute;
+    bottom: -40px;
+    text-align: left;
+}
+
+.product-img figcaption1 {
+    font-size: 20px;
+    width: 235px;
+    height: 30px;
+    position: absolute;
+    bottom: -110px;
+    text-align: left;
+}
+
+.product-img figcaption:hover {
+    color: burlywood;
+}
+
+.product-img figcaption1:hover {
+    color: burlywood;
+}
+
+@media  screen and (max-width: 576px) {
+    .heading {
+        font-size: 35px;
+    }
+
+    .categories h1 {
+        margin-top: 40px;
+    }
+
+    #menutoggle {
+        text-decoration: none;
+        color:inherit;
+    }
+
+      
+    #toolstoggle {
+        text-decoration: none;
+        color:inherit;
+    }
+    
+    #bookstoggle {
+        text-decoration: none;
+        color:inherit;
+    }
+
+    .shop-display {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .img-heading img {
+        width: 80%;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .border {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .product-display {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 150px;
+        flex-direction: column;
+    }
+
+    .product-img img {
+        gap: 40px;
+        width: 100%;
+        height: 250px;
+    }
+
+    .product-img figcaption {
+        margin-top: 40px;
+    }
+
+    .add-to-cart {
+        top: 150px;
+        left: 70px;
+    }
+}
+
+
+
+
+
+
+
+ 
+
+ 
+

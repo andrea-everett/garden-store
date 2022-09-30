@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+:root
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: white;
+    margin: 20px;
+}
+
+.mini-course-banner {
+    display: flex;
+    font-family: 'Abel', sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-color:burlywood ;
+    color: white;
+    height: 60px;
+}
+
+.mini-course-banner a {
+    font-family: 'Abel', sans-serif;
+    color: white;
+    border-style: solid;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.mini-course-banner a:hover {
+    color: burlywood;
+    background-color: white;
+}
+
+.mini-course-banner h1 {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.mini-course-banner p {
+    padding: 10px;
+    width: 400px;
+    font-size: 18px;
+}
+
+button .sign-up {
+    width: 100px;
+    height: 40px;
+    background-color: burlywood;
+    border-width: 2px;
+}
+
+.heading {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 80px;
+    text-align: center;
+}
+
+.garden-store {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color:rgb(254, 162, 177) ;
+    padding: 5px;
+}
+
+
+.hero-image  img {
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 750px;
+    padding-top: 20px;
+}
+
+.arrow {
+    height: 20px;
+    border: solid white;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 60px;
+  }
+  
+  .right {
+    position: absolute;
+    top: 30%;
+    left: 87%;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    position: absolute;
+    top: 30%;
+    right: 87%;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+.mini-course {
+    display: flex;
+    background-color: rgb(242, 223, 201);
+    margin-top: 70px;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px;
+}
+
+.course-info h1 {
+    align-items: left;
+    margin-bottom: 0px;
+    font-family: 'EB Garamond', serif;
+    font-size: 45px;
+}
+
+.course-info h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+}
+
+.course-info p {
+    margin: 10px 50px 10px;
+    line-height: 30px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ form  input {
+    display: block;
+    width: 250px;
+    height: 35px;
+    margin: 10px 155px 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.course-sign-up {
+    width: 275px;
+    height: 40px;
+    margin: 5px 155px 20px;
+}
+
+.mini-course img {
+    max-width: 600px;
+    padding: 60px;
+}
+
+.shop-heading {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+.shop-heading  h1 {
+    font-family: 'EB Garamond', serif;
+    margin: 100px 400px 20px;
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shop-heading h2 {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    margin: 0px 400px 80px;
+    font-size: 20px;
+}
+
+.figures {
+    display: flex;
+}
+
+figure  img {
+    max-width: 290px;
+    max-height: 290px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption {
+    font-family: 'EB Garamond', serif;
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+    bottom: 60px;
+    margin: 0 15px 0;
+    font-size: 35px;
+    background-color: antiquewhite;
+    width: 240px;
+    height: 130px;
+}
+
+.gifts a {
+    font-size: 30px;
+}
+
+.shop {
+     font-family: 'Abel', sans-serif;
+    position: absolute;
+    text-align: center;
+    right: 30px;
+    left: 30px;
+    bottom: 60px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(232, 191, 133);
+    opacity: 70%;
+    color: black;
+}
+
+.shop:hover {
+    background-color: white;
+    color: burlywood;
+}
+
+.footer {
+    display: flex;
+    padding-bottom: 160px;
+    background-color: rgb(235, 203, 175);
+}
+
+.footer .heading {
+    font-size: 50px;
+    padding-top: 70px;
+    margin-left: 100px;
+}
+
+.about {
+    max-width:170px ;
+    line-height: 30px;
+    margin-left: 150px;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+}
+
+.about a {
+    font-family: 'EB Garamond', serif;
+    color: black;
+}
+
+.social {
+    line-height: 30px;
+    margin-left: 200px;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+}
+
+.bx {
+    padding: 5px;
+    align-items: baseline;
+}
+
+.join  {
+    line-height: 30px;
+    margin-left: 320px;
+    font-family: 'EB Garamond', serif;
+    align-items: center;
+}
+
+form #footer-input {
+   margin: 10px 30px 10px ;
+   max-width: 150px;
+   height: 5px;
+}
+
+
+/* FOR SMALL MEDIA DEVICES */
+@media  screen and (max-width: 576px) {
+    .mini-course-banner {
+        margin: 10px 10px 10px;
+        justify-content: left;
+         max-width: 350px;
+    }
+
+    .mini-course-banner h1 {
+        padding: 8px;
+        width: 100px;
+        margin-left: 0px;
+        font-size: 12px;
+    }
+    .mini-course-banner p {
+        padding: 5px;
+        width: 130px;
+        font-size: 10px;
+    }
+
+    .mini-course-banner a {
+        width: 30px;
+        height: 15px;
+        font-size: 10px;
+    }
+
+    .hero-section {
+       text-align: center;
+       max-width: 350px;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 40px;
+        }
+
+    .garden-store {
+        width: 350px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    .hero-image img {
+        margin-left: 10px;
+        margin-left: 10px;
+        max-width: 350px;
+        height: 300px;
+    }
+
+    .mini-course {
+        margin: 10px 10px 10px;
+        width: 350px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mini-course img {
+        padding: 0;
+        margin: 10px 10px 10px;
+        width: 330px;
+        height: 250px;
+    }
+
+    .course-info {
+        margin: 10px 30px 10px;
+        text-align: center;
+        width: 300px;
+    }
+
+    .course-info h1 {
+        margin-left: 0px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .course-info h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .course-info p {
+        margin: 5px 10px 5px ;
+    }
+
+    .course-sign-up {
+        text-decoration: none;
+    }
+
+    .shop-heading {
+        width: 350px;
+    }
+
+    .shop-heading h1 {
+        margin: 40px 0px 20px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .shop-heading h2 {
+        font-size: 25px;
+        text-align: center;
+        margin: 10px 10px 10px;
+    }
+
+    .figures {
+        width: 350px;
+        margin: 0px;
+        flex-direction: column;
+    }
+
+    .figures img {
+        width: 350px;
+        height: 300px;
+    }
+
+    figcaption {
+        padding-top: 10px;
+        height: 85px;
+    }
+
+    .shop {
+        bottom: 10px;
+    }
+
+    .about {
+        display: none;
+    }
+    
+    .about a {
+        display: none;
+    }
+    
+    .social {
+        display: none;
+    }
+    
+    .bx {
+        display: none;
+    }
+    
+    .join  {
+        display: none;
+    }
+    
+    form #footer-input {
+        display: none;
+    }
+
+    .footer {
+        width: 576px;
+    }
+}
+
+
+
+
