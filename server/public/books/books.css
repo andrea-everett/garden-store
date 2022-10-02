@@ -144,21 +144,23 @@ ul {
 
 .border {
     border: solid 1px black;
-    width: 1100px;
-    margin: 100px 200px 10px;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page-count {
     font-size: 18px;
     text-align: right;
-    margin-right: 150px;
+    margin-right: 100px;
+    padding: 15px;
 }
 
 .product-display {
     display: flex;
-    width: 933px;
-    justify-content:space-evenly;
-    margin: 100px 300px 200px;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 figure {
@@ -178,7 +180,7 @@ figure {
     color: white;
     border: none;
     font-size: 25px;
-    top: 80px;
+    top: 100px;
     left: 55px;
 }
 
@@ -233,6 +235,10 @@ figure {
         color:inherit;
     }
 
+    .shop-display img {
+        padding: 0px;
+    }
+
     .shop-display {
         width: 80%;
         margin-left: auto;
@@ -270,11 +276,18 @@ figure {
 
     .product-img figcaption {
         margin-top: 40px;
+        font-size: 22px;
+    }
+
+    .product-img figcaption1 {
+        margin-top: 40px;
+        font-size: 22px;
+        bottom: -90px;
     }
 
     .add-to-cart {
         top: 150px;
-        left: 70px;
+        left: 120px;
     }
 }
 

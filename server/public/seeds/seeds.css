@@ -222,7 +222,19 @@ figure .featured-imgs {
     }
 
    #menutoggle {
+    text-decoration: none;
+    color:inherit;
     margin-top: 100px;
+   }
+
+   #toolstoggle {
+    text-decoration: none;
+    color:inherit;
+   }
+
+   #bookstoggle {
+    text-decoration: none;
+    color:inherit;
    }
 
    .shop-display {
@@ -233,7 +245,9 @@ figure .featured-imgs {
    }
 
    .shop-display h1 {
-    margin-bottom: 15px;
+    font-size: 25px;
+    top:40px;
+    left: 40px;
     left: 0px
    }
 
@@ -253,10 +267,6 @@ figure .featured-imgs {
     text-align: right;
    }
 
-   .shop-display h1 {
-    font-size: 20px;
-   }
-
    .product-display {
     width: 80%;
     margin-left: auto;
@@ -273,11 +283,13 @@ figure .featured-imgs {
 
    .product-img figcaption {
     text-align: center;
+    bottom: 155px;
     width: 100%;
    }
 
-   .product-img figcaption1 {
+   .product-img  figcaption1 {
     text-align: center;
+    bottom: 80;
     width: 100%;
    }
     }

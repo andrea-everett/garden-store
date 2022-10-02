@@ -36,11 +36,11 @@ function sendEmail() {
     );
 }
 
-var strip= Stripe('pk_test_51LgH1XB6d5FKrU8p4rlu3Tl8eoGfMbimKwRkp4HQPoAjeEkpAA4VVyWflc9PLPf410pITc8rtM4vuFPLsPKIJ4W100n9c1lHPr');
+var stripe= Stripe('pk_test_51LgH1XB6d5FKrU8p4rlu3Tl8eoGfMbimKwRkp4HQPoAjeEkpAA4VVyWflc9PLPf410pITc8rtM4vuFPLsPKIJ4W100n9c1lHPr');
 
-const button = document.querySelector("checkout")
+const button = document.getElementById("btn")
 button.addEventListener("click", () => {
-    fetch('http://localhost:3000/create-checkout-session', {
+    fetch('/create-checkout-session', {
         method: "POST", 
         headers: {
             'Content-Type': "application/json"
@@ -56,8 +56,7 @@ button.addEventListener("click", () => {
         return res.json().then(json => Promise.reject(json))
     })
     .then(({ url }) => {
-        console.log('hi')
-        // window.location = url
+        window.location = url
     })
     .catch(e => {
         console.error(e.error)
