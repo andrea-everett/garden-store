@@ -123,8 +123,9 @@ ul {
 .product-display {
     display: flex;
     flex-wrap: wrap;
-    margin: 70px 100px 150px;
+    margin: 150px 100px 150px;
     max-width: 1400px;
+    gap: 150px;
 }
 
 figure {
@@ -160,7 +161,6 @@ figure {
 }
 
 .product-img img {
-    margin-top: 100px;
     width: 265px;
     height: 265px;
 }
@@ -202,12 +202,13 @@ figure .featured-imgs {
 
 .add-to-cart {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: burlywood;
     color: white;
     border: none;
     font-size: 25px;
-    bottom: 130px;
-    left: 55px;
 }
 
 @media  screen and (max-width: 576px) {
@@ -217,17 +218,14 @@ figure .featured-imgs {
    .categories h1 {
     margin-top: 50px;
    }
-    .shop-display {
-        margin-left: 25px;
-        display: block;
-    }
 
     .img-heading img {
         width: 80%;
-        height: 250px;
+        height: 80%;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 0;
+        padding-top: 45px;
+        gap:100px;
     }
 
     .border {
@@ -240,21 +238,47 @@ figure .featured-imgs {
         margin-right: 20px;
     }
 
+    figure {
+        display: block;   
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+
+    .product-img {
+        display: block;   
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        gap: 100px;
+
+    }
+
     .product-display {
-       width: 80%;
-       margin-top: 5px;
-      display: block;   
+     display: block;   
+     margin-left: auto;
+     margin-right: auto;
+     width: 90%;
  }
 
-    figure .product-img {
-        width: 350px;
+ .add-to-cart {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+    .product-img img {
+        margin: 150px 0px 10px;
     }
 
     .product-img figcaption {
         text-align: center;
+        margin: 100px 0px 50px;
     }
 
     .product-img figcaption1 {
         text-align: center;
+        margin: 200px 0px 50px;
     }
 }
