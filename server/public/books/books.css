@@ -152,7 +152,7 @@ ul {
 .page-count {
     font-size: 18px;
     text-align: right;
-    margin-right: 100px;
+    margin-right: 50px;
     padding: 15px;
 }
 
@@ -180,8 +180,9 @@ figure {
     color: white;
     border: none;
     font-size: 25px;
-    top: 100px;
-    left: 55px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 .product-img figcaption {
@@ -257,7 +258,7 @@ figure {
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
-        width: 80%;
+        width: 90%;
     }
 
     .product-display {
