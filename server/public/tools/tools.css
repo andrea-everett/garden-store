@@ -278,7 +278,9 @@ figure .featured-imgs {
     }
 
     .product-img figcaption1 {
-        text-align: center;
+        position: relative;
+        left: 50%;
+        top: 50%;
         margin: 200px 0px 50px;
     }
 }
