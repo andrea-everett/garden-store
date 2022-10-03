@@ -2,6 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
+#cart {
+    align-items: right;
+}
+
+.data {
+    background-color: beige;
+    width: 250px;
+    height: 250px;
+}
+
+.invisble {
+   background-color: black;
+}
+
 button .sign-up {
     width: 100px;
     height: 40px;
