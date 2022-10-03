@@ -39,8 +39,8 @@ function sendEmail() {
 var stripe= Stripe('pk_test_51LgH1XB6d5FKrU8p4rlu3Tl8eoGfMbimKwRkp4HQPoAjeEkpAA4VVyWflc9PLPf410pITc8rtM4vuFPLsPKIJ4W100n9c1lHPr');
 
 const button = document.getElementById("btn")
-button.addEventListener("click", () => {
-    fetch('/create-checkout-session', {
+ button.addEventListener("click", () => {
+    fetch('http://localhost:3000/create-checkout-session', {
         method: "POST", 
         headers: {
             'Content-Type': "application/json"
@@ -52,8 +52,16 @@ button.addEventListener("click", () => {
             ]
         })
     }).then(res => {
-        if (res.ok) return res.json()
-        return res.json().then(json => Promise.reject(json))
+        
+        if (res.ok)  {
+            console.log('sucess')
+            return res.json()
+            .then(res => {
+                console.log(res)
+                window.location = res.url
+            })
+            .catch(json => Promise.reject(json)) 
+        }
     })
     .then(({ url }) => {
         window.location = url

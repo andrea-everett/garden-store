@@ -273,8 +273,6 @@ img {
         grid-row: 2 / span 1;
     }
 
-
-
     .item-4 img,  .item-5 img , .item-6 img {
         height: 100%;
         width:100%;
