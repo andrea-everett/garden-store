@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="shop.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="heading" id="heading"> Everett</div>
+            <div class="garden-store">
+                <div><a href="https://andrea-everett.github.io/garden-store/about/about.html">ABOUT</a></div>
+                <div><a href="https://andrea-everett.github.io/garden-store/shop.html">SHOP</a></div>
+                <div ><a href="https://andrea-everett.github.io/garden-store/workshop/workshop.html">WORKSHOPS</a></div>
+                <div><a href="https://andrea-everett.github.io/garden-store/contact/contact.html">CONTACT</a></div>
+            </div>
+    </div>
+
+    <section class="shop-display">
+        <div class="categories">
+            <h1>Shop by Category</h1>
+            <button id="menutoggle" >Seeds</button>
+            <div class="border"></div>
+            <ul class="navmenu" id="navmenu">
+                <li><a href="/seeds/seeds.html">All Seeds</a></li>
+                <li><a href="/seeds/seeds.html">Vegetable Seeds</a></li>
+                <li><a href="/seeds/seeds.html">Flowers Seeds</a></li>
+            </ul>
+        
+            <button id="toolstoggle">Tools</button>
+            <div class="border"></div>
+            <ul class="gardening-tools" id="toolsmenu">
+                <li><a href="tools/tools.html">Snips</a></li>
+                <li><a href="tools/tools.html">Shovels</a></li>
+                <li><a href="tools/tools.html">Gloves</a></li>
+                <li><a href="tools/tools.html">Garden Sets</a></li>
+            </ul>
+    
+            <button id="bookstoggle">Books</button>  
+            <div class="border"></div>
+            <ul class="gardening-books" id="booksmenu">
+                <li><a href="books/books.html">How to Books</a></li>
+                <li><a href="books/books.html">Vegetable Farming</a></li>
+                <li><a href="books/books.html">Garden Books</a></li>
+            </ul> 
+        </div>
+     
+        <div class="img-heading">
+            <img src="flower-books.jpeg">
+            <h1>Books with seeds.</h1>
+            <button class="books" id="books">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="flower-banner">
+        <h1>Live a Flower-Filled Life</h1>
+        <div class="border" id="flower"></div>
+        <p>We are a family-run farm, specializing in heirloom flowers & seasonal vegetables.</p>
+    </section>
+
+    <section class="product-display">
+        <figure class="product-img" id="product-img">
+            <img src="flower-books.png">   
+            <figcaption>Books  <br>Shop Here</figcaption>
+        </figure>
+
+        <figure class="product-img" id="garden-img">
+            <img src="garden-tools.png">
+            <figcaption>Garden Tools <br>Shop Here</figcaption>
+        </figure>
+
+        <figure class="product-img" id="seeds-img">
+            <img src="veg.png">
+            <figcaption>Vegetable Seeds <br>Shop Here</figcaption>
+        </figure>
+    </section>
+
+    <section class="featured-products">
+            <h1>Featured Products</h1>
+            <h2>Shop our curated collection of speciality flower seeds and supplies.</h2>
+
+        <div class="products">
+                    <figure class="featured-imgs" id="seeds">
+                        <img src="beet.png">
+                        <figcaption>Beet Seeds</figcaption>
+                    </figure>
+
+                    <figure class="featured-imgs" id="gloves">
+                        <img src="gloves.png">
+                        <figcaption>Gloves</figcaption>
+                    </figure>
+
+                    <figure class="featured-imgs" id="pruners">
+                        <img src="pruner.png">
+                        <figcaption>Pruners</figcaption>
+                    </figure>
+
+                    <figure class="featured-imgs" id="veg">
+                        <img src="carrot.png">
+                        <figcaption>Carrot Seeds</figcaption>
+                    </figure>
+
+                    <figure class="featured-imgs" id="snips">
+                        <img src="snips.png">
+                        <figcaption>Snips</figcaption>
+                    </figure>
+            </div>
+    </section>
+
+    <section class="footer">
+        <div class="heading">Everett</div>
+    
+        <!-- <div class="about">
+            <h1>About</h1>
+            <div><a href="contact.html">Contact</a></div>
+            <div ><a href="gallery.html">Gallery</a></div>
+            <div ><a href="shipping.html">Shipping & Delivery</a></div>
+        </div>
+    
+        <div class="social">
+            <h1>Follow us</h1>
+            <div><i class='bx bxl-instagram'></i>Instagram</a></div>
+            <div ><i class='bx bxl-facebook'></i>Facebook</a></div>
+            <div ><i class='bx bxl-pinterest'></i>Pinterest</a></div>
+        </div>  
+    
+        <div class="join">
+            <h1>Join us</h1>
+                <form>
+                        <input type="text" id="footer-input" placeholder="Your Name">
+                        <input type="email" id="footer-input" placeholder="Your Email">
+                        <button class="button">Get Updates</button>
+                </form> -->
+            </div>
+        </section>
+        
+        <script type="text/javascript" src="shop.js"></script>
+        <footer-component></footer-component>
+</body>
+</html>
