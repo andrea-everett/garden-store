@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name" : "Books",
-        "imageSrc" : ""
+        "priceCents" : 4094,
+        "imageColor" : "00F"
     }
 ]

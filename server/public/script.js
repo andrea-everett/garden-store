@@ -1,6 +1,9 @@
-import { setupStore } from "./store.js"
+import { setupStore } from "./books.js"
+import { setupShoppingCart } from './shoppingCart.js'
+
 
 setupStore()
+setupShoppingCart()
 
 // / change home image
 let i = 0; 

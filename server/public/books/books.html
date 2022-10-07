@@ -5,10 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="books.css">
+    <script type="text/javascript" src="../shoppingCart.js"></script>
     <script src="https://js.stripe.com/v3/"></script>
     <title>Document</title>
 </head>
 <body>
+
+    <section data-cart-items-wrapper class="shopping-cart">
+        <button data-cart-button class="cart" id="cart"></i></button>
+
+        <div class=”Header”>
+            <h3 class=”Heading”>Shopping Cart</h3>
+            <h5 class=”Action”>Remove all</h5>
+            </div>
+
+            <div class=”Cart-Items”>
+                <img src="./book3.jpeg" height="120px" width="150px"/>
+
+                <div class=”about”>
+                    <div class=”title”>Beginner's Guide </div>
+                    <div class="quantity">2</div>
+                    <div class=”price”>$29.95</div>
+                </div>
+
+                <div class=”Cart-Items”>
+                    <img src="./book3.jpeg" height="120px" width="150px"/>
+    
+                    <div class=”about”>
+                        <div class=”title”>Beginner's Guide </div>
+                        <div class="quantity">2</div>
+                        <div class=”price”>$29.95</div>
+                    </div>
+
+                    <div class=”Cart-Items”>
+                        <img src="./book3.jpeg" height="120px" width="150px"/>
+        
+                        <div class=”about”>
+                            <div class=”title”>Beginner's Guide </div>
+                            <div class="quantity">2</div>
+                            <div class=”price”>$29.95</div>
+                        </div>
+
+                        <div class=”Cart-Items”>
+                            <img src="./book3.jpeg" height="120px" width="150px"/>
+            
+                            <div class=”about”>
+                                <div class=”title”>Beginner's Guide </div>
+                                <div class="quantity">2</div>
+                                <div class=”price”>$29.95</div>
+                            </div>
+
+    </section>
+  
+
     <div class="hero-section">
         <div class="heading">Everett</div>
             <div class="garden-store">
@@ -52,29 +101,30 @@
 
     <div class="page-count">PAGE 1</div>
 
-    <section class="product-display">
-        <figure class="product-img">
-            <img src="book1.jpeg">   
+    <section data-store-container class="product-display">
+
+        <figure data-store-item class="product-img">
+            <img data-image src="book1.jpeg">   
             <button class="add-to-cart" type="button">Add to cart</button>
-            <figcaption>Beginner's Guide to Gardening</figcaption>
-            <figcaption1>$29.95</figcaption1>
+            <figcaption data-name class="figcaption">Beginner's Guide to Gardening</figcaption>
+            <figcaption1 data-price class="figcaption">$29.95</figcaption1>
         </figure>
 
-        <figure class="product-img">
+        <figure data-store-item class="product-img">
             <img src="book2.jpeg">
             <button class="add-to-cart" type="button">Add to cart</button>
             <figcaption>Organic Farming</figcaption>
-            <figcaption1>$40.95</figcaption1>
+            <figcaption1 data-price>$40.95</figcaption1>
         </figure>
 
-        <figure class="product-img">
+        <figure data-store-item class="product-img">
             <img src="book3.jpeg">
             <button class="add-to-cart" type="button">Add to cart</button>
             <figcaption>Picking Speciality Seeds </figcaption>
             <figcaption1>$30.95</figcaption1>
         </figure>
 
-        <figure class="product-img">
+        <figure data-store-item class="product-img">
             <img src="book4.jpeg">
             <button class="add-to-cart" type="button">Add to cart</button>
             <figcaption>How to Curate a Garden Store</figcaption>
@@ -83,5 +133,6 @@
     </section>
 
     <script type="text/javascript" src="books.js"></script>
+    <script type="text/javascript" src="shoppingCart.js"></script>
 </body>
 </html>

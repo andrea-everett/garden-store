@@ -2,6 +2,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
+.cart {
+    align-items: right;
+    width: 50px;
+    height: 30px;
+}
+
+.shopping-cart {
+    margin: 10px 800px 10px;
+    width: 40%;
+    height: 60%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+}
+
+.Header{
+    margin: auto;
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .Heading{
+    font-size: 20px;
+    font-family: ‘Open Sans’;
+    font-weight: 700;
+    color: #2F3841;
+   }
+
+   .Cart-Items{
+    margin: auto;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .about{
+    height: 100%;
+   }
+
+   .title{
+    padding-top: 0px;
+    line-height: 10px;
+    font-size: 20px;
+    font-family: ‘Open Sans’;
+    font-weight: 800;
+    color: #202020;
+   }
+
+   .subtitle{
+    line-height: 10px;
+    font-size: 15px;
+    font-family: ‘Open Sans’;
+    font-weight: 400;
+    color: #909090;
+   }
+
+   .counter{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .prices{
+    height: 100%;
+    text-align: right;
+    font-size: 12px;
+   }
+
+.invisble {
+   background-color: black;
+}
+
 .heading {
     font-family: 'Cedarville Cursive', cursive;
     font-size: 80px;

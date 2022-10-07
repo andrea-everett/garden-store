@@ -1,14 +1,20 @@
-const cartButton = document.querySelector('.cart')
-const cartItemsWrapper = document.querySelector('.data')
-// add items to cart
-// remove items from cart
+const cartButton = document.querySelector("[data-cart-button]")
+const cartItemsWrapper = document.querySelector("[data-cart-items-wrapper]")
+let shoppingCart = []
 
-// show/hide cart button
-// persist across multiple pages
-// calculate an acurate total
-// handle multiple of the same item in the cart
+export function setupShoppingCart() {}
 
-// shoe/hide the cart when clicked
 cartButton.addEventListener('click',() => [
     cartItemsWrapper.classList.toggle("invisible")
 ] )
+
+export function addToCart(id) {
+    shoppingCart.push({ id: id, quantity: 1 })
+    renderCart()
+}
+
+function renderCart() {
+    
+}
+
+// Add items to cart
