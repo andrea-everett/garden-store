@@ -1,3 +1,7 @@
+import { setupStore } from "./store.js"
+
+setupStore()
+
 // / change home image
 let i = 0; 
 const images = [];
@@ -71,26 +75,7 @@ const button = document.getElementById("btn")
     })
 })
 
-// // stripe payment API
-// const stripe = Stripe("pk_live_51LgH1XB6d5FKrU8pLOm7kDtW2ls5eTvlkCJhggqL8KwMfMDHtgXGeherqOzgI9EaQ9Q9c7A9OplCd6fmACMJ4PbT00rZV2vs17");
 
-// document.getElementById("checkout").addEventListener("click", function(){
-// stripe.redirectToCheckout({
-//     lineItems: [
-//         {
-//             price: "price_1LgU4yB6d5FKrU8pTDd9Vfvn",
-//             quantity: 1
-//         },
-//     ],
-//     mode: "subscription",
-//     successUrl:"https://www.google.com",
-//     cancelUrl: "https://www.twitter.com",
-// })
-// .then(function(result) {
-//     // alert(result)
-// });
-
-// })
 
 
 

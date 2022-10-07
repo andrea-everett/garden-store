@@ -67,10 +67,11 @@
         <p>We are a family-run farm, specializing in heirloom flowers & seasonal vegetables.</p>
     </section>
 
-    <section class="product-display">
-        <figure class="product-img" id="product-img">
-            <img src="flower-books.png">   
-            <figcaption>Books  <br>Shop Here</figcaption>
+    <section data-store-container class="product-display">
+
+        <figure data-store-item  class="product-img" id="product-img">
+            <img data-image src="flower-books.png">   
+            <figcaption data-name>Books  <br>Shop Here</figcaption>
         </figure>
 
         <figure class="product-img" id="garden-img">
@@ -145,6 +146,14 @@
         
         <script type="text/javascript" src="shop.js"></script>
         <script type="text/javascript" src="shoppingCart.js"></script>
+        <script type="text/javascript" src="script.js"></script>
         <footer-component></footer-component>
+
+        <template id="shop-item-template">
+            <figure class="product-img" id="product-img">
+                <img src="flower-books.png">   
+                <figcaption>Books  <br>Shop Here</figcaption>
+            </figure>
+        </template>
 </body>
 </html>
