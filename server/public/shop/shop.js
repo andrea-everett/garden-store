@@ -16,7 +16,7 @@ function renderStoreItem(item) {
     const container = storeItem.querySelector("[data-store-item]")
     container.dataset.itemId = item.itemId
 
-    const name = storeItem.querySelector("[data-name")
+    const name = storeItem.querySelector("[data-name]")
     name.innerText = item.name
 
     const image = storeItem.querySelector("[data-image]")
