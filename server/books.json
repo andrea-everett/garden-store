@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name" : "Beginner's Guide to Farming",
+        "priceCents" : 995,
+        "imageColor" : "00F"
+    },
+    {
+        "id": 2,
+        "name" : "Organic Farming",
+        "priceCents" : 4095,
+        "imageColor" : "00F"
+    },
+    {
+        "id": 3,
+        "name" : "Specialty Seeds",
+        "priceCents" : 3095,
+        "imageColor" : "00F"
+    },
+    {
+        "id": 4,
+        "name" : "How to Curate a Garden Store",
+        "priceCents" : 3095,
+        "imageColor" : "00F"
+    }
+]

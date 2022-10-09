@@ -1,10 +1,10 @@
-import items from './items.json'
+import items from './books.json'
 import formatCurrency from '../../util/formatCurrency'
 import addGlobalEventListener from '../../util/addGlobalEventListener'
 import { addToCart } from "./shoppingCart.js"
 
 const storeItemTemplate = document.querySelector('#store-item-template')
-const storeItemContainer = document.querySelector("[ data-store-container]")
+const storeItemContainer = document.querySelector("[data-store-container]")
 const IMAGE = "flower-books.png"
 
 console.log(items)

@@ -1,11 +1,11 @@
-import items from '/items.json';
+import items from '/books.json';
 import formatCurrency from '../util/formatCurrency';
 import addGlobalEventListener from '../util/addGlobalEventListener';
 
 const cartButton = document.querySelector("[data-cart-button]")
 const cartItemsWrapper = document.querySelector("[data-cart-items-wrapper]")
 let shoppingCart = []
-const IMAGE =''
+const IMAGE ='./book1.jpeg'
 const cartItemTemplate = document.querySelector('#cart-item-template')
 const cartItemContainer = document.querySelector("[data-cart-items]")
 const cartQuantity = document.querySelector("[data-cart-quantity]")
@@ -46,8 +46,6 @@ export function addToCart(id) {
     renderCart()
     saveCart()
 }
-
-
 
 function removeFromCart(id) {
     const existingItem = shoppingCart.find(entry => entry.id === id)
@@ -102,7 +100,8 @@ function renderCartItems() {
         }
 
         const image = cartItem.querySelector("[data-image]")
-        image.src = `${IMAGE}/${item.imageColor}/${item.imageColor}`
+        image.src = `${IMAGE}`
+        // /${item.imageColor}/${item.imageColor
 
         const price =cartItem.querySelector("[data-price]")
         price.innerText = formatCurrency(item.priceCents * entry.quantity / 100) 
