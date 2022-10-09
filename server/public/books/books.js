@@ -1,5 +1,6 @@
 import items from './items.json'
 import formatCurrency from '../../util/formatCurrency'
+import addGlobalEventListener from '../../util/addGlobalEventListener'
 import { addToCart } from "./shoppingCart.js"
 
 const storeItemTemplate = document.querySelector('#store-item-template')
@@ -9,11 +10,9 @@ const IMAGE = "flower-books.png"
 console.log(items)
 
 export function setupStore() {
-  document.addEventListener('click', e => {
-    if (e.target.matches('[data-add-to-cart-button]')) {
-      const id = e.target.closest('[data-store-item]').dataset.itemId
-      addToCart(parseInt(id))
-    }
+  addGlobalEventListener('click',"[data-add-to-cart-button]", e => {
+    const id = e.target.closest('[data-store-item]').dataset.itemId
+    addToCart(parseInt(id))
   })
   items.forEach(renderStoreItem)
 }

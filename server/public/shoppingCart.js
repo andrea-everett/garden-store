@@ -1,4 +1,6 @@
 import items from '/items.json';
+import formatCurrency from '../util/formatCurrency';
+import addGlobalEventListener from '../util/addGlobalEventListener';
 
 const cartButton = document.querySelector("[data-cart-button]")
 const cartItemsWrapper = document.querySelector("[data-cart-items-wrapper]")
@@ -8,12 +10,31 @@ const cartItemTemplate = document.querySelector('#cart-item-template')
 const cartItemContainer = document.querySelector("[data-cart-items]")
 const cartQuantity = document.querySelector("[data-cart-quantity]")
 const cartTotal = document.querySelector("[data-cart-total]")
+const cart = document.querySelector("[data-cart]")
+const SESSION_STORAGE_KEY ='SHOPPING_CART-cart'
 
-export function setupShoppingCart() {}
+export function setupShoppingCart() {
+    addGlobalEventListener('click', "[data-remove-from-cart-button]", e => {
+        const id = parseInt(e.target.closest("[data-item]").dataset.itemId)
+        removeFromCart(id)
+    })
+
+    shoppingCart = loadCart()
+    renderCart()
+}
 
 cartButton.addEventListener('click',() => [
     cartItemsWrapper.classList.toggle("invisible")
 ] )
+
+function saveCart() {
+    sessionStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(shoppingCart))
+}
+
+function loadCart() {
+    const cart = sessionStorage.getItem(SESSION_STORAGE_KEY)
+    return JSON.parse(cart) || []
+}
 
 export function addToCart(id) {
     const existingItem = shoppingCart.find(entry => entry.id === id)
@@ -23,9 +44,38 @@ export function addToCart(id) {
     shoppingCart.push({ id: parseInt(id), quantity: 1 })
     }
     renderCart()
+    saveCart()
+}
+
+
+
+function removeFromCart(id) {
+    const existingItem = shoppingCart.find(entry => entry.id === id)
+    if (existingItem == null) return
+    shoppingCart = shoppingCart.filter(entry => entry.id !== id)
+    renderCart()
+    saveCart()
 }
 
 function renderCart() {
+    if (shoppingCart.length === 0) {
+        hideCart()
+    } else {
+        showCart()
+        renderCartItems()
+    }
+}
+
+function hideCart() {
+    cart.classList.add("invisible")
+    cartItemsWrapper.classList.add("invisible")
+}
+
+function showCart() {
+    cart.classList.remove("invisible")
+}
+
+function renderCartItems() {
     cartQuantity.innerText = shoppingCart.length
 
     const totalCents = shoppingCart.reduce((sum, entry) => {
