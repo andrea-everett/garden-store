@@ -11,7 +11,8 @@
 </head>
 <body>
 
-    <section data-cart-items-wrapper class="shopping-cart">
+    <section data-cart class="cart">
+    <div data-cart-items-wrapper class="shopping-cart">
         <button data-cart-button class="cart" id="cart"></i></button>
 
         <div class=”Header”>
@@ -25,7 +26,7 @@
                 <div class=”about”>
                     <div class=”title”>Beginner's Guide </div>
                     <div class="quantity">2</div>
-                    <div class=”price”>$29.95</div>
+                    <div class=”price”></div>
                 </div>
 
                 <div class=”Cart-Items”>
@@ -34,7 +35,7 @@
                     <div class=”about”>
                         <div class=”title”>Beginner's Guide </div>
                         <div class="quantity">2</div>
-                        <div class=”price”>$29.95</div>
+                        <div class=”price”></div>
                     </div>
 
                     <div class=”Cart-Items”>
@@ -43,7 +44,7 @@
                         <div class=”about”>
                             <div class=”title”>Beginner's Guide </div>
                             <div class="quantity">2</div>
-                            <div class=”price”>$29.95</div>
+                            <div class=”price”></div>
                         </div>
 
                         <div class=”Cart-Items”>
@@ -51,11 +52,15 @@
             
                             <div class=”about”>
                                 <div class=”title”>Beginner's Guide </div>
-                                <div class="quantity">2</div>
-                                <div class=”price”>$29.95</div>
+                                <div class="quantity"></div>
+                                <div class=”price”></div>
                             </div>
 
-    </section>
+                    <div class="total">
+                        <span class="font-bold text-lg uppercase">Total</span>
+                        <span data-cart-total class="font-bold">$0.00</span>
+                    </div>
+         </section>
   
 
     <div class="hero-section">
@@ -105,32 +110,108 @@
 
         <figure data-store-item class="product-img">
             <img data-image src="book1.jpeg">   
-            <button class="add-to-cart" type="button">Add to cart</button>
+            <button data-add-to-cart-button class="add-to-cart" type="button">Add to cart</button>
             <figcaption data-name class="figcaption">Beginner's Guide to Gardening</figcaption>
-            <figcaption1 data-price class="figcaption">$29.95</figcaption1>
+            <figcaption1 data-price class="figcaption">$9.95</figcaption1>
         </figure>
 
         <figure data-store-item class="product-img">
             <img src="book2.jpeg">
-            <button class="add-to-cart" type="button">Add to cart</button>
+            <button data-add-to-cart-button class="add-to-cart" type="button">Add to cart</button>
             <figcaption>Organic Farming</figcaption>
             <figcaption1 data-price>$40.95</figcaption1>
         </figure>
 
         <figure data-store-item class="product-img">
             <img src="book3.jpeg">
-            <button class="add-to-cart" type="button">Add to cart</button>
+            <button data-add-to-cart-button class="add-to-cart" type="button">Add to cart</button>
             <figcaption>Picking Speciality Seeds </figcaption>
             <figcaption1>$30.95</figcaption1>
         </figure>
 
         <figure data-store-item class="product-img">
             <img src="book4.jpeg">
-            <button class="add-to-cart" type="button">Add to cart</button>
+            <button data-add-to-cart-button class="add-to-cart" type="button">Add to cart</button>
             <figcaption>How to Curate a Garden Store</figcaption>
             <figcaption1>$30.95</figcaption1>
         </figure>
     </section>
+
+    <template id="store-item-template">
+        <section data-store-container class="product-display">
+
+            <figure data-store-item class="product-img">
+                <img data-image src="book1.jpeg">   
+                <button data-add-to-cart-button class="add-to-cart" type="button">Add to cart</button>
+                <figcaption data-name class="figcaption">Beginner's Guide to Gardening</figcaption>
+                <figcaption1 data-price class="figcaption">$9.95</figcaption1>
+            </figure>
+    
+            <figure data-store-item class="product-img">
+                <img src="book2.jpeg">
+                <button data-add-to-cart-button class="add-to-cart" type="button">Add to cart</button>
+                <figcaption>Organic Farming</figcaption>
+                <figcaption1 data-price>$40.95</figcaption1>
+            </figure>
+    
+            <figure data-store-item class="product-img">
+                <img src="book3.jpeg">
+                <button data-add-to-cart-button class="add-to-cart" type="button">Add to cart</button>
+                <figcaption>Picking Speciality Seeds </figcaption>
+                <figcaption1>$30.95</figcaption1>
+            </figure>
+    
+            <figure data-store-item class="product-img">
+                <img src="book4.jpeg">
+                <button data-add-to-cart-button class="add-to-cart" type="button">Add to cart</button>
+                <figcaption>How to Curate a Garden Store</figcaption>
+                <figcaption1>$30.95</figcaption1>
+            </figure>
+    </template>
+
+    <template id="cart-item-template">
+        <div data-cart-items-container class="cart-items-container">
+        <div  data-item class=”Cart-Items”>
+            <img data-image src="./book3.jpeg" height="120px" width="150px"/>
+            <button data-remove-from-cart-button class="remove"></button>
+
+            <div class=”about”>
+                <div data-name class=”title”>Beginner's Guide </div>
+                <div data-quantity class="quantity">2</div>
+                <div data-price class=”price”>$29.95</div>
+            </div>
+
+            <div data-item class=”Cart-Items”>
+                <img data-image src="./book3.jpeg" height="120px" width="150px"/>
+                <button data-remove-from-cart-button class="remove"></button>
+
+                <div class=”about”>
+                    <div data-name class=”title”></div>
+                    <div data-quantity class="quantity"></div>
+                    <div data-price class=”price”></div>
+                </div>
+
+                <div data-item class=”Cart-Items”>
+                    <img data-image src="./book3.jpeg" height="120px" width="150px"/>
+                    <button data-remove-from-cart-button class="remove"></button>
+    
+                    <div class=”about”>
+                        <div data-name class=”title”></div>
+                        <div data-quantity class="quantity"></div>
+                        <div data-price class=”price”></div>
+                    </div>
+
+                    <div data-item class=”Cart-Items”>
+                        <img data-image src="./book3.jpeg" height="120px" width="150px"/>
+                        <button data-remove-from-cart-button class="remove"></button>
+        
+                        <div class=”about”>
+                            <div data-name class=”title”></div>
+                            <div data-quantity class="quantity"></div>
+                            <div data-price class=”price”></div>
+                        </div>
+                    </div>
+    </template>
 
     <script type="text/javascript" src="books.js"></script>
     <script type="text/javascript" src="shoppingCart.js"></script>
