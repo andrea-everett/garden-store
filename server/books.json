@@ -21,6 +21,7 @@
         "id": 4,
         "name" : "How to Curate a Garden Store",
         "priceCents" : 3095,
-        "imageColor" : "00F"
+        "imageColor" : "00F",
+        "imageUrl": "../assets/images/"
     }
 ]

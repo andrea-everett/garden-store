@@ -1,4 +1,4 @@
-import { setupStore } from "./books.js"
+import setupStore from "./books/books.js"
 import { setupShoppingCart } from './shoppingCart.js'
 
 
