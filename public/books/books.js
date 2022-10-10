@@ -1,7 +1,7 @@
 import items from './books.json'
-import formatCurrency from '../../util/formatCurrency'
-import addGlobalEventListener from '../../util/addGlobalEventListener'
-import { addToCart } from "./shoppingCart.js"
+import formatCurrency from '../../server/util/formatCurrency'
+import addGlobalEventListener from '../../server/util/addGlobalEventListener'
+import { addToCart } from "./shoppingCart.js.js"
 
 const storeItemTemplate = document.querySelector('#store-item-template')
 const storeItemContainer = document.querySelector("[data-store-container]")

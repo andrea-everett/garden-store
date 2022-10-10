@@ -1,6 +1,6 @@
 import items from '/books.json';
-import formatCurrency from '../util/formatCurrency';
-import addGlobalEventListener from '../util/addGlobalEventListener';
+import formatCurrency from '../server/util/formatCurrency';
+import addGlobalEventListener from '../server/util/addGlobalEventListener';
 
 const cartButton = document.querySelector("[data-cart-button]")
 const cartItemsWrapper = document.querySelector("[data-cart-items-wrapper]")
