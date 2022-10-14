@@ -6,16 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="shop.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="components/footer.js" type="text/javascript" defer></script>
     <script src="https://js.stripe.com/v3/"></script>
     <title>Document</title>
 </head>
-<button style="font-size:24px">Shopping Cart <i class="fa fa-shopping-cart" id="cart"></i></button>
-<div cart-items-wrapper class="data"></div>
-<div cart-items-wrapper class="invisible"></div>
 
 <body>
+ <div class="cart-modal-overlay">
+    <div class="cart-modal">
+      <i id="close-btn" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">Cart is empty</h1>
+      
+        <div class="product-rows">
+        </div>
+        <div class="total">
+          <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">$0</span>
+              <button class="purchase-btn">PURCHASE</button>
+        </div>
+      </div>
+    </div>
+<!--   end of cart modal -->
+  <div class="cart-btn">
+    <i id="cart" class="fas fa-shopping-cart"></i>
+      <span class ="cart-quantity">0</span>
+  </div>
+
     <div class="hero-section">
         <div class="heading" id="heading"> Everett</div>
             <div class="garden-store">
@@ -90,7 +108,46 @@
             <h1>Featured Products</h1>
             <h2>Shop our curated collection of speciality flower seeds and supplies.</h2>
 
-        <div class="products">
+            <div class="items-container">
+                <div class="card-1 card">
+                  <img class="product-image" src="beet.png"" alt="">
+                    <button class="add-to-cart">Add to cart</button>
+                    <figcaption>Beet Seeds</figcaption>
+                      <span class="product-price">$8.95</span>
+                </div>
+                <div class="card-2 card">
+                  <img class="product-image" src="gloves.png" alt="">
+                  <button class="add-to-cart">Add to cart</button>
+                  <figcaption>Gloves</figcaption>
+                    <span class="product-price">$5.95</span>
+                </div>
+                <div class="card-3 card">
+                  <img class="product-image" src="pruner.png" alt="">
+                    <button class="add-to-cart">Add to cart</button>
+                    <figcaption>Pruners</figcaption>
+                      <span class="product-price">$10.95</span>
+                </div>
+                <div class="card-4 card">
+                  <img class="product-image" src="carrot-seeds.jpeg" alt="">
+                     <button class="add-to-cart">Add to cart</button>
+                     <figcaption>Carrot Seeds</figcaption>
+                    <span class="product-price">$20.95</span>
+                </div>
+                <div class="card-5 card">
+                  <img class="product-image" src="squash.jpeg" alt="">
+                  <button class="add-to-cart">Add to cart</button>
+                  <figcaption>Squash Seeds</figcaption>
+                  <span class="product-price">$8.95</span>
+                </div>
+                <div class="card-5 card">
+                    <img class="product-image" src="snips.png" alt="">
+                    <button class="add-to-cart">Add to cart</button>
+                    <figcaption>Snips</figcaption>
+                    <span class="product-price">$8.95</span>
+                  </div>
+              </div>
+
+        <!-- <div class="products">
                     <figure class="featured-imgs" id="seeds">
                         <img src="beet.png">
                         <figcaption>Beet Seeds</figcaption>
@@ -116,7 +173,7 @@
                         <figcaption>Snips</figcaption>
                     </figure>
             </div>
-    </section>
+    </section> -->
 
     <section class="footer">
         <div class="heading">Everett</div>

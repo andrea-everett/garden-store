@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="tools.css">
     <script src="https://js.stripe.com/v3/"></script>
     <title>Document</title>
 </head>
 <body>
+    <div class="cart-modal-overlay">
+        <div class="cart-modal">
+          <i id="close-btn" class="fas fa-times"></i>
+            <h1 class="cart-is-empty">Cart is empty</h1>
+          
+            <div class="product-rows">
+            </div>
+            <div class="total">
+              <h1 class="cart-total">TOTAL</h1>
+                <span class="total-price">$0</span>
+                  <button class="purchase-btn">PURCHASE</button>
+            </div>
+          </div>
+        </div>
+    <!--   end of cart modal -->
+      <div class="cart-btn">
+        <i id="cart" class="fas fa-shopping-cart"></i>
+          <span class ="cart-quantity">0</span>
+      </div>
+
     <div class="hero-section">
         <div class="heading">Everett</div>
             <div class="garden-store">
@@ -51,8 +72,47 @@
     <div class="border"></div>
 
     <div class="page-count">PAGE 1</div>
+
+    <div class="items-container">
+        <div class="card-1 card">
+          <img class="product-image" src="snips1.jpeg"alt="">
+            <button class="add-to-cart" >Add to cart</button>
+            <figcaption>Wooden Snips</figcaption>
+              <span class="product-price">$8.95</span>
+        </div>
+        <div class="card-2 card">
+          <img class="product-image" src="snips2.jpeg" alt="">
+          <button class="add-to-cart">Add to cart</button>
+          <figcaption>Gloves</figcaption>
+            <span class="product-price">$5.95</span>
+        </div>
+        <div class="card-3 card">
+          <img class="product-image" src="snips3.jpeg" alt="">
+            <button class="add-to-cart">Add to cart</button>
+            <figcaption>Cushioned Snips</figcaption>
+              <span class="product-price">$10.95</span>
+        </div>
+        <div class="card-4 card">
+          <img class="product-image" src="snips3.jpeg" alt="">
+             <button class="add-to-cart">Add to cart</button>
+             <figcaption>Carrot Seeds</figcaption>
+            <span class="product-price">$20.95</span>
+        </div>
+        <div class="card-5 card">
+          <img class="product-image" src="shovel1.jpeg" alt="">
+          <button class="add-to-cart">Add to cart</button>
+          <figcaption>5" Shovel</figcaption>
+          <span class="product-price">$8.95</span>
+        </div>
+        <div class="card-5 card">
+            <img class="product-image" src="shovel.jpeg" alt="">
+            <button class="add-to-cart">Add to cart</button>
+            <figcaption>Shovel Set</figcaption>
+            <span class="product-price">$8.95</span>
+          </div>
+      </div>
     
-    <section class="product-display">
+    <!-- <section class="product-display">
         <figure class="product-img">
             <img src="snips1.jpeg">   
             <button class="add-to-cart" type="button">Add to cart</button>
@@ -108,7 +168,7 @@
             <figcaption>Patterend Garden Gloves</figcaption>
             <figcaption1>$29.95</figcaption1>
         </figure>
-    </section>
+    </section> -->
 
     <script type="text/javascript" src="tools.js"></script>
 </body>

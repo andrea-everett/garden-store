@@ -2,6 +2,196 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
+.cart-btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #cart {
+    position: relative;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 1em 4em 0 0;
+  }
+  
+  .cart-quantity {
+    color: white;
+    background-color:black;
+    padding: .1em .1em;
+    position: absolute;
+    margin: .9em 7.5em 0 0;
+    right: 0;
+    border: solid 2px black;
+    border-radius: 10px;
+    font-weight: bolder;
+  }
+  
+  .items-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    margin: 20px 20px 20px;
+  }
+  
+  .card {
+    margin: 1em;
+    position: relative;
+    overflow: hidden; 
+    text-align: center
+  }
+  
+  .card:hover .add-to-cart {
+    transform: translateX(0);
+  }
+  
+  .product-image {
+    width: 250px;
+    height: 250px;
+   margin: 20px 20px 30px;
+  }
+  
+  .add-to-cart {
+    background-color: burlywood;
+    color: white;
+    position: absolute;
+    right: 40%;
+    left: 30%;
+    top: 55%;
+    padding: .5em 1em; 
+    transform: translateX(500px);
+    width: 150px;
+    transition: .5s ease;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.2rem
+  }
+  
+  .product-price {
+    text-align: center;
+    padding-top: 1em;
+    font-size: 18px;
+  }
+  
+  .cart-modal-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2;
+    transform: translateX(-200%);
+    transition: .5s ease-out;
+    
+  }
+  
+  .cart-modal {
+    height: 100vh;
+    width: 50%;
+    background-color: rgb(50,50,50);
+    float: right;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  
+  #close-btn {
+    font-size: 1.5rem;
+    float: right;
+    margin: .5em 2em 0 0;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .cart-is-empty {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    display: none;
+    
+  }
+  
+  .total {
+    text-align: center;
+    margin: 2em 0 2em 0;
+  /*   display: none; */
+  }
+  
+  .cart-total {
+    color: white;
+  }
+  
+  .total-price {
+    color: white;
+    font-size: 2rem;
+    display: block;
+  }
+  
+  .purchase-btn {
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: green;
+    color: white;
+    padding: 1em 2em;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 2em 0 1em 0;
+  }
+  
+  .product-rows {
+    margin-top: 3em;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .product-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-image {
+    width: 200px;
+    margin: 5px 35px 5px;
+  }
+  
+  .cart-price {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  
+  .product-quantity {
+    width: 30px;
+    height: 20px;
+    font-size: 2rem;
+    margin-left: 3rem;
+  }
+  
+  .remove-btn {
+    padding: 1em 2em;
+    background-color:burlywood;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 3rem;
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+  
+  .remove-btn:active {
+    transform: translateY(5px);
+  }
+  
+button .sign-up {
+    width: 100px;
+    height: 40px;
+    background-color: burlywood;
+    border-width: 2px;
+}
+
 .heading {
     font-family: 'Cedarville Cursive', cursive;
     font-size: 80px;
@@ -251,7 +441,6 @@ figure .featured-imgs {
         margin-right: auto;
         width: 90%;
         gap: 100px;
-
     }
 
     .product-display {
