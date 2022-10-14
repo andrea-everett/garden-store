@@ -4,11 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="seeds.css">
     <script src="https://js.stripe.com/v3/"></script>
     <title>Document</title>
 </head>
 <body>
+      <!--  cart modal  -->
+  <div class="cart-modal-overlay">
+    <div class="cart-modal">
+      <i id="close-btn" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">Cart is empty</h1>
+      
+        <div class="product-rows">
+        </div>
+        <div class="total">
+          <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">$0</span>
+              <button class="purchase-btn">PURCHASE</button>
+        </div>
+      </div>
+    </div>
+<!--   end of cart modal -->
+  <div class="cart-btn">
+    <i id="cart" class="fas fa-shopping-cart"></i>
+      <span class ="cart-quantity">0</span>
+  </div>
+
     <div class="hero-section">
         <div class="heading"> Everett</div>
             <div class="garden-store">
@@ -52,64 +74,112 @@
     <div class="border"></div>
 
     <div class="page-count">PAGE 1</div>
+
+    <div class="items-container">
+        <div class="card-1 card">
+          <img class="product-image" src="corn.jpeg" alt="">
+            <button class="add-to-cart">Add to cart</button>
+              <span class="product-price">$1395</span>
+        </div>
+        <div class="card-2 card">
+          <img class="product-image" src="lettuce.jpeg" alt="">
+          <button class="add-to-cart">Add to cart</button>
+            <span class="product-price">$1175</span>
+        </div>
+        <div class="card-3 card">
+          <img class="product-image" src="zebra-tomato.jpeg" alt="">
+            <button class="add-to-cart">Add to cart</button>
+              <span class="product-price">$1150</span>
+        </div>
+        <div class="card-4 card">
+          <img class="product-image" src="gerbera.jpeg" alt="">
+             <button class="add-to-cart">Add to cart</button>
+            <span class="product-price">$1575</span>
+        </div>
+        <div class="card-5 card">
+          <img class="product-image" src="zucchinni.png" alt="">
+          <button class="add-to-cart">Add to cart</button>
+          <span class="product-price">$1230</span>
+        </div>
+        <div class="card-5 card">
+            <img class="product-image" src="sunflower.jpeg" alt="">
+            <button class="add-to-cart">Add to cart</button>
+            <span class="product-price">$1230</span>
+          </div>
+          <div class="card-5 card">
+            <img class="product-image" src="zucchinni.png" alt="">
+            <button class="add-to-cart">Add to cart</button>
+            <span class="product-price">$1230</span>
+          </div>
+          <div class="card-5 card">
+            <img class="product-image" src="zinnia.jpeg" alt="">
+            <button class="add-to-cart">Add to cart</button>
+            <span class="product-price">$1230</span>
+          </div>
+          <div class="card-5 card">
+            <img class="product-image" src="morning-glory.jpeg" alt="">
+            <button class="add-to-cart">Add to cart</button>
+            <span class="product-price">$1230</span>
+          </div>
+      </div>
     
-    <section class="product-display">
+    <!-- <section class="product-display">
         <figure class="product-img">
-            <img src="corn.jpeg">   
+            <img class="product-image" src="corn.jpeg">   
             <button class="add-to-cart" type="button">Add to cart</button>
             <figcaption>Organic Corn Seeds</figcaption>
-            <figcaption1>$8.95</figcaption1>
+            <figcaption1 class="product-price">$8.95</figcaption1>
         </figure>
 
         <figure class="product-img">
-            <img src="lettuce.jpeg">
+            <img img class="product-image" src="lettuce.jpeg">
             <button class="add-to-cart" type="button">Add to cart</button>
             <figcaption>Organic Lettuce Seeds</figcaption>
             <figcaption1>$5.95</figcaption1>
         </figure>
 
         <figure class="product-img">
-            <img src="zebra-tomato.jpeg">
+            <img img class="product-image" src="zebra-tomato.jpeg">
             <button class="add-to-cart" type="button">Add to cart</button>
             <figcaption>Zebra Tomato Seeds</figcaption>
             <figcaption1>$15.95</figcaption1>
         </figure>
 
         <figure class="product-img">
-            <img src="gerbera.jpeg">
+            <img img class="product-image" src="gerbera.jpeg">
             <button class="add-to-cart" type="button">Add to cart</button>
             <figcaption>Gerbera Daisy Seeds</figcaption>
             <figcaption1>$29.95</figcaption1>
         </figure>
 
         <figure class="product-img">
-            <img src="zucchinni.png">
+            <img img class="product-image" src="zucchinni.png">
             <button class="add-to-cart" type="button">Add to cart</button>
             <figcaption>Zucchinni Seeds</figcaption>
             <figcaption1>$10.95</figcaption1>
         </figure>
 
         <figure class="product-img">
-            <img src="sunflower.jpeg">
+            <img img class="product-image" src="sunflower.jpeg">
             <button class="add-to-cart" type="button">Add to cart</button>
             <figcaption>Sunflower Seeds </figcaption>
             <figcaption1>$10.95</figcaption1>
         </figure>
 
         <figure class="product-img">
-            <img src="zinnia.jpeg">
+            <img img class="product-image" src="zinnia.jpeg">
             <button class="add-to-cart" type="button">Add to cart</button>
             <figcaption>Zinnia Seeds- Multicolor</figcaption>
             <figcaption1>$20.05</figcaption1>
         </figure>
 
         <figure class="product-img">
-            <img src="morning-glory.jpeg">
+            <img img class="product-image" src="morning-glory.jpeg">
             <button class="add-to-cart" type="button">Add to cart</button>
             <figcaption>Morning Glory Seeds</figcaption>
             <figcaption1>$15.95</figcaption1>
         </figure>
-    </section>
+    </section> -->
 
     <script type="text/javascript" src="seeds.js"></script>
 </body>
