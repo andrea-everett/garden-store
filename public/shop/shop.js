@@ -1,4 +1,37 @@
-// open cart modal
+// on button click redirect to home page
+document.querySelector('#heading')
+.addEventListener('click', () => {
+    window.location.href = '../index.html';
+});
+
+// toggle seeds menu
+document.addEventListener("DOMContentLoaded", function(){
+    var navToggle = document.getElementById("menutoggle");
+    var navMenu = document.getElementById("navmenu");
+    navToggle.addEventListener("click", function(e){
+      navMenu.classList.toggle("open");
+    });
+  });
+
+// toggle tools menu
+  document.addEventListener("DOMContentLoaded", function(){
+    var navToggle = document.getElementById("toolstoggle");
+    var navMenu = document.getElementById("toolsmenu");
+    navToggle.addEventListener("click", function(e){
+      navMenu.classList.toggle("open");
+    });
+  });
+
+//   toggle books menu
+document.addEventListener("DOMContentLoaded", function(){
+    var navToggle = document.getElementById("bookstoggle");
+    var navMenu = document.getElementById("booksmenu");
+    navToggle.addEventListener("click", function(e){
+      navMenu.classList.toggle("open");
+    });
+  });
+
+// / open cart modal
 const cart = document.querySelector('#cart');
 const cartModalOverlay = document.querySelector('.cart-modal-overlay');
 
@@ -141,38 +174,6 @@ function purchaseBtnClicked () {
 }
 
 
-// on button click redirect to home page
-document.querySelector('#heading')
-.addEventListener('click', () => {
-    window.location.href = '../index.html';
-});
-
-// toggle seeds menu
-document.addEventListener("DOMContentLoaded", function(){
-    var navToggle = document.getElementById("menutoggle");
-    var navMenu = document.getElementById("navmenu");
-    navToggle.addEventListener("click", function(e){
-      navMenu.classList.toggle("open");
-    });
-  });
-
-// toggle tools menu
-  document.addEventListener("DOMContentLoaded", function(){
-    var navToggle = document.getElementById("toolstoggle");
-    var navMenu = document.getElementById("toolsmenu");
-    navToggle.addEventListener("click", function(e){
-      navMenu.classList.toggle("open");
-    });
-  });
-
-//   toggle books menu
-document.addEventListener("DOMContentLoaded", function(){
-    var navToggle = document.getElementById("bookstoggle");
-    var navMenu = document.getElementById("booksmenu");
-    navToggle.addEventListener("click", function(e){
-      navMenu.classList.toggle("open");
-    });
-  });
 
   document.querySelector('#navmenu')
     .addEventListener('click', () => {
