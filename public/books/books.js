@@ -37,6 +37,33 @@
 
 // toggle seeds menu
 // open cart modal
+document.addEventListener("DOMContentLoaded", function(){
+  var navToggle = document.getElementById("menutoggle");
+  var navMenu = document.getElementById("navmenu");
+  navToggle.addEventListener("click", function(e){
+    navMenu.classList.toggle("open");
+  });
+});
+
+// toggle tools menu
+document.addEventListener("DOMContentLoaded", function(){
+  var navToggle = document.getElementById("toolstoggle");
+  var navMenu = document.getElementById("toolsmenu");
+  navToggle.addEventListener("click", function(e){
+    navMenu.classList.toggle("open");
+  });
+});
+
+//   toggle books menu
+document.addEventListener("DOMContentLoaded", function(){
+  var navToggle = document.getElementById("bookstoggle");
+  var navMenu = document.getElementById("booksmenu");
+  navToggle.addEventListener("click", function(e){
+    navMenu.classList.toggle("open");
+  });
+});
+
+
 const cart = document.querySelector('#cart');
 const cartModalOverlay = document.querySelector('.cart-modal-overlay');
 
@@ -178,29 +205,3 @@ function purchaseBtnClicked () {
   updateCartPrice()
 }
 
-document.addEventListener("DOMContentLoaded", function(){
-    var navToggle = document.getElementById("menutoggle");
-    var navMenu = document.getElementById("navmenu");
-    navToggle.addEventListener("click", function(e){
-      navMenu.classList.toggle("open");
-    });
-  });
-
-// toggle tools menu
-  document.addEventListener("DOMContentLoaded", function(){
-    var navToggle = document.getElementById("toolstoggle");
-    var navMenu = document.getElementById("toolsmenu");
-    navToggle.addEventListener("click", function(e){
-      navMenu.classList.toggle("open");
-    });
-  });
-
-//   toggle books menu
-document.addEventListener("DOMContentLoaded", function(){
-    var navToggle = document.getElementById("bookstoggle");
-    var navMenu = document.getElementById("booksmenu");
-    navToggle.addEventListener("click", function(e){
-      navMenu.classList.toggle("open");
-    });
-  });
-  
