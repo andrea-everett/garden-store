@@ -6,64 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="books.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script type="text/javascript" src="../shoppingCart.js"></script>
+    <script type="module" src="books.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 
 <body>
-    <section data-cart class="invisible">
-        <button data-cart-button i class='bx bx-cart-alt bx-lg'></i></button>
-
-        <div data-cart-items-wrapper class="shopping-cart">
-            
-        <div class=”Header”>
-            <h3 class=”Heading”>Shopping Cart</h3>
-            <h5 class=”Action”>Remove all</h5>
-         </div>
-
-        <div data-cart-items class=”Cart-Items”>
-            <img src="./book3.jpeg" height="120px" width="150px"/>
-
-            <div class=”about”>
-                <div class=”title”>Beginner's Guide </div>
-                <div data-cart-quantity class="quantity">2</div>
-                <div class=”price”></div>
+    <div class="cart-modal-overlay">
+        <div class="cart-modal">
+          <i id="close-btn" class="fas fa-times"></i>
+            <h1 class="cart-is-empty">Cart is empty</h1>
+          
+            <div class="product-rows">
             </div>
-
-            <div data-cart-items class=”Cart-Items”>
-                <img src="./book3.jpeg" height="120px" width="150px"/>
-
-                <div class=”about”>
-                    <div class=”title”>Beginner's Guide </div>
-                    <div data-cart-quantity class="quantity">2</div>
-                    <div class=”price”></div>
-                </div>
-
-                <div data-cart-items class=”Cart-Items”>
-                    <img src="./book3.jpeg" height="120px" width="150px"/>
-
-                    <div class=”about”>
-                        <div class=”title”>Beginner's Guide </div>
-                        <div data-cart-quantity class="quantity">2</div>
-                        <div class=”price”></div>
-                    </div>
-
-                    <div data-cart-items class=”Cart-Items”>
-                        <img src="./book3.jpeg" height="120px" width="150px"/>
-        
-                        <div class=”about”>
-                            <div class=”title”>Beginner's Guide </div>
-                            <div data-cart-quantity class="quantity"></div>
-                            <div class=”price”></div>
-                        </div>
-
-                <div class="total">
-                    <span class="font-bold text-lg uppercase">Total</span>
-                    <span data-cart-total class="font-bold">$0.00</span>
-                </div>
-         </section>
-  
+            <div class="total">
+              <h1 class="cart-total">TOTAL</h1>
+                <span class="total-price">$0</span>
+                <form action="/create-checkout-session" method="POST">
+                    <button type="submit" id="btn">Checkout</button>
+                </form>
+            </div>
+          </div>
+        </div>
+    <!--   end of cart modal -->
+      <div class="cart-btn">
+        <i id="cart" class="fas fa-shopping-cart"></i>
+          <span class ="cart-quantity">0</span>
+      </div>
 
     <div class="hero-section">
         <div class="heading">Everett</div>
@@ -108,9 +79,35 @@
 
     <div class="page-count">PAGE 1</div>
 
-    <section data-store-container class="product-display">
+  
+        <div class="items-container">
+            <div class="card-1 card">
+              <img class="product-image" src="book1.jpeg"alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <figcaption>Beginner's Guide to Gardening</figcaption>
+                  <span class="product-price">$8.95</span>
+            </div>
+            <div class="card-2 card">
+              <img class="product-image" src="book2.jpeg" alt="">
+              <button class="add-to-cart">Add to cart</button>
+              <figcaption>Organic Farming</figcaption>
+                <span class="product-price">$5.95</span>
+            </div>
+            <div class="card-3 card">
+              <img class="product-image" src="book3.jpeg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <figcaption>Picking Specialty Seeds</figcaption>
+                  <span class="product-price">$10.95</span>
+            </div>
+            <div class="card-4 card">
+              <img class="product-image" src="book4.jpeg" alt="">
+                 <button class="add-to-cart">Add to cart</button>
+                 <figcaption>How to Curate a Garden Store</figcaption>
+                <span class="product-price">$20.95</span>
+            </div>
+          </div>
 
-        <figure data-store-item class="product-img">
+        <!-- <figure data-store-item class="product-img">
             <img data-image src="book1.jpeg">   
             <button data-add-to-cart-button class="add-to-cart" type="button">Add to cart</button>
             <figcaption data-name class="figcaption">Beginner's Guide to Gardening</figcaption>
@@ -137,10 +134,10 @@
             <figcaption>How to Curate a Garden Store</figcaption>
             <figcaption1>$30.95</figcaption1>
         </figure>
-    </section>
+    </section> -->
 
-    <template id="cart-item-template">
-        <!-- <div data-cart-items-container class="cart-items-container"> -->
+    <!-- <template id="cart-item-template">
+
         <div  data-item class=”Cart-Items”>
             <img data-image src="./book3.jpeg" height="120px" width="150px"/>
             <button data-remove-from-cart-button class="remove"></button>
@@ -213,9 +210,8 @@
                 <figcaption data-name></figcaption>
                 <figcaption1 data-price></figcaption1>
             </figure>
-    </template>
+    </template> -->
 
-    <script type="module" src="books.js"></script>
     <script type="module" src="shoppingCart.js"></script>
 </body>
 </html>

@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "devStart": "nodemon server.js",
-    "start": "parcel index.html shop.html books.html seeds.html gifts.html",
-    "build": "parcel build index.html shop.html books.html seeds.html gifts.html"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",

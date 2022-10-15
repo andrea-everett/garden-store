@@ -8,7 +8,8 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="module" defer></script>
+    <script src="/public/script.js" type="module" defer></script>
     <script src="https://js.stripe.com/v3/"></script>
     <title>Document</title>
 </head>
@@ -24,7 +25,9 @@
         <div class="total">
           <h1 class="cart-total">TOTAL</h1>
             <span class="total-price">$0</span>
-              <button class="purchase-btn">PURCHASE</button>
+            <form action="/create-checkout-session" method="POST">
+                <button type="submit" id="btn">Checkout</button>
+            </form>
         </div>
       </div>
     </div>
