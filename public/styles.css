@@ -210,6 +210,10 @@ figcaption {
     height: 130px;
 }
 
+.shop a {
+    color: black;
+}
+
 .gifts a {
     font-size: 30px;
 }
