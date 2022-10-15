@@ -1,4 +1,3 @@
-{/* <script src="https://js.stripe.com/v3/"></script> */}
 
 require('dotenv').config()
 
