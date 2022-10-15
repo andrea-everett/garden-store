@@ -142,6 +142,10 @@ p {
     color: white;
 } 
 
+.learn-more a {
+    color: black;
+}
+
 .testimonials {
    display: flex;
    flex-wrap: wrap;
