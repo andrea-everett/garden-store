@@ -586,6 +586,12 @@ form #footer-input {
          height: 250px;
     }
 
+    .items-container {
+        grid-template-columns: repeat(1, minmax(230px, 1fr));
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .featured-products {
         gap: 200px;
         width: 80%;
