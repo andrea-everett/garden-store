@@ -1,7 +1,6 @@
 import setupStore from "./books/books.js"
 import { setupShoppingCart } from './shoppingCart.js'
 
-
 setupStore()
 setupShoppingCart()
 
@@ -60,23 +59,25 @@ const button = document.getElementById("btn")
         })
     }).then(res => {
         
-        if (res.ok)  {
-            console.log('sucess')
-            return res.json()
-            .then(res => {
-                console.log(res)
-                window.location = res.url
-            })
-            .catch(json => Promise.reject(json)) 
-        }
+        if (res.ok)  return res.json().then(json => Promise.reject(json))
+        })
+        .then(({ url }) => {
+            window.location = url
+        }) 
+        .catch(e => {
+            console.error(e.error)
+        })
     })
-    .then(({ url }) => {
-        window.location = url
-    })
-    .catch(e => {
-        console.error(e.error)
-    })
-})
+            // .then(res => {
+            //     console.log(res)
+            //     window.location = res.url
+            // })
+            // .catch(json => Promise.reject(json)) 
+        
+    // })
+    // .then(({ url }) => {
+    //     window.location = url
+
 
 
 
