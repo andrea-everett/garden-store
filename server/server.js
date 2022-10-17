@@ -5,7 +5,6 @@ const app = express()
 const cors = require('cors')
 app.use(express.json())
 app.use(cors({ 
-    origin: 'http://localhost:5500',
 }))
 
 
@@ -52,7 +51,7 @@ app.get('/', (req, res) => {
 }) 
 
 
-app.post('/create-checkout-session', async  (req, res) => {
+app.post('http://localhost:5500/create-checkout-session', async  (req, res) => {
   console.log('starting-checkout');
   console.log('req body', req.body);
   try {

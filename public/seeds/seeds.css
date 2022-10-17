@@ -48,10 +48,6 @@ img {
     text-align: center
   }
   
-  .card:hover .add-to-cart {
-    transform: translateX(0);
-  }
-  
   .product-image {
     margin-bottom: 1em
   }
@@ -60,13 +56,11 @@ img {
     background-color: burlywood;
     color: white;
     position: absolute;
-    right: 40%;
-    left: 30%;
+    position: absolute;
+    right: 15%;
     top: 55%;
     padding: .5em 1em; 
-    transform: translateX(500px);
     width: 150px;
-    transition: .5s ease;
     outline: none;
     border: none;
     cursor: pointer;
@@ -348,8 +342,20 @@ figure .featured-imgs {
 
 
 @media  screen and (max-width: 576px) {
+  .cart-modal {
+    width: 90%;
+  }
+  .cart-image {
+    width: 150px;
+    margin: 0px;
+  }
+
+  form {
+    align-items: center;
+  }
     .heading {
         font-size: 40px;
+        padding: 0px;
     }
 
    #menutoggle {

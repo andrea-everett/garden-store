@@ -377,6 +377,7 @@ form #footer-input {
 
     .course-sign-up {
         text-decoration: none;
+        color: inherit;
     }
 
     .shop-heading {

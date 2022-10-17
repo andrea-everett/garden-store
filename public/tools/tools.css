@@ -39,10 +39,6 @@
     text-align: center
   }
   
-  .card:hover .add-to-cart {
-    transform: translateX(0);
-  }
-  
   .product-image {
     width: 250px;
     height: 250px;
@@ -53,13 +49,14 @@
     background-color: burlywood;
     color: white;
     position: absolute;
+    position: absolute;
+    right: 15%;
+    top: 55%;
     right: 75%;
     left: 35%;
     top: 55%;
     padding: .5em 1em; 
-    transform: translateX(500px);
     width: 150px;
-    transition: .5s ease;
     outline: none;
     border: none;
     cursor: pointer;
