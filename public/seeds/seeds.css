@@ -342,17 +342,22 @@ figure .featured-imgs {
 
 
 @media  screen and (max-width: 576px) {
-  .cart-modal {
-    width: 90%;
+  .cart-btn {
+    display: inline;
+   justify-content: right;
   }
   .cart-image {
     width: 150px;
-    margin: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  form {
-    align-items: center;
-  }
+#btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
     .heading {
         font-size: 40px;
         padding: 0px;
