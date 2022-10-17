@@ -398,11 +398,32 @@ figure .featured-imgs {
     margin-top: 50px;
    }
 
+   #menutoggle {
+    text-decoration: none;
+    color: inherit;
+   }
+
+   #seedstoggle {
+    text-decoration: none;
+    color: inherit;
+   }
+
+   #toolstoggle {
+    text-decoration: none;
+    color: inherit;
+   }
+
+   #bookstoggle {
+    text-decoration: none;
+    color: inherit;
+   }
+
     .img-heading img {
-        width: 80%;
+        width: 90%;
         height: 80%;
         margin-left: auto;
         margin-right: auto;
+        padding: 0px;
         padding-top: 45px;
         gap:100px;
     }
@@ -417,18 +438,21 @@ figure .featured-imgs {
         margin-right: 20px;
     }
 
+  .items-container {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+
     figure {
         display: block;   
         margin-left: auto;
         margin-right: auto;
-    
     }
 
     .product-img {
         display: block;   
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
+        width: 100%;
         gap: 100px;
     }
 
