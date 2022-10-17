@@ -5,7 +5,7 @@ document.querySelector('#heading')
 });
 
 // on button click redirect to testimonials
-document.querySelector('#testimonials')
+document.getElementById('#testimonials')
 .addEventListener('click', () => {
     window.location.href = '../workshop/workshop.html';
 });
