@@ -53,8 +53,8 @@
     background-color: burlywood;
     color: white;
     position: absolute;
-    right: 40%;
-    left: 30%;
+    right: 75%;
+    left: 35%;
     top: 55%;
     padding: .5em 1em; 
     transform: translateX(500px);
@@ -388,17 +388,6 @@ figure .featured-imgs {
     max-width: 1335px;
     margin-left: 10px;
     position: absolute;
-}
-
-.add-to-cart {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: burlywood;
-    color: white;
-    border: none;
-    font-size: 25px;
 }
 
 @media  screen and (max-width: 576px) {

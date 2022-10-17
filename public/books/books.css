@@ -53,8 +53,8 @@
     background-color: burlywood;
     color: white;
     position: absolute;
-    right: 40%;
-    left: 30%;
+    right: 75%;
+    left: 35%;
     top: 55%;
     padding: .5em 1em; 
     transform: translateX(500px);
@@ -432,17 +432,6 @@ figure {
 .product-img img {
     width: 236px;
     height: 236px;
-}
-
-.add-to-cart {
-    position: absolute;
-    background-color: burlywood;
-    color: white;
-    border: none;
-    font-size: 25px;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
 }
 
 .product-img figcaption {
