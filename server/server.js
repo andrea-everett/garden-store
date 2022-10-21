@@ -45,13 +45,13 @@ const YOUR_DOMAIN = 'http://localhost:3000'
 // })
 
 // This is your test secret API key.
-app.get('/', (req, res) => {
-  console.log('hi');
-  res.sendFile('/public/index.html');
-}) 
+// app.get('/', (req, res) => {
+//   console.log('hi');
+//   res.sendFile('../public/index.html');
+// }) 
 
 
-app.post('http://localhost:5500/create-checkout-session', async  (req, res) => {
+app.post('/create-checkout-session', async  (req, res) => {
   console.log('starting-checkout');
   console.log('req body', req.body);
   try {

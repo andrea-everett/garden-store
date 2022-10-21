@@ -136,22 +136,21 @@ function changeQuantity(event) {
   updateCartPrice()
 }
 // end of update quantity input
-
+let cartTotal = 0;
 // update total price
 function updateCartPrice() {
-  var total = 0
   for (var i = 0; i < productRow.length; i += 2) {
     cartRow = productRow[i]
   var priceElement = cartRow.getElementsByClassName('cart-price')[0]
   var quantityElement = cartRow.getElementsByClassName('product-quantity')[0]
   var price = parseFloat(priceElement.innerText.replace('$', ''))
   var quantity = quantityElement.value
-  total = total + (price * quantity )
+  cartTotal = cartTotal + Math.fround(price * quantity)
     
   }
-  document.getElementsByClassName('total-price')[0].innerText =  '$' + total
+  document.getElementsByClassName('total-price')[0].innerText =  '$' + cartTotal
 
-document.getElementsByClassName('cart-quantity')[0].textContent = i /= 2
+  document.getElementsByClassName('cart-quantity')[0].textContent = i /= 2
 }
 // end of update total price
 

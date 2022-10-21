@@ -310,7 +310,9 @@ img {
     }
 
     #products {
+        text-decoration: none;
+        color: inherit;
        justify-content: right;
     }
-
 }
+
