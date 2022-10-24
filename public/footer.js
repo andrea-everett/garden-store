@@ -15,8 +15,9 @@ footerTemplate.innerHTML = `
         }
 
         .heading {
+            margin: 30px 50px 0px;
             font-family: 'Cedarville Cursive', cursive;
-            font-size: 80px;
+            font-size: 50px;
             text-align: center;
         }
 
@@ -28,26 +29,22 @@ footerTemplate.innerHTML = `
             padding: 5px;
         }
 
-        h1 {
-            margin-left: 50px;
-        }
-
         .footer {
             display: flex;
-            padding-bottom: 160px;
+            padding-bottom: 100px;
             background-color: rgb(235, 203, 175);
         }
         
         .footer .heading {
             font-size: 50px;
-            padding-top: 70px;
+            padding-top: 100px;
             margin-left: 100px;
         }
         
         .about {
-            max-width:170px ;
-            line-height: 30px;
-            margin-left: 150px;
+            margin: 50px 100px 50px;
+            width: 170px;
+            line-height: 40px;
             font-family: 'EB Garamond', serif;
             font-size: 18px;
         }
@@ -58,8 +55,9 @@ footerTemplate.innerHTML = `
         }
         
         .social {
-            line-height: 30px;
-            margin-left: 200px;
+            margin: 50px 100px 50px;
+            width: 170px;
+            line-height: 40px;
             font-family: 'EB Garamond', serif;
             font-size: 18px;
         }
@@ -70,24 +68,30 @@ footerTemplate.innerHTML = `
         }
         
         .join  {
-            line-height: 30px;
-            margin-left: 320px;
+            margin: 50px 100px 50px;
+            width: 170px;
+            line-height: 40px;
             font-family: 'EB Garamond', serif;
+            font-size: 18px;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
             align-items: center;
         }
         
         form #footer-input {
-           margin: 10px 50px 10px ;
-           max-width: 150px;
-           height: 5px;
+           margin: 10px 50px 30px ;
+           width: 165px;
+           height: 35px;
         }
 
-        form input {
-            display: block;
-            width: 250px;
-            height: 35px;
-            padding: 10px;
-            text-align: center;
+    button {
+        width: 175px;
+        height: 50px;
+    }
     }
      </style>
      <footer>

@@ -237,7 +237,7 @@ figcaption {
     color: burlywood;
 }
 
-.footer {
+/* .footer {
     display: flex;
     padding-bottom: 160px;
     background-color: rgb(235, 203, 175);
@@ -286,7 +286,7 @@ form #footer-input {
    max-width: 150px;
    height: 5px;
 }
-
+ */
 
 /* FOR SMALL MEDIA DEVICES */
 @media  screen and (max-width: 576px) {

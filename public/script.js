@@ -55,7 +55,7 @@ cartButton.addEventListener("click", () => {
     const cartPrice = grabPrice();
     const cartObj = JSON.stringify({price: parseInt(cartPrice)})
     console.log('cart', cartPrice)
-    fetch('http://localhost:3000/create-checkout-session', {
+    fetch('https://localhost:3000/create-checkout-session', {
         method: "POST", 
         body: '31',
         mode: "cors"
