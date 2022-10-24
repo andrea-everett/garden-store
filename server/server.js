@@ -5,6 +5,7 @@ const app = express()
 const cors = require('cors')
 app.use(express.json())
 app.use(cors({ 
+    origin: "http://localhost:5500"
 }))
 
 
@@ -50,10 +51,10 @@ const YOUR_DOMAIN = 'http://localhost:3000'
 //   res.sendFile('../public/index.html');
 // }) 
 
-
-app.post('/create-checkout-session', async  (req, res) => {
+app.post('/create-checkout-session', async (req, res) => {
   console.log('starting-checkout');
   console.log('req body', req.body);
+  res.status(200)
   try {
             const session = await stripe.checkout.sessions.create({
                 payment_method_types: ['card'],
@@ -71,11 +72,17 @@ app.post('/create-checkout-session', async  (req, res) => {
                         quantity: item.quantity
                     }
                 }),
+                line_items: [
+                    {
+                        price: grabPrice()
+                    } 
+                ],
                 success_url: `${process.env.PUBLIC_URL}/success.html`,
                 cancel_url: `${process.env.PUBLIC_URL}/cancel.html`
             })
             console.log('sucessfull response')
-            res.status(200).json({ url: session.url })
+            res.status(200)
+            .json({ url: session.url })
         } catch (e) {
             res.status(500).json({ error: e.message })
         }
@@ -95,6 +102,5 @@ app.post('/create-checkout-session', async  (req, res) => {
   // });
 
   // res.redirect(303, session.url);
-
 
 app.listen(3000)

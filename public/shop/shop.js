@@ -155,11 +155,11 @@ function updateCartPrice() {
 // end of update total price
 
 // purchase items
-const purchaseBtn = document.querySelector('.purchase-btn');
+// const purchaseBtn = document.querySelector('.purchase-btn');
 
 const closeCartModal = document.querySelector('.cart-modal');
 
-purchaseBtn.addEventListener('click', purchaseBtnClicked)
+// purchaseBtn.addEventListener('click', purchaseBtnClicked)
 
 function purchaseBtnClicked () {
   alert ('Thank you for your purchase');
@@ -214,34 +214,34 @@ document.querySelector('#seeds-img')
 });
 
 // on button click redirect to seeds page
-document.querySelector('#seeds')
-.addEventListener('click', () => {
-    window.location.href = 'https://andrea-everett.github.io/garden-store/seeds/seeds.html';
-});
+// document.querySelector('#seeds')
+// .addEventListener('click', () => {
+//     window.location.href = 'https://andrea-everett.github.io/garden-store/seeds/seeds.html';
+// });
 
 // on button click redirect to seeds page
-document.querySelector('#gloves')
-.addEventListener('click', () => {
-    window.location.href = 'https://andrea-everett.github.io/garden-store/tools/tools.html';
-});
+// document.querySelector('#gloves')
+// .addEventListener('click', () => {
+//     window.location.href = 'https://andrea-everett.github.io/garden-store/tools/tools.html';
+// });
 
 // on button click redirect to seeds page
-document.querySelector('#pruners')
-.addEventListener('click', () => {
-    window.location.href = 'https://andrea-everett.github.io/garden-store/tools/tools.html';
-});
+// document.querySelector('#pruners')
+// .addEventListener('click', () => {
+//     window.location.href = 'https://andrea-everett.github.io/garden-store/tools/tools.html';
+// });
 
 // on button click redirect to seeds page
-document.querySelector('#veg')
-.addEventListener('click', () => {
-    window.location.href = 'https://andrea-everett.github.io/garden-store/seeds/seeds.html';
-});
+// document.querySelector('#veg')
+// .addEventListener('click', () => {
+//     window.location.href = 'https://andrea-everett.github.io/garden-store/seeds/seeds.html';
+// });
 
 // on button click redirect to seeds page
-document.querySelector('#snips')
-.addEventListener('click', () => {
-    window.location.href = 'https://andrea-everett.github.io/garden-store/tools/tools.html';
-});
+// document.querySelector('#snips')
+// .addEventListener('click', () => {
+//     window.location.href = 'https://andrea-everett.github.io/garden-store/tools/tools.html';
+// });
 
 
 

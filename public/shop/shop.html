@@ -8,8 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="components/footer.js" type="module" defer></script>
-    <script src="/public/script.js" type="module" defer></script>
+    <script src="../footer.js" type="text/javascript" defer></script>
     <script src="https://js.stripe.com/v3/"></script>
     <title>Document</title>
 </head>
@@ -24,9 +23,9 @@
         </div>
         <div class="total">
           <h1 class="cart-total">TOTAL</h1>
-            <span class="total-price">$0</span>
-            <form action="http://localhost:3000/create-checkout-session" method="POST">
-                <button type="submit" id="checkout-btn">Checkout</button>
+            <span id="total-price">23</span>
+            <form>
+                <button type="button" id="checkout-btn">Checkout</button>
             </form>
         </div>
       </div>
@@ -205,16 +204,10 @@
             </div>
         </section>
         
-        <script type="text/javascript" src="shop.js"></script>
-        <script type="text/javascript" src="shoppingCart.js"></script>
-        <script type="text/javascript" src="script.js"></script>
-        <footer-component></footer-component>
+        <script type="text/javascript" src="./shop.js"></script>
+        <!-- <script type="text/javascript" src="../shoppingCart.js"></script> -->
+        <script type="module" src="../script.js"></script>
 
-        <template id="shop-item-template">
-            <figure class="product-img" id="product-img">
-                <img src="flower-books.png">   
-                <figcaption>Books  <br>Shop Here</figcaption>
-            </figure>
-        </template>
-</body>
+        <footer-component></footer-component>
+    </body>
 </html>
