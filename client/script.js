@@ -44,17 +44,17 @@ function sendEmail() {
 
 var stripe= Stripe('pk_live_51LgH1XB6d5FKrU8pLOm7kDtW2ls5eTvlkCJhggqL8KwMfMDHtgXGeherqOzgI9EaQ9Q9c7A9OplCd6fmACMJ4PbT00rZV2vs17');
 
-function grabPrice() {
-    const cartPrice = document.getElementById('total-price').innerHTML 
-    console.log(cartPrice)
-    return cartPrice
-}
+// function grabPrice() {
+//     const cartPrice = document.getElementById('total-price').innerHTML 
+//     console.log(cartPrice)
+//     return cartPrice
+// }
 const cartButton = document.getElementById("checkout-btn")
 
 cartButton.addEventListener("click", () => {
-    const cartPrice = grabPrice();
-    const cartObj = JSON.stringify({price: parseInt(cartPrice)})
-    fetch('https://localhost:3000/create-checkout-session', {
+    // const cartPrice = grabPrice();
+    // const cartObj = JSON.stringify({price: parseInt(cartPrice)})
+    fetch('http://localhost:3000/create-checkout-session', {
         method: "POST", 
         headers: {
             "Content-Type": "application/json",

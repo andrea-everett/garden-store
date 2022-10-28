@@ -73,8 +73,8 @@ app.post('/create-checkout-session', async (req, res) => {
                         price: grabPrice()
                     } 
                 ],
-                success_url: `${process.env.PUBLIC_URL}/success.html`,
-                cancel_url: `${process.env.PUBLIC_URL}/cancel.html`
+                success_url: `${process.env.CLIENT_URL}/success.html`,
+                cancel_url: `${process.env.CLIENT_URL}/cancel.html`
             })
             console.log('sucessfull response')
             res.status(200)
