@@ -42,7 +42,7 @@ function sendEmail() {
     );
 }
 
-var stripe= Stripe('pk_test_51LgH1XB6d5FKrU8p4rlu3Tl8eoGfMbimKwRkp4HQPoAjeEkpAA4VVyWflc9PLPf410pITc8rtM4vuFPLsPKIJ4W100n9c1lHPr');
+var stripe= Stripe('pk_live_51LgH1XB6d5FKrU8pLOm7kDtW2ls5eTvlkCJhggqL8KwMfMDHtgXGeherqOzgI9EaQ9Q9c7A9OplCd6fmACMJ4PbT00rZV2vs17');
 
 function grabPrice() {
     const cartPrice = document.getElementById('total-price').innerHTML 
@@ -54,11 +54,17 @@ const cartButton = document.getElementById("checkout-btn")
 cartButton.addEventListener("click", () => {
     const cartPrice = grabPrice();
     const cartObj = JSON.stringify({price: parseInt(cartPrice)})
-    console.log('cart', cartPrice)
     fetch('https://localhost:3000/create-checkout-session', {
         method: "POST", 
-        body: '31',
-        mode: "cors"
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            items: [
+                { id: 1, quantity: 3 },
+                { id:2, quantity: 1 },
+            ]
+        })
     }).then(res => {
         console.log('resp in event listener', res)
         if (res.ok)  return res.json().then(json => Promise.reject(json))
