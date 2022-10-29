@@ -155,11 +155,11 @@ function updateCartPrice() {
 // end of update total price
 
 // purchase items
-// const purchaseBtn = document.querySelector('.purchase-btn');
+const purchaseBtn = document.querySelector('.purchase-btn');
 
 const closeCartModal = document.querySelector('.cart-modal');
 
-// purchaseBtn.addEventListener('click', purchaseBtnClicked)
+purchaseBtn.addEventListener('click', purchaseBtnClicked)
 
 function purchaseBtnClicked () {
   alert ('Thank you for your purchase');
