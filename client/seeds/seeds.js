@@ -144,9 +144,6 @@ function purchaseBtnClicked () {
 //alert user if cart is empty 
 
 
-
-
-
 // toggle seeds menu
 document.addEventListener("DOMContentLoaded", function(){
     var navToggle = document.getElementById("menutoggle");

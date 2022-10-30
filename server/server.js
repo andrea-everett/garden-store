@@ -1,4 +1,5 @@
 require('dotenv').config()
+const path = require('path');
 // const cors = require('cors')
 
 const express = require("express")
@@ -8,7 +9,7 @@ const app = express()
 // }
 
 // app.use(cors(corsOptions))
-
+app.use(express.static(path.join(__dirname, "..", "client")));
 app.use(express.json())
 
 const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY)
@@ -90,8 +91,8 @@ app.post('/create-checkout-session', async (req, res) => {
     })
 
     app.get('/', (req, res) => {
-        res.sendFile('../client/index.html')
-    })
+        return res.sendFile(path.join(__dirname, '..', 'client/index.html'));
+      })
   // const session = await stripe.checkout.sessions.create({
   //   line_items: [
   //     {
@@ -107,5 +108,5 @@ app.post('/create-checkout-session', async (req, res) => {
   // });
 
   // res.redirect(303, session.url);
-
-app.listen(3000)
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => { console.log(`listenning to port ${PORT}` )})
