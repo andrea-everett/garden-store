@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm run devStart",
+    "start": "node server.js",
     "devStart": "nodemon server.js",
     "dev": "nodemon server.js"
   },
