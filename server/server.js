@@ -88,6 +88,10 @@ app.post('/create-checkout-session', async (req, res) => {
             res.status(500).json({ error: e.message })
         }
     })
+
+    app.get('/', (req, res) => {
+        res.sendFile('../client/index.html')
+    })
   // const session = await stripe.checkout.sessions.create({
   //   line_items: [
   //     {
