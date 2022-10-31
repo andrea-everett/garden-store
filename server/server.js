@@ -16,7 +16,7 @@ const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY)
 
 
 const storeItems = new Map([
-    [1, { priceInCents: 10000, name: "Learn React Today"}],
+    [1, { priceInCents: 895, name: "Sunflower Seeds"}],
     [ 2, { priceInCents: 20000, name: "Learn CSS Today"}],
 ])
 
