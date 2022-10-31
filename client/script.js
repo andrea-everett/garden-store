@@ -65,9 +65,7 @@ testButton.addEventListener("click", () => {
 })
 
 cartButton.addEventListener("click", () => {
-    // const cartPrice = grabPrice();
-    // const cartObj = JSON.stringify({price: parseInt(cartPrice)})
-    fetch('http://localhost:3000/create-checkout-session', {
+    fetch('https://localhost:3000/create-checkout-session', {
         method: "POST", 
         headers: {
             "Content-Type": "application/json",
