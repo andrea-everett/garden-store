@@ -65,7 +65,7 @@ testButton.addEventListener("click", () => {
 })
 
 cartButton.addEventListener("click", () => {
-    fetch('http://localhost:3000/create-checkout-session', {
+    fetch('https://localhost:3000/create-checkout-session', {
         method: "POST", 
         headers: {
             "Content-Type": "application/json",
