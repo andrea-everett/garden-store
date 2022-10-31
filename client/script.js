@@ -68,66 +68,66 @@ cartButton.addEventListener("click", () => {
     fetch('http://localhost:3000/create-checkout-session', {
         method: "POST", 
         headers: {
-            'Content-Type': "application/json"
+            "Content-Type": "application/json",
         },
         body: JSON.stringify({
             items: [
                 { id: 1, quantity: 3 },
-                { id: 2, quantity: 1 }
+                { id:2, quantity: 1 },
             ]
         })
     }).then(res => {
+        console.log('resp in event listener', res)
+        // if (res.ok)  return res.json().then(json => Promise.reject(json))
+        // if (res.ok)  res.json().then(json => console.log(json)).then( url => console.log(url))
+        if (res.ok)  return res.json()
+    }).then(( {url} ) => {
+        // console.log(url)
+        window.location =url
+    }).catch(e => {
+        console.error(e)
+    })  
+})
+
+
+
+
+
+
+
+
+    // fetch('http://localhost:3000/create-checkout-session', {
+    //     method: "POST", 
+    //     headers: {
+    //         'Content-Type': "application/json"
+    //     },
+    //     body: JSON.stringify({
+    //         items: [
+    //             { id: 1, quantity: 3 },
+    //             { id: 2, quantity: 1 }
+    //         ]
+    //     })
+    // }).then(res => {
         
-        if (res.ok)  return res.json().then(json => Promise.reject(json))
-        })
-        .then(({ url }) => {
-            window.location = res.url
-        }) 
-        .catch(e => {
-            console.error(e.error)
-        })
-    })
-            .then(res => {
-                console.log(res)
-                window.location = res.url
-            })
-            .catch(json => Promise.reject(json)) 
-
-
-
-//     fetch('http://localhost:3000/create-checkout-session', {
-//         method: "POST", 
-//         headers: {
-//             "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify({
-//             items: [
-//                 { id: 1, quantity: 3 },
-//                 { id:2, quantity: 1 },
-//             ]
-//         })
-//     }).then(res => {
-//         console.log('resp in event listener', res)
-//         // if (res.ok)  return res.json().then(json => Promise.reject(json))
-//         // if (res.ok)  res.json().then(json => console.log(json)).then( url => console.log(url))
-//         if (res.ok)  return res.json()
-//     }).then(( {url} ) => {
-//         // console.log(url)
-//         window.location =url
-//     }).catch(e => {
-//         console.error(e)
-//     })  
-// })
-
-
-
-
-
-
-
-
-
+    //     if (res.ok)  return res.json().then(json => Promise.reject(json))
+    //     })
+    //     .then(({ url }) => {
+    //         window.location = res.url
+    //     }) 
+    //     .catch(e => {
+    //         console.error(e.error)
+    //     })
+    // })
+    //         // .then(res => {
+    //         //     console.log(res)
+    //         //     window.location = res.url
+    //         // })
+    //         // .catch(json => Promise.reject(json)) 
         
+    // // })
+    // // .then(({ url }) => {
+    // //     window.location = url
+
 
 
 
