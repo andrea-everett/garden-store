@@ -60,54 +60,59 @@ app.post('/test', (req, res)=>{
 } )
 
 app.post('/create-checkout-session', async (req, res) => {
-  console.log('starting-checkout');
-  console.log(' body from checkout endpoint', req.body);
+    const session = await stripe.checkout.sessions.create({
+        line_items: [
+          {
+            // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
+            price: '{{pr_1234}}',
+            quantity: 1,
+          },
+        ],
+        mode: 'payment',
+        success_url: `${process.env.CLIENT_URL}/success.html`,
+        cancel_url: `${process.env.CLIENT_URL}/cancel.html`,
+        automatic_tax: {enabled: true},
+      });
+    
+   
+//   console.log('starting-checkout');
+//   console.log(' body from checkout endpoint', req.body);
+
 //   res.status(200)
-  try {
-            const session = await stripe.checkout.sessions.create({
-                payment_method_types: ['card'],
-                mode: "payment",
-                line_items: req.body.items.map(item => {
-                    const storeItem = storeItems.get(item.id)
-                    return {
-                        price_data: {
-                            currency: 'usd',    
-                            product_data: {
-                                name: storeItem.name
-                            },
-                            unit_amount: storeItem.priceInCents,
-                        },
-                        quantity: item.quantity
-                    }
-                }),
-                success_url: `${process.env.CLIENT_URL}/success.html`,
-                cancel_url: `${process.env.CLIENT_URL}/cancel.html`
-            })
-            console.log('sucessfull response')
-            res.status(200) .json({ url: session.url })
-        } catch (e) {
-            res.status(500).json({ error: e.message })
-        }
-    })
+//   try {
+//             const session = await stripe.checkout.sessions.create({
+//                 payment_method_types: ['card'],
+//                 mode: "payment",
+//                 line_items: req.body.items.map(item => {
+//                     const storeItem = storeItems.get(item.id)
+//                     return {
+//                         price_data: {
+//                             currency: 'usd',    
+//                             product_data: {
+//                                 name: storeItem.name
+//                             },
+//                             unit_amount: storeItem.priceInCents,
+//                         },
+//                         quantity: item.quantity
+//                     }
+//                 }),
+//                 success_url: `${process.env.CLIENT_URL}/success.html`,
+//                 cancel_url: `${process.env.CLIENT_URL}/cancel.html`
+//             })
+//             console.log('sucessfull response')
+//             res.status(200) .json({ url: session.url })
+//         } catch (e) {
+//             res.status(500).json({ error: e.message })
+//         }
+//     })
 
-    app.get('/', (req, res) => {
-        return res.sendFile(path.join(__dirname, '..', 'client/index.html'));
-      })
-  const session = await stripe.checkout.sessions.create({
-    line_items: [
-      {
-        // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-        price: '{{pr_1234}}',
-        quantity: 1,
-      },
-    ],
-    mode: 'payment',
-    success_url: `${process.env.CLIENT_URL}/success.html`,
-    cancel_url: `${process.env.CLIENT_URL}/cancel.html`,
-    automatic_tax: {enabled: true},
-  });
 
-  res.redirect(303, session.url);
-  
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => { console.log(`listenning to port ${PORT}` )})
+res.redirect(303, session.url)
+});
+
+app.get('/', (req, res) => {
+return res.sendFile(path.join(__dirname, '..', 'client/index.html'))
+});
+
+const PORT = process.env.PORT || 3000
+app.listen(PORT, () => console.log(`listenning to port ${PORT}` ))
