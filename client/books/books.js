@@ -37,33 +37,7 @@
 
 // toggle seeds menu
 // open cart modal
-document.addEventListener("DOMContentLoaded", function(){
-  var navToggle = document.getElementById("menutoggle");
-  var navMenu = document.getElementById("navmenu");
-  navToggle.addEventListener("click", function(e){
-    navMenu.classList.toggle("open");
-  });
-});
-
-// toggle tools menu
-document.addEventListener("DOMContentLoaded", function(){
-  var navToggle = document.getElementById("toolstoggle");
-  var navMenu = document.getElementById("toolsmenu");
-  navToggle.addEventListener("click", function(e){
-    navMenu.classList.toggle("open");
-  });
-});
-
-//   toggle books menu
-document.addEventListener("DOMContentLoaded", function(){
-  var navToggle = document.getElementById("bookstoggle");
-  var navMenu = document.getElementById("booksmenu");
-  navToggle.addEventListener("click", function(e){
-    navMenu.classList.toggle("open");
-  });
-});
-
-
+// open cart modal
 const cart = document.querySelector('#cart');
 const cartModalOverlay = document.querySelector('.cart-modal-overlay');
 
@@ -109,18 +83,19 @@ function addToCartClicked (event) {
   updateCartPrice()
 }
 
-function addItemToCart (price, imageSrc) {
+ function addItemToCart (price, imageSrc) {
+  const existingItem = shoppingCart.find(entry => entry.price=== price)
+  if (existingItem) {
+    existingItem.quantity++
+  } else {
+    shoppingCart.push({ id: id, quantity: 1 })
+  }
+  renderCart()
+  
   var productRow = document.createElement('div');
   productRow.classList.add('product-row');
   var productRows = document.getElementsByClassName('product-rows')[0];
   var cartImage = document.getElementsByClassName('cart-image');
-  
-  for (var i = 0; i < cartImage.length; i++){
-    if (cartImage[i].src == imageSrc){
-      alert ('This item has already been added to the cart')
-      return;
-    }
-  }
   
   var cartRowItems = `
   <div class="product-row">
@@ -205,3 +180,7 @@ function purchaseBtnClicked () {
   updateCartPrice()
 }
 
+
+const storage = localStorage.getItem('.total-price');
+
+localStorage.setItem('total-price', 'cart-count')
