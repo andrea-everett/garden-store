@@ -83,7 +83,7 @@ cartButton.addEventListener("click", () => {
         if (res.ok)  return res.json()
     }).then(( {url} ) => {
         // console.log(url)
-        window.location =url
+        window.location =res.url
     }).catch(e => {
         console.error(e)
     })  
