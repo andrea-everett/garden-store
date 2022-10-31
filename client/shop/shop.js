@@ -78,24 +78,16 @@ document.addEventListener("DOMContentLoaded", function(){
   }
   
   function addItemToCart (price, imageSrc) {
-      const existingItem = shoppingCart.find(entry => entry.price=== price)
-      if (existingItem) {
-        existingItem.quantity++
-      } else {
-        shoppingCart.push({ id: id, quantity: 1 })
-      }
-      renderCart()
-      
-      var productRow = document.createElement('div');
-      productRow.classList.add('product-row');
-      var productRows = document.getElementsByClassName('product-rows')[0];
-      var cartImage = document.getElementsByClassName('cart-image');
+    var productRow = document.createElement('div');
+    productRow.classList.add('product-row');
+    var productRows = document.getElementsByClassName('product-rows')[0];
+    var cartImage = document.getElementsByClassName('cart-image');
     
-      for (var i = 0; i < cartImage.length; i++){
-        if (cartImage[i].src == imageSrc){
-          alert ('This item has already been added to the cart')
-          return;
-        }
+    for (var i = 0; i < cartImage.length; i++){
+      if (cartImage[i].src == imageSrc){
+        alert ('This item has already been added to the cart')
+        return;
+      }
     }
     
     var cartRowItems = `
@@ -114,7 +106,30 @@ document.addEventListener("DOMContentLoaded", function(){
     updateCartPrice()
   }
   // end of add products to cart
-  
+  // local storage
+  var cartId = "cart";
+   
+  var localAdapter = {
+   
+      saveCart: function (object) {
+   
+          var stringified = JSON.stringify(object);
+          localStorage.setItem(cartId, stringified);
+          return true;
+   
+      },
+      getCart: function () {
+   
+          return JSON.parse(localStorage.getItem(cartId));
+   
+      },
+      clearCart: function () {
+   
+          localStorage.removeItem(cartId);
+   
+      }
+   
+  };
   // Remove products from cart
   const removeBtn = document.getElementsByClassName('remove-btn');
   for (var i = 0; i < removeBtn.length; i++) {
@@ -157,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function(){
     total = total + (price * quantity )
       
     }
-  document.getElementsByClassName('total-price')[0].innerText =  '$' + total
+    document.getElementsByClassName('total-price')[0].innerText =  '$' + total
   
   document.getElementsByClassName('cart-quantity')[0].textContent = i /= 2
   }
@@ -180,7 +195,8 @@ document.addEventListener("DOMContentLoaded", function(){
    }
     updateCartPrice()
   }
-
+  
+  
   // set local storage
   const storage = localStorage.getItem('.total-price');
 

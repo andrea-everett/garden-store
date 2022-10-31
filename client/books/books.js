@@ -38,6 +38,8 @@
 // toggle seeds menu
 // open cart modal
 // open cart modal
+// / open cart modal
+
 const cart = document.querySelector('#cart');
 const cartModalOverlay = document.querySelector('.cart-modal-overlay');
 
@@ -63,7 +65,29 @@ cartModalOverlay.addEventListener('click', (e) => {
   }
 })
 // end of close cart modal
-
+var cartId = "cart";
+   
+var localAdapter = {
+ 
+    saveCart: function (object) {
+ 
+        var stringified = JSON.stringify(object);
+        localStorage.setItem(cartId, stringified);
+        return true;
+ 
+    },
+    getCart: function () {
+ 
+        return JSON.parse(localStorage.getItem(cartId));
+ 
+    },
+    clearCart: function () {
+ 
+        localStorage.removeItem(cartId);
+ 
+    }
+ 
+};
 // add products to cart
 const addToCart = document.getElementsByClassName('add-to-cart');
 const productRow = document.getElementsByClassName('product-row');
@@ -83,19 +107,18 @@ function addToCartClicked (event) {
   updateCartPrice()
 }
 
- function addItemToCart (price, imageSrc) {
-  const existingItem = shoppingCart.find(entry => entry.price=== price)
-  if (existingItem) {
-    existingItem.quantity++
-  } else {
-    shoppingCart.push({ id: id, quantity: 1 })
-  }
-  renderCart()
-  
+function addItemToCart (price, imageSrc) {
   var productRow = document.createElement('div');
   productRow.classList.add('product-row');
   var productRows = document.getElementsByClassName('product-rows')[0];
   var cartImage = document.getElementsByClassName('cart-image');
+  
+  for (var i = 0; i < cartImage.length; i++){
+    if (cartImage[i].src == imageSrc){
+      alert ('This item has already been added to the cart')
+      return;
+    }
+  }
   
   var cartRowItems = `
   <div class="product-row">
@@ -113,7 +136,30 @@ function addToCartClicked (event) {
   updateCartPrice()
 }
 // end of add products to cart
-
+// local storage
+var cartId = "cart";
+ 
+var localAdapter = {
+ 
+    saveCart: function (object) {
+ 
+        var stringified = JSON.stringify(object);
+        localStorage.setItem(cartId, stringified);
+        return true;
+ 
+    },
+    getCart: function () {
+ 
+        return JSON.parse(localStorage.getItem(cartId));
+ 
+    },
+    clearCart: function () {
+ 
+        localStorage.removeItem(cartId);
+ 
+    }
+ 
+};
 // Remove products from cart
 const removeBtn = document.getElementsByClassName('remove-btn');
 for (var i = 0; i < removeBtn.length; i++) {
@@ -180,7 +226,3 @@ function purchaseBtnClicked () {
   updateCartPrice()
 }
 
-
-const storage = localStorage.getItem('.total-price');
-
-localStorage.setItem('total-price', 'cart-count')

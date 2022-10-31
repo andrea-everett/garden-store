@@ -52,7 +52,29 @@ cartModalOverlay.addEventListener('click', (e) => {
   }
 })
 // end of close cart modal
-
+var cartId = "cart";
+   
+var localAdapter = {
+ 
+    saveCart: function (object) {
+ 
+        var stringified = JSON.stringify(object);
+        localStorage.setItem(cartId, stringified);
+        return true;
+ 
+    },
+    getCart: function () {
+ 
+        return JSON.parse(localStorage.getItem(cartId));
+ 
+    },
+    clearCart: function () {
+ 
+        localStorage.removeItem(cartId);
+ 
+    }
+ 
+};
 // add products to cart
 const addToCart = document.getElementsByClassName('add-to-cart');
 const productRow = document.getElementsByClassName('product-row');
@@ -101,7 +123,30 @@ function addItemToCart (price, imageSrc) {
   updateCartPrice()
 }
 // end of add products to cart
-
+// local storage
+var cartId = "cart";
+ 
+var localAdapter = {
+ 
+    saveCart: function (object) {
+ 
+        var stringified = JSON.stringify(object);
+        localStorage.setItem(cartId, stringified);
+        return true;
+ 
+    },
+    getCart: function () {
+ 
+        return JSON.parse(localStorage.getItem(cartId));
+ 
+    },
+    clearCart: function () {
+ 
+        localStorage.removeItem(cartId);
+ 
+    }
+ 
+};
 // Remove products from cart
 const removeBtn = document.getElementsByClassName('remove-btn');
 for (var i = 0; i < removeBtn.length; i++) {
