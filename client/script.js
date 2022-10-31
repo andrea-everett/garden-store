@@ -42,7 +42,7 @@ function sendEmail() {
     );
 }
 
-var stripe= Stripe('pk_test_51LgH1XB6d5FKrU8p4rlu3Tl8eoGfMbimKwRkp4HQPoAjeEkpAA4VVyWflc9PLPf410pITc8rtM4vuFPLsPKIJ4W100n9c1lHPr');
+var stripe= Stripe('pk_live_51LgH1XB6d5FKrU8pLOm7kDtW2ls5eTvlkCJhggqL8KwMfMDHtgXGeherqOzgI9EaQ9Q9c7A9OplCd6fmACMJ4PbT00rZV2vs17');
 
 // function grabPrice() {
 //     const cartPrice = document.getElementById('total-price').innerHTML 
