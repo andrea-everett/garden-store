@@ -93,20 +93,21 @@ app.post('/create-checkout-session', async (req, res) => {
     app.get('/', (req, res) => {
         return res.sendFile(path.join(__dirname, '..', 'client/index.html'));
       })
-  // const session = await stripe.checkout.sessions.create({
-  //   line_items: [
-  //     {
-  //       // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-  //       price: '{{pr_1234}}',
-  //       quantity: 1,
-  //     },
-  //   ],
-  //   mode: 'payment',
-  //   success_url: `${process.env.SERVER_URL}/success.html`,
-  //   cancel_url: `${process.env.SERVER_URL}/cancel.html`,
-  //   automatic_tax: {enabled: true},
-  // });
+  const session = await stripe.checkout.sessions.create({
+    line_items: [
+      {
+        // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
+        price: '{{pr_1234}}',
+        quantity: 1,
+      },
+    ],
+    mode: 'payment',
+    success_url: `${process.env.CLIENT_URL}/success.html`,
+    cancel_url: `${process.env.CLIENT_URL}/cancel.html`,
+    automatic_tax: {enabled: true},
+  });
 
-  // res.redirect(303, session.url);
+  res.redirect(303, session.url);
+  
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => { console.log(`listenning to port ${PORT}` )})
