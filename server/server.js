@@ -12,13 +12,20 @@ const app = express()
 app.use(express.static(path.join(__dirname, "..", "client")));
 app.use(express.json())
 
+
 const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY)
+const product = await stripe.prodcuts.create({name: 'Squash Seeds'})
 
+const price = await stripe.prices.create({
+    product: '{{price_1Lz3NIB6d5FKrU8pjV9UjYRO}}',
+    unit_amount: 895,
+    currency: 'usd',
+  });
 
-const storeItems = new Map([
-    [1, { priceInCents: 895, name: "Sunflower Seeds"}],
-    [ 2, { priceInCents: 20000, name: "Learn CSS Today"}],
-])
+// const storeItems = new Map([
+//     [1, { priceInCents: 895, name: "Sunflower Seeds"}],
+//     // [ 2, { priceInCents: 20000, name: "Learn CSS Today"}],
+// ])
 
 const YOUR_DOMAIN = 'http://localhost:3000'
 
@@ -60,26 +67,27 @@ app.post('/test', (req, res)=>{
 } )
 
 app.post('/create-checkout-session', async (req, res) => {
-  console.log('starting-checkout');
-  console.log(' body from checkout endpoint', req.body);
+//   console.log('starting-checkout');
+//   console.log(' body from checkout endpoint', req.body);
 //   res.status(200)
   try {
             const session = await stripe.checkout.sessions.create({
                 payment_method_types: ['card'],
                 mode: "payment",
-                line_items: req.body.items.map(item => {
-                    const storeItem = storeItems.get(item.id)
-                    return {
-                        price_data: {
-                            currency: 'usd',    
-                            product_data: {
-                                name: storeItem.name
-                            },
-                            unit_amount: storeItem.priceInCents,
-                        },
-                        quantity: item.quantity
-                    }
-                }),
+                line_items:[{price: '{{PRICE_ID}}', quantity: 1}],
+                //  req.body.items.map(item => {
+                //     const storeItem = storeItems.get(item.id)
+                //     return {
+                //         price_data: {
+                //             currency: 'usd',    
+                //             product_data: {
+                //                 name: storeItem.name
+                //             },
+                //             unit_amount: storeItem.priceInCents,
+                //         },
+                //         quantity: item.quantity
+                //     }
+                // }),
                 success_url: `${process.env.CLIENT_URL}/success.html`,
                 cancel_url: `${process.env.CLIENT_URL}/cancel.html`
             })
