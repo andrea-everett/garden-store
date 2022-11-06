@@ -67,19 +67,21 @@ app.post('/create-checkout-session', async (req, res) => {
             const session = await stripe.checkout.sessions.create({
                 payment_method_types: ['card'],
                 mode: "payment",
-                line_items: req.body.items.map(item => {
-                    const storeItem = storeItems.get(item.id)
-                    return {
-                        price_data: {
-                            currency: 'usd',    
-                            product_data: {
-                                name: storeItem.name
-                            },
-                            unit_amount: storeItem.priceInCents,
-                        },
-                        quantity: item.quantity
-                    }
-                }),
+                line_items: [{price: '{{price_1Lz3NIB6d5FKrU8pjV9UjYRO}}', quantity: 1},
+                                            {price: '{{price_1Lz3MnB6d5FKrU8pKG5t16Pe}}', quantity: 1}],
+                //  req.body.items.map(item => {
+                //     const storeItem = storeItems.get(item.id)
+                //     return {
+                //         price_data: {
+                //             currency: 'usd',    
+                //             product_data: {
+                //                 name: storeItem.name
+                //             },
+                //             unit_amount: storeItem.priceInCents,
+                //         },
+                //         quantity: item.quantity
+                //     }
+                // }),
                 success_url: `${process.env.CLIENT_URL}/success.html`,
                 cancel_url: `${process.env.CLIENT_URL}/cancel.html`
             })
