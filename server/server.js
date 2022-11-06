@@ -15,10 +15,10 @@ app.use(express.json())
 const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY)
 
 
-const storeItems = new Map([
-    [1, { priceInCents: 895, name: "Sunflower Seeds"}],
-    [ 2, { priceInCents: 20000, name: "Learn CSS Today"}],
-])
+// const storeItems = new Map([
+//     [1, { priceInCents: 895, name: "Sunflower Seeds"}],
+//     [ 2, { priceInCents: 20000, name: "Learn CSS Today"}],
+// ])
 
 const YOUR_DOMAIN = 'http://localhost:3000'
 
@@ -68,14 +68,14 @@ app.post('/create-checkout-session', async (req, res) => {
                 payment_method_types: ['card'],
                 mode: "payment",
                 line_items: req.body.items.map(item => {
-                    const storeItem = storeItems.get(item.id)
+                  req.body.get(item.id)
                     return {
                         price_data: {
                             currency: 'usd',    
                             product_data: {
-                                name: storeItem.name
+                                name: item.name
                             },
-                            unit_amount: storeItem.priceInCents,
+                            unit_amount:item.priceInCents,
                         },
                         quantity: item.quantity
                     }

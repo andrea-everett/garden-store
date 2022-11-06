@@ -65,29 +65,27 @@ cartModalOverlay.addEventListener('click', (e) => {
   }
 })
 // end of close cart modal
-var cartId = "cart";
+// var cartId = "cart";
    
-var localAdapter = {
+// var localAdapter = {
  
-    saveCart: function (object) {
+//     saveCart: function (object) {
  
-        var stringified = JSON.stringify(object);
-        localStorage.setItem(cartId, stringified);
-        return true;
+//         var stringified = JSON.stringify(object);
+//         localStorage.setItem(cartId, stringified);
+//         return true;
  
-    },
-    getCart: function () {
+//     },
+//     getCart: function () {
  
-        return JSON.parse(localStorage.getItem(cartId));
+//         return JSON.parse(localStorage.getItem(cartId));
  
-    },
-    clearCart: function () {
+//     },
+//     clearCart: function () {
  
-        localStorage.removeItem(cartId);
+//         localStorage.removeItem(cartId);
  
-    }
- 
-};
+//     }
 // add products to cart
 const addToCart = document.getElementsByClassName('add-to-cart');
 const productRow = document.getElementsByClassName('product-row');
@@ -99,19 +97,26 @@ for (var i = 0; i < addToCart.length; i++) {
 
 function addToCartClicked (event) {
   button = event.target;
-  var cartItem = button.parentElement;
-  var price = cartItem.getElementsByClassName('product-price')[0].innerText;
+  const cartItem = button.parentElement;
+  const price = cartItem.getElementsByClassName('product-price')[0].innerText;
   
-  var imageSrc = cartItem.getElementsByClassName('product-image')[0].src;
+  const imageSrc = cartItem.getElementsByClassName('product-image')[0].src;
   addItemToCart (price, imageSrc);
   updateCartPrice()
 }
 
 function addItemToCart (price, imageSrc) {
-  var productRow = document.createElement('div');
+  let products = [];
+  if(localStorage.getItem('products')) {
+    products = JSON.parse(localStorage.getItem('products'));
+  }
+  products.push({'productId' : productId + 1, image : '<imageLink>'});
+  localStorage.setItem('products', JSON.stringify(products));
+
+  const productRow = document.createElement('div');
   productRow.classList.add('product-row');
-  var productRows = document.getElementsByClassName('product-rows')[0];
-  var cartImage = document.getElementsByClassName('cart-image');
+  const productRows = document.getElementsByClassName('product-rows')[0];
+  const cartImage = document.getElementsByClassName('cart-image');
   
   for (var i = 0; i < cartImage.length; i++){
     if (cartImage[i].src == imageSrc){

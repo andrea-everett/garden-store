@@ -72,7 +72,7 @@ cartButton.addEventListener("click", () => {
         },
         body: JSON.stringify({
             items: [
-                { id: 1, quantity: 3 },
+                { id: 1, quantity: 3, name:'Squash Seeds' },
                 { id:2, quantity: 1 },
             ]
         })
