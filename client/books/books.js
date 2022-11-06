@@ -99,7 +99,8 @@ function addToCartClicked (event) {
   button = event.target;
   const cartItem = button.parentElement;
   const price = cartItem.getElementsByClassName('product-price')[0].innerText;
-  
+  const name = cartItem.getElementsByTypeName('figcaption')[0].innerText;
+
   const imageSrc = cartItem.getElementsByClassName('product-image')[0].src;
   addItemToCart (price, imageSrc);
   updateCartPrice()
@@ -118,14 +119,14 @@ function addItemToCart (price, imageSrc) {
   const productRows = document.getElementsByClassName('product-rows')[0];
   const cartImage = document.getElementsByClassName('cart-image');
   
-  for (var i = 0; i < cartImage.length; i++){
+  for (const i = 0; i < cartImage.length; i++){
     if (cartImage[i].src == imageSrc){
       alert ('This item has already been added to the cart')
       return;
     }
   }
   
-  var cartRowItems = `
+  const cartRowItems = `
   <div class="product-row">
         <img class="cart-image" src="${imageSrc}" alt="">
         <span class ="cart-price">${price}</span>
