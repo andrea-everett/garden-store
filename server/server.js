@@ -68,7 +68,6 @@ app.post('/create-checkout-session', async (req, res) => {
                 payment_method_types: ['card'],
                 mode: "payment",
                 line_items: req.body.items.map(item => {
-                  req.body.get(item.id)
                     return {
                         price_data: {
                             currency: 'usd',    

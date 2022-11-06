@@ -65,16 +65,36 @@ testButton.addEventListener("click", () => {
 })
 
 cartButton.addEventListener("click", () => {
+    const productsRaw = document.getElementsByClassName("product-item")
+    // console.log('productsRaw', productsRaw)
+    const productsArray = Array.from(productsRaw)
+    const products = productsArray.map ((product , index)=> {
+        const name =product.querySelector('.product-name').innerHTML
+        console.log('product-name', name)
+
+        const price =product.querySelector('.product-price').innerHTML
+        console.log('product-price', price)
+
+
+        const parsedPrice = Math.floor(parseFloat(price.replace('$', '')) * 100)
+        console.log(parsedPrice)
+
+        const quantity =product.querySelector('.product-quantity').value
+        console.log('product-quantity', quantity)
+        return {
+            id: index,
+            name: name,
+            priceInCents: parsedPrice,
+            quantity: quantity,
+        }
+    })
     fetch('/create-checkout-session', {
         method: "POST", 
         headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            items: [
-                { id: 1, quantity: 3, name:'Squash Seeds' },
-                { id:2, quantity: 1 },
-            ]
+            items: products
         })
     }).then(res => {
         console.log('resp in event listener', res)
@@ -88,6 +108,7 @@ cartButton.addEventListener("click", () => {
         console.error(e)
     })  
 })
+
 
 
 
