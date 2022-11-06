@@ -17,7 +17,7 @@ const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY)
 
 const storeItems = new Map([
     [1, { priceInCents: 895, name: "Sunflower Seeds"}],
-    // [ 2, { priceInCents: 20000, name: "Learn CSS Today"}],
+    [ 2, { priceInCents: 20000, name: "Learn CSS Today"}],
 ])
 
 const YOUR_DOMAIN = 'http://localhost:3000'
