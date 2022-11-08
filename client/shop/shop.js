@@ -69,35 +69,41 @@ document.addEventListener("DOMContentLoaded", function(){
   
   function addToCartClicked (event) {
     button = event.target;
-    var cartItem = button.parentElement;
-    var price = cartItem.getElementsByClassName('product-price')[0].innerText;
-    
-    var imageSrc = cartItem.getElementsByClassName('product-image')[0].src;
-    addItemToCart (price, imageSrc);
+    const cartItem = button.parentElement;
+    const price = cartItem.getElementsByClassName('product-price')[0].innerText;
+  
+   console.log(price);
+    const name = cartItem.getElementsByClassName('product-name')[0].innerText;
+  
+    console.log(name);
+  
+    const imageSrc = cartItem.getElementsByClassName('product-image')[0].src;
+    addItemToCart (price, name, imageSrc);
     updateCartPrice()
   }
   
-  function addItemToCart (price, imageSrc) {
-    var productRow = document.createElement('div');
-    productRow.classList.add('product-row');
-    var productRows = document.getElementsByClassName('product-rows')[0];
-    var cartImage = document.getElementsByClassName('cart-image');
+  function addItemToCart (price, name, imageSrc) {
+      const productRow = document.createElement('div');
+      productRow.classList.add('product-row');
+      const productRows = document.getElementsByClassName('product-rows')[0];
+      const cartImage = document.getElementsByClassName('cart-image');
     
-    for (var i = 0; i < cartImage.length; i++){
+    for (let i = 0; i < cartImage.length; i++){
       if (cartImage[i].src == imageSrc){
         alert ('This item has already been added to the cart')
         return;
       }
     }
     
-    var cartRowItems = `
-    <div class="product-row">
+  
+    const cartRowItems = `
+    <div class="product-item">
           <img class="cart-image" src="${imageSrc}" alt="">
-          <span class ="cart-price">${price}</span>
+          <span class ="product-price">${price}</span>
+          <span class="product-name">${name}</span>
           <input class="product-quantity" type="number" value="1">
           <button class="remove-btn">Remove</button>
           </div>
-          
         `
     productRow.innerHTML = cartRowItems;
     productRows.append(productRow);
@@ -162,19 +168,19 @@ document.addEventListener("DOMContentLoaded", function(){
   
   // update total price
   function updateCartPrice() {
-    var total = 0
-    for (var i = 0; i < productRow.length; i += 2) {
+    let total = 0
+    for (let i = 0; i < productRow.length; i += 1) {
       cartRow = productRow[i]
-    var priceElement = cartRow.getElementsByClassName('cart-price')[0]
-    var quantityElement = cartRow.getElementsByClassName('product-quantity')[0]
-    var price = parseFloat(priceElement.innerText.replace('$', ''))
-    var quantity = quantityElement.value
+    const priceElement = cartRow.getElementsByClassName('product-price')[0]
+    const quantityElement = cartRow.getElementsByClassName('product-quantity')[0]
+   const price = parseFloat(priceElement.innerText.replace('$', ''))
+   const quantity = quantityElement.value
     total = total + (price * quantity )
       
     }
     document.getElementsByClassName('total-price')[0].innerText =  '$' + total
   
-  document.getElementsByClassName('cart-quantity')[0].textContent = i /= 2
+    document.getElementsByClassName('cart-quantity')[0].textContent = i /= 1
   }
   // end of update total price
   

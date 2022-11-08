@@ -1,45 +1,31 @@
-// import items from './books.json'
-// import formatCurrency from '../../server/util/formatCurrency'
-// import addGlobalEventListener from '../../server/util/addGlobalEventListener'
-// import { addToCart } from "./shoppingCart.js.js"
-
-// const storeItemTemplate = document.querySelector('#store-item-template')
-// const storeItemContainer = document.querySelector("[data-store-container]")
-// const IMAGE = "flower-books.png"
-
-// console.log(items)
-
-// export function setupStore() {
-//   addGlobalEventListener('click',"[data-add-to-cart-button]", e => {
-//     const id = e.target.closest('[data-store-item]').dataset.itemId
-//     addToCart(parseInt(id))
-//   })
-//   items.forEach(renderStoreItem)
-// }
-
-// function renderStoreItem(item) {
-//     const storeItem = storeItemTemplate.content.cloneNode(true)
-
-//     const container = storeItem.querySelector("[data-store-item]")
-//     container.dataset.itemId = item.itemId
-
-//     const name = storeItem.querySelector("[data-name]")
-//     name.innerText = item.name
-
-//     const image = storeItem.querySelector("[data-image]")
-//     image.src = `${IMAGE}/${item.imageColor}/${item.imageColor}`
-
-//     const price = storeItem.querySelector("[data-price]")
-//     price.innerText = formatCurrency(item.priceCents / 100) 
-
-//     storeItemContainer.appendChild(storeItem)
-// }
-
 // toggle seeds menu
-// open cart modal
-// open cart modal
-// / open cart modal
+document.addEventListener("DOMContentLoaded", function(){
+  var navToggle = document.getElementById("menutoggle");
+  var navMenu = document.getElementById("navmenu");
+  navToggle.addEventListener("click", function(e){
+    navMenu.classList.toggle("open");
+  });
+});
 
+// toggle tools menu
+document.addEventListener("DOMContentLoaded", function(){
+  var navToggle = document.getElementById("toolstoggle");
+  var navMenu = document.getElementById("toolsmenu");
+  navToggle.addEventListener("click", function(e){
+    navMenu.classList.toggle("open");
+  });
+});
+
+//   toggle books menu
+document.addEventListener("DOMContentLoaded", function(){
+  var navToggle = document.getElementById("bookstoggle");
+  var navMenu = document.getElementById("booksmenu");
+  navToggle.addEventListener("click", function(e){
+    navMenu.classList.toggle("open");
+  });
+});
+
+// / open cart modal
 const cart = document.querySelector('#cart');
 const cartModalOverlay = document.querySelector('.cart-modal-overlay');
 
@@ -64,6 +50,7 @@ cartModalOverlay.addEventListener('click', (e) => {
     cartModalOverlay.style.transform = 'translateX(-200%)'
   }
 })
+
 // end of close cart modal
 // var cartId = "cart";
    
@@ -111,17 +98,10 @@ function addToCartClicked (event) {
 }
 
 function addItemToCart (price, name, imageSrc) {
-  // let products = [];
-  // if(localStorage.getItem('products')) {
-  //   products = JSON.parse(localStorage.getItem('products'));
-  // }
-  // products.push({'productId' : productId + 1, image : '<imageLink>'});
-  // localStorage.setItem('products', JSON.stringify(products));
-
-  const productRow = document.createElement('div');
-  productRow.classList.add('product-row');
-  const productRows = document.getElementsByClassName('product-rows')[0];
-  const cartImage = document.getElementsByClassName('cart-image');
+    const productRow = document.createElement('div');
+    productRow.classList.add('product-row');
+    const productRows = document.getElementsByClassName('product-rows')[0];
+    const cartImage = document.getElementsByClassName('cart-image');
   
   for (let i = 0; i < cartImage.length; i++){
     if (cartImage[i].src == imageSrc){
@@ -203,7 +183,7 @@ function changeQuantity(event) {
 // update total price
 function updateCartPrice() {
   let total = 0
-  for (let i = 0; i < productRow.length; i += 2) {
+  for (let i = 0; i < productRow.length; i += 1) {
     cartRow = productRow[i]
   const priceElement = cartRow.getElementsByClassName('product-price')[0]
   const quantityElement = cartRow.getElementsByClassName('product-quantity')[0]
@@ -214,7 +194,7 @@ function updateCartPrice() {
   }
   document.getElementsByClassName('total-price')[0].innerText =  '$' + total
 
-document.getElementsByClassName('product-quantity')[0].textContent = i /= 2
+  document.getElementsByClassName('cart-quantity')[0].textContent = i /= 1
 }
 // end of update total price
 

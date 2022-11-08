@@ -36,35 +36,40 @@ for (var i = 0; i < addToCart.length; i++) {
 
 function addToCartClicked (event) {
   button = event.target;
-  var cartItem = button.parentElement;
-  var price = cartItem.getElementsByClassName('product-price')[0].innerText;
-  
-  var imageSrc = cartItem.getElementsByClassName('product-image')[0].src;
-  addItemToCart (price, imageSrc);
+  const cartItem = button.parentElement;
+  const price = cartItem.getElementsByClassName('product-price')[0].innerText;
+
+ console.log(price);
+  const name = cartItem.getElementsByClassName('product-name')[0].innerText;
+
+  console.log(name);
+
+  const imageSrc = cartItem.getElementsByClassName('product-image')[0].src;
+  addItemToCart (price, name, imageSrc);
   updateCartPrice()
 }
 
-function addItemToCart (price, imageSrc) {
-  var productRow = document.createElement('div');
-  productRow.classList.add('product-row');
-  var productRows = document.getElementsByClassName('product-rows')[0];
-  var cartImage = document.getElementsByClassName('cart-image');
+function addItemToCart (price, name, imageSrc) {
+    const productRow = document.createElement('div');
+    productRow.classList.add('product-row');
+    const productRows = document.getElementsByClassName('product-rows')[0];
+    const cartImage = document.getElementsByClassName('cart-image');
   
-  for (var i = 0; i < cartImage.length; i++){
+  for (let i = 0; i < cartImage.length; i++){
     if (cartImage[i].src == imageSrc){
       alert ('This item has already been added to the cart')
       return;
     }
   }
   
-  var cartRowItems = `
-  <div class="product-row">
+  const cartRowItems = `
+  <div class="product-item">
         <img class="cart-image" src="${imageSrc}" alt="">
-        <span class ="cart-price">${price}</span>
+        <span class ="product-price">${price}</span>
+        <span class="product-name">${name}</span>
         <input class="product-quantity" type="number" value="1">
         <button class="remove-btn">Remove</button>
         </div>
-        
       `
   productRow.innerHTML = cartRowItems;
   productRows.append(productRow);
@@ -73,7 +78,30 @@ function addItemToCart (price, imageSrc) {
   updateCartPrice()
 }
 // end of add products to cart
-
+// local storage
+// var cartId = "cart";
+ 
+// var localAdapter = {
+ 
+//     saveCart: function (object) {
+ 
+//         var stringified = JSON.stringify(object);
+//         localStorage.setItem(cartId, stringified);
+//         return true;
+ 
+//     },
+//     getCart: function () {
+ 
+//         return JSON.parse(localStorage.getItem(cartId));
+ 
+//     },
+//     clearCart: function () {
+ 
+//         localStorage.removeItem(cartId);
+ 
+//     }
+ 
+// };
 // Remove products from cart
 const removeBtn = document.getElementsByClassName('remove-btn');
 for (var i = 0; i < removeBtn.length; i++) {
@@ -88,15 +116,15 @@ function removeItem (event) {
 }
 
 // update quantity input
-var quantityInput = document.getElementsByClassName('product-quantity')[0];
+let quantityInput = document.getElementsByClassName('product-quantity')[0];
 
-for (var i = 0; i < quantityInput; i++){
+for (let i = 0; i < quantityInput; i++){
   input = quantityInput[i]
   input.addEventListener('change', changeQuantity)
 }
 
 function changeQuantity(event) {
-  var input = event.target
+  let input = event.target
   if (isNaN(input.value) || input.value <= 0){
     input.value = 1
   }
@@ -106,20 +134,21 @@ function changeQuantity(event) {
 
 // update total price
 function updateCartPrice() {
-  var total = 0
-  for (var i = 0; i < productRow.length; i += 2) {
+  let total = 0
+  for (let i = 0; i < productRow.length; i += 1) {
     cartRow = productRow[i]
-  var priceElement = cartRow.getElementsByClassName('cart-price')[0]
-  var quantityElement = cartRow.getElementsByClassName('product-quantity')[0]
-  var price = parseFloat(priceElement.innerText.replace('$', ''))
-  var quantity = quantityElement.value
+  const priceElement = cartRow.getElementsByClassName('product-price')[0]
+  const quantityElement = cartRow.getElementsByClassName('product-quantity')[0]
+ const price = parseFloat(priceElement.innerText.replace('$', ''))
+ const quantity = quantityElement.value
   total = total + (price * quantity )
     
   }
   document.getElementsByClassName('total-price')[0].innerText =  '$' + total
 
-document.getElementsByClassName('cart-quantity')[0].textContent = i /= 2
+  document.getElementsByClassName('cart-quantity')[0].textContent = i /= 1
 }
+
 // end of update total price
 
 // purchase items
@@ -139,34 +168,3 @@ function purchaseBtnClicked () {
  }
   updateCartPrice()
 }
-// end of purchase items
-
-//alert user if cart is empty 
-
-
-// toggle seeds menu
-document.addEventListener("DOMContentLoaded", function(){
-    var navToggle = document.getElementById("menutoggle");
-    var navMenu = document.getElementById("navmenu");
-    navToggle.addEventListener("click", function(e){
-      navMenu.classList.toggle("open");
-    });
-  });
-
-// toggle tools menu
-  document.addEventListener("DOMContentLoaded", function(){
-    var navToggle = document.getElementById("toolstoggle");
-    var navMenu = document.getElementById("toolsmenu");
-    navToggle.addEventListener("click", function(e){
-      navMenu.classList.toggle("open");
-    });
-  });
-
-//   toggle books menu
-document.addEventListener("DOMContentLoaded", function(){
-    var navToggle = document.getElementById("bookstoggle");
-    var navMenu = document.getElementById("booksmenu");
-    navToggle.addEventListener("click", function(e){
-      navMenu.classList.toggle("open");
-    });
-  });

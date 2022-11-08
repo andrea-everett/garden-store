@@ -14,23 +14,23 @@
 </head>
 
 <body>
- <div class="cart-modal-overlay">
-    <div class="cart-modal">
-      <i id="close-btn" class="fas fa-times"></i>
-        <h1 class="cart-is-empty">Cart is empty</h1>
-      
-        <div class="product-rows">
+    <div class="cart-modal-overlay">
+        <div class="cart-modal">
+          <i id="close-btn" class="fas fa-times"></i>
+            <h1 class="cart-is-empty">Cart is empty</h1>
+          
+            <div class="product-rows">
+            </div>
+            <div class="total">
+              <h1 class="cart-total">TOTAL</h1>
+                <span class="total-price">$0</span>
+                <form>
+                    <button type="button" id="checkout-btn">Checkout</button>
+                    <button type="button" id="test-btn">Test</button>
+                </form>
+            </div>
+          </div>
         </div>
-        <div class="total">
-          <h1 class="cart-total">TOTAL</h1>
-            <span class="total-price">23</span>
-            <form>
-                <button type="button" id="checkout-btn">Checkout</button>
-                <button type="button" id="test-btn">Test</button>
-            </form>
-        </div>
-      </div>
-    </div>
 <!--   end of cart modal -->
   <div class="cart-btn">
     <i id="cart" class="fas fa-shopping-cart"></i>
@@ -93,17 +93,17 @@
 
         <figure  class="product-img" id="product-img">
             <img src="flower-books.png">   
-            <figcaption >Books  <br><a href="../books/books.html">Shop Here</a></figcaption>
+            <figcaption class="product-name">Books  <br><a href="../books/books.html">Shop Here</a></figcaption>
         </figure>
 
         <figure class="product-img" id="garden-img">
             <img src="garden-tools.png">
-            <figcaption>Garden Tools <br><a href="../tools/tools.html">Shop Here</a></figcaption>
+            <figcaption class="product-name">Garden Tools <br><a href="../tools/tools.html">Shop Here</a></figcaption>
         </figure>
 
         <figure class="product-img" id="seeds-img">
             <img src="veg.png">
-            <figcaption>Vegetable Seeds <br><a href="../seeds/seeds.html">Shop Here</a></figcaption>
+            <figcaption class="product-name">Vegetable Seeds <br><a href="../seeds/seeds.html">Shop Here</a></figcaption>
         </figure>
     </section>
 
@@ -115,37 +115,37 @@
                 <div class="card-1 card">
                   <img class="product-image" src="beet.png"" alt="">
                     <button class="add-to-cart">Add to cart</button>
-                    <figcaption>Beet Seeds</figcaption>
+                    <figcaption class="product-name">Beet Seeds</figcaption>
                       <span class="product-price">$8.95</span>
                 </div>
                 <div class="card-2 card">
                   <img class="product-image" src="gloves.png" alt="">
                   <button class="add-to-cart">Add to cart</button>
-                  <figcaption>Gloves</figcaption>
+                  <figcaption class="product-name">Gloves</figcaption>
                     <span class="product-price">$5.95</span>
                 </div>
                 <div class="card-3 card">
                   <img class="product-image" src="pruner.png" alt="">
                     <button class="add-to-cart">Add to cart</button>
-                    <figcaption>Pruners</figcaption>
+                    <figcaption class="product-name">Pruners</figcaption>
                       <span class="product-price">$10.95</span>
                 </div>
                 <div class="card-4 card">
                   <img class="product-image" src="carrot-seeds.jpeg" alt="">
                      <button class="add-to-cart">Add to cart</button>
-                     <figcaption>Carrot Seeds</figcaption>
+                     <figcaption class="product-name">Carrot Seeds</figcaption>
                     <span class="product-price">$20.95</span>
                 </div>
                 <div class="card-5 card">
                   <img class="product-image" src="squash.jpeg" alt="">
                   <button class="add-to-cart">Add to cart</button>
-                  <figcaption>Squash Seeds</figcaption>
+                  <figcaption class="product-name">Squash Seeds</figcaption>
                   <span class="product-price">$8.95</span>
                 </div>
                 <div class="card-5 card">
                     <img class="product-image" src="snips.png" alt="">
                     <button class="add-to-cart">Add to cart</button>
-                    <figcaption>Snips</figcaption>
+                    <figcaption class="product-name">Snips</figcaption>
                     <span class="product-price">$8.95</span>
                   </div>
               </div>
@@ -180,9 +180,7 @@
         
         <script type="text/javascript" src="./shop.js"></script>
         <script src="https://js.stripe.com/v3/"></script>
-        <!-- <script type="text/javascript" src="../shoppingCart.js"></script> -->
         <script type="module" src="../script.js"></script>
-
         <footer-component></footer-component>
     </body>
 </html>
