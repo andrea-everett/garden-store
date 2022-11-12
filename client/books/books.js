@@ -183,20 +183,22 @@ function changeQuantity(event) {
 // update total price
 function updateCartPrice() {
   let total = 0
+  let cartQuantity = 0
   for (let i = 0; i < productRow.length; i += 1) {
     cartRow = productRow[i]
-  const priceElement = cartRow.getElementsByClassName('product-price')[0]
-  const quantityElement = cartRow.getElementsByClassName('product-quantity')[0]
- const price = parseFloat(priceElement.innerText.replace('$', ''))
- const quantity = quantityElement.value
-  total = total + (price * quantity )
-    
+    const priceElement = cartRow.getElementsByClassName('product-price')[0]
+    const quantityElement = cartRow.getElementsByClassName('product-quantity')[0]
+    const price = parseFloat(priceElement.innerText.replace('$', ''))
+    const quantity = quantityElement.value
+    cartQuantity = cartQuantity + parseInt(quantity)
+    total = total + (price * quantity )
   }
-  document.getElementsByClassName('total-price')[0].innerText =  '$' + total
+  document.getElementsByClassName('total-price')[0].innerText =  '$' + total.toFixed(2)
+  document.getElementsByClassName('cart-quantity')[0].textContent = cartQuantity
 
-  document.getElementsByClassName('cart-quantity')[0].textContent = i /= 1
+  // setLocalStorage()
 }
-// end of update total price
+
 
 // purchase items
 const purchaseBtn = document.querySelector('.purchase-btn');

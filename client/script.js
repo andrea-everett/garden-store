@@ -51,6 +51,7 @@ var stripe= Stripe('pk_live_51LgH1XB6d5FKrU8pLOm7kDtW2ls5eTvlkCJhggqL8KwMfMDHtgX
 // }
 const cartButton = document.getElementById("checkout-btn")
 const testButton = document.getElementById("test-btn")
+const cartQuantity =
 
 testButton.addEventListener("click", () => {
     fetch('http://localhost:3000/test',{
