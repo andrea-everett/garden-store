@@ -131,6 +131,8 @@ footerTemplate.innerHTML = `
          }
 
          button {
+            text-decoration: none;
+            color: inherit;
             width: 155px;
             height: 20px;
         }

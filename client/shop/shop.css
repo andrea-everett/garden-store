@@ -492,13 +492,13 @@ form #footer-input {
     
       .product-price {
         text-align: center;
-        font-size: 15px;
+        font-size: 18px;
       }
     
       .product-name {
         padding: 20px;
         text-align: center;
-        font-size: 13px;
+        font-size: 18px;
       }
     
       .product-quantity {
@@ -518,6 +518,12 @@ form #footer-input {
         font-size: 12px;
         text-align: center;
         padding: 5px;
+      }
+
+      #checkout-btn {
+        width: 100px;
+        height: 25px;
+        font-size: 15px;
       }
     
     .heading {
@@ -686,12 +692,5 @@ form #footer-input {
         margin-right:auto;
         width: 70%;
     }
-
-    .add-to-cart {
-        left: 30%;
-    }
-
-    
-
 }
 

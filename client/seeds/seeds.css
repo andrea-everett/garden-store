@@ -452,6 +452,12 @@ figure .featured-imgs {
     color:inherit;
    }
 
+   .items-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 20px 20px;
+   }
+
    .shop-display {
     width: 80%;
     margin-left: auto;
@@ -509,23 +515,4 @@ figure .featured-imgs {
    }
     }
 
-    /* @media (max-width: 1000px){
-      .cart-modal {
-        width: 100vw;
-      } 
-      
-      .product-row {
-        flex-direction: column;
-        text-align: center;
-        margin-bottom: 2em;
-      }
-      
-      .remove-btn {
-        margin: 0
-      }
-      
-      .product-quantity {
-        margin: .5em 0 .5em 0
-      }
-    } */
   
