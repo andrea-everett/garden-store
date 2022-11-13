@@ -22,6 +22,13 @@ img {
     cursor: pointer;
     margin: 1em 4em 0 0;
   }
+
+  .product-price {
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 25px;
+  }
   
   .cart-quantity {
     color: white;
@@ -33,6 +40,15 @@ img {
     border: solid 2px black;
     border-radius: 10px;
     font-weight: bolder;
+  }
+
+  #checkout-btn {
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    color: burlywood;
+    width: 200px;
+    height: 50px;
   }
   
   .items-container {
@@ -56,22 +72,29 @@ img {
     background-color: burlywood;
     color: white;
     position: absolute;
-    position: absolute;
-    right: 15%;
-    top: 55%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: .5em 1em; 
-    width: 150px;
+    width: 180px;
     outline: none;
     border: none;
     cursor: pointer;
     font-weight: bolder;
     font-size: 1.2rem
   }
+
+  .product-name {
+    padding: 20px;
+    font-size: 25px;
+    color: black;
+  }
   
   .product-price {
+    color: black;
     text-align: center;
     padding-top: 1em;
-    font-size: 18px;
+    font-size: 25px;
   }
   
   .cart-modal-overlay {
@@ -88,7 +111,7 @@ img {
   .cart-modal {
     height: 100vh;
     width: 50%;
-    background-color: rgb(50,50,50);
+    background-color: burlywood;
     float: right;
     overflow: scroll;
     overflow-x: hidden;
@@ -118,11 +141,11 @@ img {
   }
   
   .cart-total {
-    color: white;
+    color:black;
   }
   
   .total-price {
-    color: white;
+    color:black;
     font-size: 2rem;
     display: block;
   }
@@ -172,8 +195,8 @@ img {
   
   .remove-btn {
     padding: 1em 2em;
-    background-color:burlywood;
-    color: white;
+    background-color:white;
+    color: burlywood;
     outline: none;
     border: none;
     cursor: pointer;
@@ -342,6 +365,56 @@ figure .featured-imgs {
 
 
 @media  screen and (max-width: 576px) {
+  #cart {
+    font-size: 15px;
+  }
+
+  .product-row {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 300px;
+  }
+
+  .cart-quantity {
+    text-align: center;
+    font-size: 8px;
+  }
+
+  .product-item {
+    display: grid;
+    grid-gap: 5px;
+  }
+
+  .product-price {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .product-name {
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .product-quantity {
+    width: 20px;
+    height: 15px;
+    font-size: 18px;
+    margin-left: 75px;
+  }
+
+  .cart-image {
+    width: 100px;
+  }
+
+  .remove-btn {
+    width: 80px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+  }
+
   .cart-btn {
     display: inline;
    justify-content: right;

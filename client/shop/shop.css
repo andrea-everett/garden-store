@@ -48,13 +48,12 @@
   .add-to-cart {
     background-color: burlywood;
     color: white;
-    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate((-50%, -50%));
+    transform: translate(-50%, -50%);
     padding: .5em 1em; 
-    width: 150px;
+    width: 180px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -63,7 +62,7 @@
   }
   
   .product-price {
-    color: white;
+    color: black;
     text-align: center;
     padding-top: 1em;
     font-size: 25px;
@@ -89,7 +88,7 @@
   .cart-modal {
     height: 100vh;
     width: 50%;
-    background-color: rgb(50,50,50);
+    background-color:burlywood;
     float: right;
     overflow: scroll;
     overflow-x: hidden;
@@ -129,10 +128,10 @@
   }
   
   #checkout-btn {
-    background-color: burlywood;
+    background-color: white;
     border: none;
     font-size: 20px;
-    color: white;
+    color: burlywood;
     width: 200px;
     height: 50px;
   }
@@ -169,8 +168,8 @@
   
   .remove-btn {
     padding: 1em 2em;
-    background-color:burlywood;
-    color: white;
+    background-color:white;
+    color: burlywood;
     outline: none;
     border: none;
     cursor: pointer;
@@ -471,6 +470,56 @@ form #footer-input {
 }
 
 @media  screen and (max-width: 576px) {
+    #cart {
+        font-size: 15px;
+      }
+    
+      .product-row {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-rows: 300px;
+      }
+    
+      .cart-quantity {
+        text-align: center;
+        font-size: 8px;
+      }
+    
+      .product-item {
+        display: grid;
+        grid-gap: 5px;
+      }
+    
+      .product-price {
+        text-align: center;
+        font-size: 15px;
+      }
+    
+      .product-name {
+        padding: 20px;
+        text-align: center;
+        font-size: 13px;
+      }
+    
+      .product-quantity {
+        width: 20px;
+        height: 15px;
+        font-size: 18px;
+        margin-left: 75px;
+      }
+    
+      .cart-image {
+        width: 100px;
+      }
+    
+      .remove-btn {
+        width: 80px;
+        height: 20px;
+        font-size: 12px;
+        text-align: center;
+        padding: 5px;
+      }
+    
     .heading {
         font-size: 35px;
     }

@@ -39,10 +39,6 @@
     text-align: center
   }
   
-  .card:hover .add-to-cart {
-    transform: translateX(0);
-  }
-  
   .product-image {
     width: 250px;
     height: 250px;
@@ -53,13 +49,11 @@
     background-color: burlywood;
     color: white;
     position: absolute;
-    right: 75%;
-    left: 30%;
-    top: 55%;
-    padding: .5em 1em; 
-    transform: translateX(500px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 150px;
-    transition: .5s ease;
+    height: 50px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -87,7 +81,7 @@
   .cart-modal {
     height: 100vh;
     width: 50%;
-    background-color: rgb(50,50,50);
+    background-color: burlywood;
     float: right;
     overflow: scroll;
     overflow-x: hidden;
@@ -171,14 +165,21 @@
   
   .remove-btn {
     padding: 1em 2em;
-    background-color:burlywood;
-    color: white;
+    background-color:white;
+    color: burlywood;
     outline: none;
     border: none;
     cursor: pointer;
     margin-left: 3rem;
     font-weight: bolder;
     font-size: 1rem;
+  }
+
+  #checkout-btn {
+    color: burlywood;
+    background-color: white;
+    border: none;
+    font-size: 25px;
   }
   
   .remove-btn:active {
@@ -461,6 +462,56 @@ figure {
 }
 
 @media  screen and (max-width: 576px) {
+  #cart {
+    font-size: 15px;
+  }
+
+  .product-row {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 300px;
+  }
+
+  .cart-quantity {
+    text-align: center;
+    font-size: 8px;
+  }
+
+  .product-item {
+    display: grid;
+    grid-gap: 5px;
+  }
+
+  .product-price {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .product-name {
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .product-quantity {
+    width: 20px;
+    height: 15px;
+    font-size: 18px;
+    margin-left: 75px;
+  }
+
+  .cart-image {
+    width: 100px;
+  }
+
+  .remove-btn {
+    width: 80px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+  }
+
     .heading {
         font-size: 35px;
     }
@@ -537,11 +588,6 @@ figure {
         margin-top: 40px;
         font-size: 22px;
         bottom: -90px;
-    }
-
-    .add-to-cart {
-        top: 150px;
-        left: 120px;
     }
 }
 

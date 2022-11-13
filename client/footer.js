@@ -92,6 +92,49 @@ footerTemplate.innerHTML = `
         width: 175px;
         height: 50px;
     }
+    @media  screen and (max-width: 576px) {
+        .footer {
+            display: grid;
+            padding-bottom: 300px;
+            background-color: rgb(235, 203, 175);
+        }
+
+        .footer .heading {
+           display: none;
+        }
+
+        .about {
+            display: block;
+            line-height: 25px;
+           margin: 5px 60px 5px;
+           font-size: 15px;
+        }
+
+        .social {
+            display: block;
+            line-height: 25px;
+           margin: 5px 60px 5px;
+           font-size: 15px;
+        }
+
+        .join {
+            display: block;
+            line-height: 25px;
+           margin: 5px 60px 5px;
+           font-size: 15px;
+        }
+
+        form #footer-input {
+            margin: 5px 50px 5px ;
+            width: 150px;
+            height: 25px;
+         }
+
+         button {
+            width: 155px;
+            height: 20px;
+        }
+    }
     }
      </style>
      <footer>
