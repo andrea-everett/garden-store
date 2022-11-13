@@ -195,8 +195,6 @@ function updateCartPrice() {
   }
   document.getElementsByClassName('total-price')[0].innerText =  '$' + total.toFixed(2)
   document.getElementsByClassName('cart-quantity')[0].textContent = cartQuantity
-
-  // setLocalStorage()
 }
 
 

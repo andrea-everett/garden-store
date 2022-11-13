@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cedarville+Cursive&family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
-  
   .cart-btn {
     display: flex;
     justify-content: flex-end;
@@ -28,6 +27,7 @@
   }
   
   .items-container {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, minmax(150px, 1fr));
     margin: 20px 20px 20px;
@@ -36,22 +36,22 @@
   .card {
     margin: 1em;
     position: relative;
-    overflow: hidden; 
     text-align: center
   }
   
   .product-image {
     width: 250px;
     height: 250px;
-   margin: 20px 20px 30px;
    position: relative;
   }
   
   .add-to-cart {
     background-color: burlywood;
     color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    top:-250%;
     transform: translate((-50%, -50%));
     padding: .5em 1em; 
     width: 150px;
@@ -63,9 +63,16 @@
   }
   
   .product-price {
+    color: white;
     text-align: center;
     padding-top: 1em;
-    font-size: 18px;
+    font-size: 25px;
+  }
+
+  .product-name {
+    color:black;
+    padding: 20px;
+    font-size: 25px;
   }
   
   .cart-modal-overlay {
@@ -115,23 +122,19 @@
     color: white;
   }
   
-  #total-price {
+  .total-price {
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     display: block;
   }
   
-  .purchase-btn {
-    font-size: 1rem;
-    font-weight: bolder;
-    background-color: green;
-    color: white;
-    padding: 1em 2em;
-    border-radius: 10px;
-    outline: none;
+  #checkout-btn {
+    background-color: burlywood;
     border: none;
-    cursor: pointer;
-    margin: 2em 0 1em 0;
+    font-size: 20px;
+    color: white;
+    width: 200px;
+    height: 50px;
   }
   
   .product-rows {

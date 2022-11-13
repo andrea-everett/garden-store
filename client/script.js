@@ -50,20 +50,6 @@ var stripe= Stripe('pk_live_51LgH1XB6d5FKrU8pLOm7kDtW2ls5eTvlkCJhggqL8KwMfMDHtgX
 //     return cartPrice
 // }
 const cartButton = document.getElementById("checkout-btn")
-const testButton = document.getElementById("test-btn")
-const cartQuantity =
-
-testButton.addEventListener("click", () => {
-    fetch('http://localhost:3000/test',{
-        method: "POST", 
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-            test: 'testing'
-        })
-    })
-})
 
 cartButton.addEventListener("click", () => {
     const productsRaw = document.getElementsByClassName("product-item")
