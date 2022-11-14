@@ -95,7 +95,7 @@ footerTemplate.innerHTML = `
     @media  screen and (max-width: 576px) {
         .footer {
             display: grid;
-            padding-bottom: 300px;
+            padding-bottom: 200px;
             background-color: rgb(235, 203, 175);
         }
 
@@ -103,37 +103,41 @@ footerTemplate.innerHTML = `
            display: none;
         }
 
+        h1 {
+            margin-bottom: 10px;
+        }
+
         .about {
             display: block;
-            line-height: 25px;
+            line-height: 20px;
            margin: 5px 60px 5px;
            font-size: 15px;
         }
 
         .social {
             display: block;
-            line-height: 25px;
+            line-height: 20px;
            margin: 5px 60px 5px;
            font-size: 15px;
         }
 
         .join {
             display: block;
-            line-height: 25px;
+            line-height: 20px;
            margin: 5px 60px 5px;
            font-size: 15px;
         }
 
         form #footer-input {
-            margin: 5px 50px 5px ;
-            width: 150px;
-            height: 25px;
+            margin: 5px 20px 5px ;
+            width: 100px;
+            height: 15px;
          }
 
          button {
             text-decoration: none;
             color: inherit;
-            width: 155px;
+            width: 130px;
             height: 20px;
         }
     }

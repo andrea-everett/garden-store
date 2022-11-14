@@ -363,7 +363,6 @@ figure .featured-imgs {
     position: absolute;
 }
 
-
 @media  screen and (max-width: 576px) {
   #cart {
     font-size: 15px;
@@ -416,9 +415,9 @@ figure .featured-imgs {
   }
 
   .cart-btn {
-    display: inline;
    justify-content: right;
   }
+  
   .cart-image {
     width: 150px;
     display: block;

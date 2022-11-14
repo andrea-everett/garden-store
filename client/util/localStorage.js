@@ -1,37 +1,38 @@
-// fetch("books.js")
-// .then(function(response){
-//    return response.json();
-// })
-// .then(function(data){
-//    localStorage.setItem("products", JSON.stringify(data));
-//    if(!localStorage.getItem("cart")){
-//       localStorage.setItem("cart", "[]");
-//    }
-// });
-export function setLocalStorage() {
-    const cartName= "cart-quantity";
+fetch("books.js")
+.then(function(response){
+   return response.json();
+})
+.then(function(data){
+    console.log(data)
+   localStorage.setItem("products", JSON.stringify(data));
+   if(!localStorage.getItem("cart")){
+      localStorage.setItem("cart", "[]");
+   }
+});
+// export function setLocalStorage() {
+//     const cartName= "cart-quantity";
    
-    const localAdapter = {
+//     const localAdapter = {
      
-        saveCart: function (object) {
+//         saveCart: function (object) {
      
-            const stringified = JSON.stringify(object);
-            localStorage.setItem('cart-quantity', stringified);
-            return true;
+//             const stringified = JSON.stringify(object);
+//             localStorage.setItem('cart-quantity', stringified);
+//             return true;
      
-        },
-        getCart: function () {
+//         },
+//         getCart: function () {
      
-            return JSON.parse(localStorage.getItem('cart-quantity'));
+//             return JSON.parse(localStorage.getItem('cart-quantity'));
      
-        },
-        clearCart: function () {
+//         },
+//         clearCart: function () {
      
-            localStorage.removeItem('cart-quantity');
+//             localStorage.removeItem('cart-quantity');
      
-        }
-    };
-} 
+//         }
+//     };
+// } 
 
 // export function getLocalStorage() {
 //     const quantity = localStorage.getItem('cart-quantity');

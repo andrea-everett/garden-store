@@ -415,34 +415,6 @@ form #footer-input {
     .shop {
         bottom: 10px;
     }
-
-    .about {
-        display: none;
-    }
-    
-    .about a {
-        display: none;
-    }
-    
-    .social {
-        display: none;
-    }
-    
-    .bx {
-        display: none;
-    }
-    
-    .join  {
-        display: none;
-    }
-    
-    form #footer-input {
-        display: none;
-    }
-
-    .footer {
-        width: 576px;
-    }
 }
 
 
