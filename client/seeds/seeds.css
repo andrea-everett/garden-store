@@ -23,13 +23,36 @@ img {
     margin: 1em 4em 0 0;
   }
 
-  .product-price {
-    color: white;
+  .total {
     text-align: center;
-    padding-top: 1em;
-    font-size: 25px;
+    margin: 2em 0 2em 0;
   }
   
+  .cart-total {
+    color: white;
+  }
+  
+  .total-price {
+    color: white;
+    font-size: 35px;
+    display: block;
+  }
+
+  .product-price {
+    padding: 0px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+  .product-name {
+    border: solid;
+    text-align: center;
+    padding: 5px;
+    font-size: 22px;
+    color: white;
+  }
+
   .cart-quantity {
     color: white;
     background-color:black;
@@ -42,6 +65,12 @@ img {
     font-weight: bolder;
   }
 
+  .product-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   #checkout-btn {
     background-color: white;
     border: none;
@@ -50,10 +79,19 @@ img {
     width: 200px;
     height: 50px;
   }
+
+  .product-item {
+    display: grid;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 5px;
+  }
   
   .items-container {
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
     margin: 20px 20px 20px;
   }
   
@@ -190,17 +228,17 @@ img {
     width: 30px;
     height: 20px;
     font-size: 2rem;
-    margin-left: 3rem;
+    margin-left: 130px;
   }
   
   .remove-btn {
-    padding: 1em 2em;
+    width: 100px;
     background-color:white;
     color: burlywood;
     outline: none;
     border: none;
     cursor: pointer;
-    margin-left: 3rem;
+    margin-left: 6rem;
     font-weight: bolder;
     font-size: 1rem;
   }
@@ -370,8 +408,7 @@ figure .featured-imgs {
 
   .product-row {
     display: grid;
-    grid-gap: 5px;
-    grid-template-rows: 300px;
+    grid-gap: 20px;
   }
 
   .cart-quantity {
@@ -412,6 +449,7 @@ figure .featured-imgs {
     font-size: 12px;
     text-align: center;
     padding: 5px;
+    margin-left:55px;
   }
 
   .cart-btn {
@@ -419,10 +457,25 @@ figure .featured-imgs {
   }
   
   .cart-image {
+    padding: 20px;
     width: 150px;
+    height: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .cart-total {
+    font-size: 18px;
+  }
+
+  .total-price {
+    font-size: 25px;
+  }
+
+  #checkout-btn {
+    width: 100px;
+    height: 30px;
   }
 
 #btn {
@@ -430,10 +483,11 @@ figure .featured-imgs {
   margin-right: auto;
   display: block;
 }
-    .heading {
-        font-size: 40px;
-        padding: 0px;
-    }
+
+.heading {
+    font-size: 40px;
+    padding: 0px;
+}
 
    #menutoggle {
     text-decoration: none;

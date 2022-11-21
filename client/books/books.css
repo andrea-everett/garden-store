@@ -105,6 +105,7 @@
   }
   
   .total {
+    height: 200px;
     text-align: center;
     margin: 2em 0 2em 0;
   /*   display: none; */
