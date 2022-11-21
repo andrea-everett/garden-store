@@ -162,7 +162,7 @@
     text-align: center;
     padding: 5px;
     font-size: 22px;
-    color: white;
+    color: black;
   }
 
   .product-quantity {
@@ -539,7 +539,7 @@ form #footer-input {
         text-align: center;
         padding: 10px;
         font-size: 22px;
-        color: white;
+
       }
     
       .product-quantity {
